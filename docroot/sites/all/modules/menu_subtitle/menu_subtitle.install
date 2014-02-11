@@ -1,0 +1,156 @@
+<?php
+
+/**
+ * @file
+ * Install file for the menu_subtitle module.
+ */
+ 
+/**
+ * Implements hook_schema().
+ */
+function menu_subtitle_schema() {
+  $schema = array();
+
+  $schema['menu_subtitle'] = array(
+    'description' => 'Stores general data for menu subtitle.',
+    'fields' => array(
+      'mlid' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+      ),
+      'subtitle' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'position' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0
+      ),
+      'link' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 1,
+      ),
+    ),
+    'primary key' => array('mlid'),
+  );
+
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function menu_subtitle_uninstall() {
+  $query = db_select('menu_links', 'ml');
+  $query->fields('ml', array('mlid', 'options'));
+  $result = $query->execute();
+  while ($item = $result->fetchAssoc()) {
+    $options = unserialize($item['options']);
+    if (isset($options['subtitle'])) {
+      unset($options['subtitle']);
+      db_update('menu_links')
+        ->fields(array(
+          'options' => serialize($options),
+        ))
+        ->condition('mlid', $item['mlid'], '=')
+        ->execute();
+    }
+  }
+}
+
+/**
+ * Create menu subtitle table.
+ */
+function menu_subtitle_update_7100() {
+  $schema = array();
+
+  $schema['menu_subtitle'] = array(
+    'description' => 'Stores general data for menu subtitle.',
+    'fields' => array(
+      'mlid' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+      ),
+      'subtitle' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+    ),
+    'primary key' => array('mlid'),
+  );
+
+  db_create_table('menu_subtitle', drupal_get_schema_unprocessed('menu_subtitle', 'menu_subtitle'));
+  return 'Add the menu_subtitle table for the menu subtitle module.';
+}
+
+/**
+ * Export the menu subtitles saved from menu table to the new menu_subtitle table created with menu_subtitle_update_7100().
+ */
+function menu_subtitle_update_7101() {
+  $query = db_select('menu_links', 'ml');
+  $query->fields('ml', array('mlid', 'options'));
+  $result = $query->execute();
+
+  while ($item = $result->fetchAssoc()) {
+    $options = unserialize($item['options']);
+    
+    if (!empty($options['subtitle'])) {
+      db_insert('menu_subtitle')
+        ->fields(array(
+          'mlid' => $item['mlid'],
+          'subtitle' => $options['subtitle'],
+        ))
+        ->execute();
+    }
+      
+    unset($options['subtitle']);
+    db_update('menu_links')
+      ->fields(array(
+        'options' => serialize($options),
+      ))
+      ->condition('mlid', $item['mlid'], '=')
+      ->execute();
+  }
+  
+  return 'Menu subtitle exported in menu_subtitle table.';
+}
+
+/**
+ * Add the new field "position" to the schema table.
+ */
+function menu_subtitle_update_7102() {
+  $spec = array(
+    'type' => 'int',
+    'size' => 'tiny',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 0,
+  );
+  
+  db_add_field('menu_subtitle', 'position', $spec);
+}
+
+/**
+ * Add the new field "link" to the schema table.
+ */
+function menu_subtitle_update_7103() {
+  $spec = array(
+    'type' => 'int',
+    'size' => 'tiny',
+    'unsigned' => TRUE,
+    'not null' => TRUE,
+    'default' => 1,
+  );
+  
+  db_add_field('menu_subtitle', 'link', $spec);
+}

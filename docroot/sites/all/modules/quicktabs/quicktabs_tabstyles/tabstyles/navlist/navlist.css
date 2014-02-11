@@ -1,0 +1,92 @@
+
+.quicktabs_wrapper.quicktabs-style-navlist {
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+
+
+ul.quicktabs-tabs.quicktabs-style-navlist {
+  float: left;
+  padding: 4px 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  width: 20%;
+}
+/*-------------------------------------------------Unactive Tabs------------------------------*/
+ul.quicktabs-tabs.quicktabs-style-navlist li {
+  display: block;
+  margin-right: -1px;
+  padding: 0;
+  margin-bottom: -1px;
+  margin-top: -4px;
+  border-left: 5px solid #555555;
+  /*text-transform:uppercase;*/
+  color: #333;
+  text-align: center;
+  /*text-shadow: 0 1px 0 #eee; */
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+ul.quicktabs-tabs.quicktabs-style-navlist li a:hover {
+	background: #CCCCCC;
+	color: #000000;
+}
+
+ul.quicktabs-tabs.quicktabs-style-navlist li a {
+  display: block;
+  color: #FFFFFF;
+  text-align: right;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 10px 0 0;
+  /*height: 23px;*/ 
+  font-weight: normal;
+  background: #777777;
+  border:1px solid #888888;
+  padding:10px;
+    padding-top:16px;
+  padding-bottom:16px;
+ /* background: -webkit-linear-gradient(180deg, #aaaaaa, #444444); /* For Safari */
+/*background: -o-linear-gradient(180deg, #aaaaaa, #444444); /* For Opera 11.1 to 12.0 */
+/*background: -moz-linear-gradient(180deg, #aaaaaa, #444444); /* For Firefox 3.6 to 15 */
+/*background: linear-gradient(180deg, #aaaaaa, #444444); /* Standard syntax (must be last) */ 
+
+}
+/*-------------------------------------------------------Active Tab--------------------------*/
+ul.quicktabs-tabs.quicktabs-style-navlist li.active {
+  background: #FFFFFF;
+ /* border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888; */
+  border-right: white;
+  border-left: 5px solid #BB0000;
+}
+ul.quicktabs-tabs.quicktabs-style-navlist li.active a {
+  color: #990000;
+  background: #FFFFFF;
+  font-weight: bold;
+  border-right: #888888;
+  padding:10px;
+    padding-top:16px;
+  padding-bottom:16px;
+}
+
+/*-------------------------------------------- Content Box-----------------------------*/
+.quicktabs_main.quicktabs-style-navlist {
+  float: left;
+ 
+  background: #FFFFFF;
+  padding: 10px;
+  min-height: 392px;
+  position: relative;
+  z-index: 1;
+  width: 70%;
+   /*border: 1px solid #888888;
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+}

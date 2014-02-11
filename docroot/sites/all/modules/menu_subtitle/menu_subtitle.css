@@ -1,0 +1,8 @@
+.menu-link-title,
+.menu-link-subtitle {
+  display: block;
+}
+
+ul.inline li {
+  float: left;
+}

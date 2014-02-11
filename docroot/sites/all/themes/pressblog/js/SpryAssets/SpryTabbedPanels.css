@@ -1,0 +1,28 @@
+#TabbedPanelsSidebar { clear:both; }
+
+.TabbedPanels { margin: 0 0 20px 0; padding: 0px; float: left; clear: none; width:100%; }
+
+.TabbedPanelsTabGroup { margin: 0px; padding: 0px; }
+
+ul.TabbedPanelsTabGroup { background:#dbf2f8; display:block; overflow:hidden; }
+
+.TabbedPanelsTab { position: relative; padding:5px; float: left; list-style: none; cursor: pointer; background:#dbf2f8; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff; 
+width:64px; text-align:center; }
+
+.TabbedPanelsTab.last{ border-right:none; }
+
+.TabbedPanelsTab { color: #718795; text-transform: uppercase; font-weight:bold; font-size:10px; }
+
+.TabbedPanelsTabHover { color: #424f58; }
+
+.TabbedPanelsTabSelected { background: #bae3f5; color:#424f58; 	border-bottom:1px solid #bae3f5; }
+
+.TabbedPanelsContentGroup { clear: both; overflow:hidden; border: 4px solid #bae3f5; margin:0;}
+
+.TabbedPanelsContent { padding: 10px; clear:both; overflow:hidden; height:295px;}
+
+@media all and (max-width: 980px) {
+ /* all of your styles here */
+.TabbedPanelsContent { height:auto;}
+ 
+}

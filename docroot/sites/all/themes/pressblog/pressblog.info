@@ -1,0 +1,48 @@
+name = PressBlog - MoreThanThemes
+description = A stylish theme. A workhorse in content presentation. Ideal for news portals, journalists, bloggers and anyone into writing... lots.
+version = 3.1.0
+core = 7.x
+
+stylesheets[all and (min-width: 980px)][] = css/960.css
+stylesheets[all and (min-width: 760px) and (max-width: 980px)][] = css/720.css
+stylesheets[all and (max-width: 760px)][] = css/mobile.css
+
+stylesheets[all][] = js/SpryAssets/SpryTabbedPanels.css
+stylesheets[all][] = style.css
+
+regions[page_top] = Page top
+
+regions[main_navigation] = Main navigation
+regions[search_area] = Search area
+regions[header] = Header
+regions[secondary_navigation] = Secondary navigation
+regions[header_bottom] = Header bottom
+
+regions[highlighted] = Highlighted
+regions[content] = Content
+
+regions[sidebar_tabs] = Sidebar Tabs
+regions[sidebar_first] = Sidebar
+
+regions[footer_first] = Footer first area
+regions[footer_second] = Footer second area
+regions[footer_third] = Footer third area
+regions[footer_fourth] = Footer fourth area
+
+regions[footer_message] = Footer message
+regions[help] = Help
+regions[page_bottom] = Page bottom
+
+scripts[] = js/SpryAssets/SpryTabbedPanels.js
+scripts[] = js/jquery.cycle.all.min.js
+
+settings[breadcrumb_display]= 1
+settings[scrolltop_display]= 1
+settings[color_scheme]= 'default'
+settings[headings_font_family]= 'hff-default'
+settings[paragraph_font_family]= 'pff-default'
+settings[slideshow_effect]='fade'
+settings[slideshow_effect_time]='10'
+settings[frontpage_content_print]= 0
+
+

@@ -1,0 +1,13 @@
+#slideshow .slider-item img { width:620px; height: 354px; }
+
+.view-latest-blogposts a img { width:350px; max-height: 185px; }
+
+.slider-text { width:580px; }
+
+ul.followme li { float:left; padding:0 5px 0 0; }
+
+.flickr-photo-img { width:75px; height:75px; }
+
+#header-navigation-inner, #header-subscribe-inner { position: relative; z-index:100; }
+
+.meta-right { width:540px; }

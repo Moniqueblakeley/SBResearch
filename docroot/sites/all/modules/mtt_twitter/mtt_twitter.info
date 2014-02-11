@@ -1,0 +1,7 @@
+name = MtT Twitter
+description = Creates a block that displays the recent activity of your twitter account.
+version = 7.x-1.0
+package = More Than Themes
+core = 7.x
+files[] = mtt_twitter.module
+configure = admin/config/system/mtt_twitter
