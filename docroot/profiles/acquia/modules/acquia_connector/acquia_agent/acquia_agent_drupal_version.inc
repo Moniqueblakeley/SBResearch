@@ -17,7 +17,7 @@ define('IS_ACQUIA_DRUPAL', TRUE);
 /**
  * Acquia Drupal version information (only used if IS_ACQUIA_DRUPAL).
  */
-define('ACQUIA_DRUPAL_VERSION' , '7.26.29 (Drupal 7.26 core)');
+define('ACQUIA_DRUPAL_VERSION' , '7.26.28 (Drupal 7.26 core)');
 define('ACQUIA_DRUPAL_SERIES'  , '7.0');
 define('ACQUIA_DRUPAL_BRANCH'  , '7.x');
-define('ACQUIA_DRUPAL_REVISION', '6065');
+define('ACQUIA_DRUPAL_REVISION', '6051');
