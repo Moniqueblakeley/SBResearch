@@ -188,7 +188,11 @@ function jcarousel_jcarousel_skin_info() {
     'title' => t('Tango'),
     'file' => 'skins/tango/jcarousel-tango.css',
   );
-
+  $skins['edited'] = array(
+    'title' => t('Edited'),
+    'file' => 'skins/edited/jcarousel-edited.css',
+  );
+  
   return $skins;
 }
 

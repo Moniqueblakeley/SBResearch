@@ -780,8 +780,8 @@ table.calendar-legend tr.even .stripe {
   float: none;
   padding: 5px 0;
   position: absolute;
-  right: 60px;
-  left: auto;
+  /*right: 60px;*/
+  left:0px;
   text-align: right;
   top: 0px;
   width: auto;
