@@ -1,10 +1,14 @@
-﻿.dateIcon 
+﻿
+.dateIcon 
 {
-	width: 50px; height: 60px; 
-    float:left;
-    font-size: 15px; font-weight: bold; color: #fff; text-transform: uppercase;
-	background-color:khaki;
+	width: 50px; height: 40px; 
+	position:relative;
+   float:left; 
+    font-size: 15px; font-weight: bold; color: #eee; text-transform: uppercase;
+	background-color:red;
+	margin-bottom:15px;
 }
+
 
 .dateIcon p
 {
@@ -19,7 +23,7 @@
 	background: linear-gradient(top, #d10000 0%, #7a0909 100%);
 	background: -moz-linear-gradient(top, #d10000 0%, #7a0909 100%);
 	background: -webkit-linear-gradient(top, #d10000 0%, #7a0909 100%);
-	font-size: 12px; font-weight: bold; color: #fff; text-transform: uppercase; 	
+	font-size: 15px; font-weight: bold; color: #fff; text-transform: uppercase; 	
 	display: block;
 	border-top: 3px solid #a13838;
 	border-radius: 0 0 10px 10px;
@@ -38,7 +42,39 @@
 
 .eventInfo
 {
-   position:relative;
-   left:15px;
+/**text-align:left;**/
+/**  position:relative; **/
+    /* float:left;*/
+   left:15px; 
  
+}
+
+.eventInfoTraining
+{
+/**text-align:left;**/
+/*  position:relative; */
+	left:15px;
+/**   left:15px; **/
+}
+
+.trainingDateIcon 
+{
+	width: 50px; height: 40px; 
+	/*position:relative;*/
+   float:left; 
+    font-size: 15px; font-weight: bold; color: #a13838; text-transform: uppercase;
+	/*background-color:khaki;*/
+	clear:both;
+	padding-right:10px;
+}
+
+
+.trainingDateIcon p
+{
+	font-family: Helvetica, sans-serif; 
+	font-size: 14px; text-align: center; color: #a13838; 
+	border: 3px solid #eee;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
 }

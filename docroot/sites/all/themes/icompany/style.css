@@ -946,7 +946,7 @@ span.icon-circle-light-facebook {
 
 @media screen and (min-width: 1023px) {
 	#slider-inner {
-		min-height: 300px;
+		min-height: 250px;
 	}
 }
 
@@ -2407,7 +2407,7 @@ ul.tabs a {
 }
 
 .item-list ul.pager {
-	margin: 20px;
+	/*margin: 20px;*/
 }
 
 /* BOTTOM REGION ------------------ */
@@ -2663,11 +2663,11 @@ html.js fieldset.collapsed{
 }
 
 /* hide read more link */
-@media (max-width: 830px) {
+@media (max-width: 3000px) {
 	.views-field-view-node {
 		display: none;
 	}
-}
+} 
 
 .jcarousel-item {
 	padding: 0;
