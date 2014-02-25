@@ -1,7 +1,7 @@
 /*
  * Put all your css customization codes here so that you can easily update version later
  */
-html, body{background-image:url('http://129.49.23.45:8085/sites/default/files/sbrobg.png'); background-repeat:repeat-x; background-color:#f3f3f3;}
+html, body{background-image:url('http://research.dev.sinc.stonybrook.edu/sites/default/files/sbrobg.png'); background-repeat:repeat-x; background-color:#f3f3f3;}
 h2
 {
 
@@ -85,7 +85,7 @@ display:none;
 }
 
 #superfish-2:before
-{position:absolute;background-image:url('http://129.49.23.45:8085/sites/default/files/ribbonangles-inverted.png'); top: -12px;
+{position:absolute;background-image:url('http://research.dev.sinc.stonybrook.edu/sites/default/files/ribbonangles-inverted.png'); top: -12px;
 right: auto;
 left: -1px;
 content: "";
@@ -185,13 +185,13 @@ color:dodgerblue;
 
 .ui-accordion .ui-accordion-content{margin-bottom:20px; }
 
-.views-field-title {  }
-.views-field-title a {}
+ .views-field-title {  } 
+ .views-field-title a {} 
 #research-news-teaser .views-field-title {text-transform: initial;font-size:0.9em}
 
 #research-news-teaser .views-field-created {font-size:0.8em}
 #research-recent-funding-opportunities .field-content a{font-size:0.8em}
-.views-field-field-blurb-description {margin:5px 5px 10px 20px}
+.views-field-field-blurb-description {margin:5px 5px 10px 20px} 
 
 
 
@@ -225,7 +225,7 @@ background-color:lightgoldenrodyellow;
 
 
 .region-content {padding:5px 10px;margin-top:30px}
-.views-field-title-1 {font-weight:bold; text-transform: uppercase;}
+ .views-field-title-1 {font-weight:bold; text-transform: uppercase;} 
 
 .item-list ul li {margin:10px 0 0.25em -2.2em; background: #d3eefb; /* Old browsers */
 
@@ -330,7 +330,7 @@ margin-right:0px
 
 #superfish-3  li ul li a { background-color:white; padding:5px 10px; border:1px solid ghostwhite; color:black; font-size:11px}
 
-#superfish-3 .sf-sub-indicator {background:url('http://129.49.23.45:8085/sites/all/libraries/superfish/images/arrows-ffffff.png') no-repeat -10px -99px; top:0.1em;right:-1em}
+#superfish-3 .sf-sub-indicator {background:url('http://research.dev.sinc.stonybrook.edu/sites/all/libraries/superfish/images/arrows-ffffff.png') no-repeat -10px -99px; top:0.1em;right:-1em}
 
 #user_links {}
 
@@ -396,7 +396,7 @@ p.subtitle {color:goldenrod;font-size:0.8em}
 
 /*.content img {padding:4px ;border:1px solid #EEEEEE;margin:5px}*/
 
-.quicktabs-tabs li :before{position:absolute;background-image:url('http://129.49.23.45:8085/sites/default/files/ribbonangles-inverted.png'); top: -12px;
+.quicktabs-tabs li :before{position:absolute;background-image:url('http://research.dev.sinc.stonybrook.edu/sites/default/files/ribbonangles-inverted.png'); top: -12px;
 right: auto;
 left: -26px;
 content: "";
