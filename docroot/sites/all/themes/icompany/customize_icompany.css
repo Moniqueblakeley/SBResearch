@@ -1,7 +1,7 @@
 /*
  * Put all your css customization codes here so that you can easily update version later
  */
-html, body{background-image:url('http://research.dev.sinc.stonybrook.edu/sites/default/files/sbrobg.png'); background-repeat:repeat-x; background-color:#f3f3f3;}
+html, body{background-image:url('/sites/default/files/sbrobg.png'); background-repeat:repeat-x; background-color:#f3f3f3;}
 h2
 {
 
@@ -85,7 +85,7 @@ display:none;
 }
 
 #superfish-2:before
-{position:absolute;background-image:url('http://research.dev.sinc.stonybrook.edu/sites/default/files/ribbonangles-inverted.png'); top: -12px;
+{position:absolute;background-image:url('/sites/default/files/ribbonangles-inverted.png'); top: -12px;
 right: auto;
 left: -1px;
 content: "";
@@ -330,7 +330,7 @@ margin-right:0px
 
 #superfish-3  li ul li a { background-color:white; padding:5px 10px; border:1px solid ghostwhite; color:black; font-size:11px}
 
-#superfish-3 .sf-sub-indicator {background:url('http://research.dev.sinc.stonybrook.edu/sites/all/libraries/superfish/images/arrows-ffffff.png') no-repeat -10px -99px; top:0.1em;right:-1em}
+#superfish-3 .sf-sub-indicator {background:url('/sites/all/libraries/superfish/images/arrows-ffffff.png') no-repeat -10px -99px; top:0.1em;right:-1em}
 
 #user_links {}
 
@@ -396,7 +396,7 @@ p.subtitle {color:goldenrod;font-size:0.8em}
 
 /*.content img {padding:4px ;border:1px solid #EEEEEE;margin:5px}*/
 
-.quicktabs-tabs li :before{position:absolute;background-image:url('http://research.dev.sinc.stonybrook.edu/sites/default/files/ribbonangles-inverted.png'); top: -12px;
+.quicktabs-tabs li :before{position:absolute;background-image:url('/sites/default/files/ribbonangles-inverted.png'); top: -12px;
 right: auto;
 left: -26px;
 content: "";
