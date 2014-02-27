@@ -21,7 +21,7 @@ background: -o-linear-gradient(45deg,  #6d0019 0%,#8f0222 69%,#a90329 100%); /* 
 background: -ms-linear-gradient(45deg,  #6d0019 0%,#8f0222 69%,#a90329 100%); /* IE10+ */
 background: linear-gradient(45deg,  #6d0019 0%,#8f0222 69%,#a90329 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d0019', endColorstr='#a90329',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-background-image:url('http://129.49.23.45:8085/sites/default/files/slideshow-bg.png');
+background-image:url('/sites/default/files/slideshow-bg.png');
 
 }
 
