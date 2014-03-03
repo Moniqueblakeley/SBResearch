@@ -1,7 +1,7 @@
 /*
  * Put all your css customization codes here so that you can easily update version later
  */
-html, body{background-image:url('/sites/default/files/sbrobg.png'); background-repeat:repeat-x; background-color:#f3f3f3;}
+html, body{background-image:url('/sites/default/files/sbrobg.png'); background-repeat:repeat-x; background-color:#ffffff;}
 h2
 {
 
@@ -109,7 +109,7 @@ color:white;;color:white; }
 
 .inner{padding:20px 0px}
 
-.region-content {padding:5px 20px;}
+.region-content {padding:2px 20px;}
 .footer-inner {padding:10px}
 #footer-note .inner{text-align:center;}
 #page-wrapper {border-top:0px;
@@ -163,6 +163,7 @@ font-size:14px;
 
 
 }
+
 .ui-widget-content {background:none;}
 
 .ui-accordion .ui-accordion-content {background-color:whitesmoke;border:1px solid silver}
@@ -225,7 +226,7 @@ background-color:lightgoldenrodyellow;
 
 
 .region-content {padding:5px 10px;margin-top:30px}
- .views-field-title-1 {font-weight:bold; text-transform: uppercase;} 
+ .views-field-title-1 {font-weight:bold;} 
 
 .item-list ul li {margin:10px 0 0.25em -2.2em; background: #d3eefb; /* Old browsers */
 
