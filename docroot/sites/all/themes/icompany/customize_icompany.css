@@ -1,25 +1,21 @@
 /*
  * Put all your css customization codes here so that you can easily update version later
  */
-html, body{background-image:url('/sites/default/files/sbrobg.png'); background-repeat:repeat-x; background-color:#ffffff;}
+html, body{background-image:url('http://www.stonybrook.edu/research/newimages/sbrobg-short.png');background-image:url('/sites/default/files/sbrobg.png'); background-repeat:repeat-x; background-color:#990000;font-size:13px}
 h2
 {
 
 padding:8px;
 color:black;
--webkit-border-radius:3px;
-font-size:14px;
-background: url('http://www.innovationcenterstonybrook.com/portals/_default/containers/stonybrook/images/c2_titbg.png') repeat #990000;
-background: rgba(254,210,138,1);
-background: -moz-linear-gradient(left, rgba(254,210,138,1) 0%, rgba(254,210,138,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(254,210,138,1)), color-stop(100%, rgba(254,210,138,1)));
-background: -webkit-linear-gradient(left, rgba(254,210,138,1) 0%, rgba(254,210,138,1) 100%);
-background: -o-linear-gradient(left, rgba(254,210,138,1) 0%, rgba(254,210,138,1) 100%);
-background: -ms-linear-gradient(left, rgba(254,210,138,1) 0%, rgba(254,210,138,1) 100%);
-background: linear-gradient(to right, rgba(254,210,138,1) 0%, rgba(254,210,138,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fed28a', endColorstr='#fed28a', GradientType=1 );
-border:1px solid gold;
-background-color:khaki;
+-webkit-border-radius:1px;
+font-size:16px;
+text-transform: uppercase;
+color:crimson;
+
+border:0px solid gold;
+border-bottom:1px solid crimson;
+border-top:3px solid crimson;
+background-color:snow;
 text-shadow:text-shadow: 3px 2px 2px rgba(126, 150, 255, 0.83);}
 a {color:skyblue}
 #iview  h2  {color:White; }
@@ -63,6 +59,7 @@ margin-left:-15px;
 -webkit-box-shadow: 0px 26px 110px -53px rgba(97,97,97,1);
 -moz-box-shadow: 0px 26px 110px -53px rgba(97,97,97,1);
 box-shadow: 0px 26px 110px -53px rgba(97,97,97,1);
+margin-bottom:30px
 }
 
 .active_row{
@@ -125,12 +122,21 @@ border-radius:0px;
 box-shadow: -5px -1px 184px 42px rgba(0,0,0,0.43);
  background-color:#F6F3E2;
  background-color:#fffdec;
-
+ background-color:#ffffff;
+ 
+ -webkit-box-shadow: -5px -1px 184px 42px rgba(0,0,0,0);
+-moz-box-shadow: -5px -1px 184px 42px rgba(0,0,0,0);
+box-shadow: -5px -1px 184px 22px rgba(0,0,0,0.65);
+margin-bottom:100px
 }	
 .views-row {padding:5px;}
 
-table td {border-top:0px; padding:5px}
+table td {border-top:0px; }
 
+
+#block-system-main > div > div > div.panel-flexible.panels-flexible-1.clearfix > div > div.panels-flexible-1-left > div > div > div > div > div > div > div > div > table > tbody > tr  {padding:25px;  border:1px solid gold; }
+
+#block-system-main > div > div > div.panel-flexible.panels-flexible-1.clearfix > div > div.panels-flexible-1-left > div > div > div > div > div > div > div > div > table > tbody > td.active_row {border-right:1px solid white}
 .view-offices h5{font-size:12px;padding:5px; background-color:cadetblue; color:white}
 .view-offices h5 a {color:white}
 
@@ -196,16 +202,14 @@ color:dodgerblue;
 
 
 
-.view-subtopic-titles table tr { background: #d3eefb; /* Old browsers */
-background: -moz-linear-gradient(left,  #d3eefb 0%, #ffffff 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d3eefb), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  #d3eefb 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  #d3eefb 0%,#ffffff 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  #d3eefb 0%,#ffffff 100%); /* IE10+ */
-background: linear-gradient(to right,  #d3eefb 0%,#ffffff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3eefb', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
-border-bottom:#D5EEFB 1px solid;
-border-left: 5px solid navy;
+.view-subtopic-titles table tr { 
+background-color:lightgoldenrodyellow;
+
+ /* Old browsers */
+font-size:14px;
+padding: 25px 10px;
+border-bottom:1px solid palegoldenrod;
+border-left: 5px solid lightgoldenrod;
 background-color:lightgoldenrodyellow;
 
 }
@@ -219,11 +223,12 @@ background: -ms-linear-gradient(left,  #d3eefb 0%,#ffffff 100%); /* IE10+ */
 background: linear-gradient(to right,  #d3eefb 0%,#ffffff 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3eefb', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 border-bottom:#D5EEFB 0px solid;
-border-left: 5px solid navy;
+border-left: 5px solid crimson;
 background-color:lightgoldenrodyellow;
 
 }
 
+.view-subtopic-menu table tr td a{color:crimson}
 
 .region-content {padding:5px 10px;margin-top:0px}
  .views-field-title-1 {font-weight:bold;} 
@@ -364,7 +369,7 @@ text-align: right;
 }
 
 .rtejustify{text-align:left}
-.rtecenter{text-align:left}
+
 a {color:cadetblue}
 
 .faq-content{padding-left:30px;}
@@ -431,7 +436,7 @@ background-position: -20px -3px;}
 #homepage-search label {display:none}
 #homepage-search .form-text {width:80%}
 
- #title-region .inner{ background-image:none; }
+ #title-region .inner{ background-image:none; background-color:white; }
  
 .field-type-youtube{
 	display:block;
@@ -478,3 +483,57 @@ width: 40%;
 }
 
 .staff-directory .views-field.views-field-field-position {width:40%}
+
+
+.sbrotopiccontentview {border:10px solid gray; color:crimson}
+
+
+#block-system-main > div > div > div.panel-flexible.panels-flexible-1.clearfix > div > div.panels-flexible-1-middle > div > div > div > div > div.panel-pane.pane-views.pane-topic-content > div > div {
+border: 1px solid gold;
+
+}
+
+#block-system-main > div > div > div.panel-flexible.panels-flexible-1.clearfix > div > div.panels-flexible-1-left > div > div > div > div {
+margin-left: 0px;
+border-top:0px solid gray;
+}
+
+.panels-flexible-column-inside{padding:0px}
+
+.panels-flexible-column-1-main {
+float: left;
+width: 90.0000%;
+margin-left:-1px;
+border-top:1px solid palegoldenrod;
+border-right:1px solid palegoldenrod;
+padding:5px 20px;
+min-height:500px
+
+}
+
+.panels-flexible-region-1-sidebar_left {
+float: left;
+width: 100.0000%;
+border-top:1px solid palegoldenrod;
+margin-left:-25px;
+padding:0px 25px 0px 0px;
+}
+
+
+
+.panels-flexible-region-1-sidebar_left:before
+{position:absolute;background-image:url('/sites/default/files/ribbonangles-inverted.png'); top: -12px;
+right: auto;
+left: -26px;
+content: "";
+width: 16px;
+height: 12px;
+background-color: transparent;
+background-repeat: no-repeat;
+background-position: -22px -3px;}
+ tr.odd {background-color:transparent;}
+blockquote {margin:0px; border:0px; background-color:lightgoldenrodyellow; padding:15px}
+
+.panels-flexible-column {padding:0px}
+
+.ui-state-default {border:0px ; background:none;}
