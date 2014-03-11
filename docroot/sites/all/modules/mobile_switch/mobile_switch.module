@@ -1,0 +1,302 @@
+<?php
+/**
+ * @file
+ * Simple theme switch for mobile devices, detected by browscap.
+ */
+
+/**
+ * Implements hook_page_alter().
+ *
+ * Display a user agent message.
+ */
+function mobile_switch_page_alter(&$page) {
+  $get['display_useragent'] = variable_get('mobile_switch_display_useragent', 0);
+  $get['display_browscapinfo'] = variable_get('mobile_switch_display_browscapinfo', 0);
+
+  if ($get['display_useragent']) {
+    if (mobile_switch_administer()) {
+      $browser = browscap_get_browser(NULL, TRUE);
+      $message = t('!mobile-switch information from browscap. User agent', array('!mobile-switch' => l(t('Mobile Switch'), 'admin/config/user-interface/mobile-switch'))) . ':<br />';
+      $message .= $browser['useragent'];
+      drupal_set_message(filter_xss_admin($message));
+    }
+  }
+  if ($get['display_browscapinfo']) {
+    if (mobile_switch_administer()) {
+      $browser = browscap_get_browser(NULL, TRUE);
+      $message = t('!mobile-switch information; browscap details', array('!mobile-switch' => l(t('Mobile Switch'), 'admin/config/user-interface/mobile-switch'))) . ':<br />';
+      $message .= _mobile_switch_get_browscap_details($browser);
+      drupal_set_message($message);
+    }
+  }
+}
+
+/**
+ * Implements hook_boot().
+ *
+ * Alter specific entries in the 'variable' table:
+ *   - theme_default: If mobile mobile device the value are changed
+ *                    to the configured mobile theme.
+ * Insert new entries in the 'variable' table:
+ *   - mobile_switch_ismobiledevice: The default value is FALSE. If the
+ *                                   browscap value 'ismobiledevice' are 1
+ *                                   the value is TRUE.
+ *   - mobile_switch_ismobiletheme: The default value is FALSE. If used mobile
+ *                                  theme the value is TRUE.
+ *   - theme_mobile: The default value is FALSE. If used mobile theme the value
+ *                   is the machine name of the used theme.
+ */
+function mobile_switch_boot() {
+  global $conf;
+
+  // Initialize the new variables here (as fallback) if configured the
+  // 'Mobile theme' setting  with the option 'Do not use'.
+  $conf['mobile_switch_ismobiledevice'] = FALSE;
+  $conf['mobile_switch_ismobiletheme'] = FALSE;
+  $conf['theme_mobile'] = FALSE;
+  // Preserve the configuration variables.
+  $conf['mobile_switch_theme_default'] = variable_get('theme_default', 'bartik');
+  $conf['mobile_switch_theme_mobile'] = variable_get('mobile_switch_mobile_theme', 'none');
+  // Use the mobile theme on admin pages.
+  $get['admin'] = (bool) variable_get('mobile_switch_admin_usage', FALSE);
+
+  if (defined('MAINTENANCE_MODE') || (stristr($_GET['q'], 'admin') && $get['admin'] === FALSE) || $conf['mobile_switch_theme_mobile'] == 'none' ) {
+    return;
+  }
+
+  $get['deskbrowser'] = (bool) variable_get('mobile_switch_deskbrowser', FALSE);
+  $get['developer'] = (bool) variable_get('mobile_switch_developer', FALSE);
+  $get['theme_default'] = $conf['mobile_switch_theme_default'];
+  $get['browser'] = mobile_switch_browscap_get_browser($get['developer']);
+
+  if ((bool) variable_get('mobile_switch_prevent_devices', FALSE) === TRUE) {
+    if ((bool) $get['browser']['prevent_device'] === TRUE) {
+      return;
+    }
+  }
+
+  $get['theme_cookie'] = FALSE;
+  if ((bool) $get['browser']['ismobiledevice'] === TRUE
+    || ((bool) $get['browser']['ismobiledevice'] === FALSE && $get['developer'] === TRUE && $get['deskbrowser'] === TRUE)
+    || $get['deskbrowser'] === TRUE
+  ) {
+    $conf['theme_mobile'] = $conf['theme_default'] = $conf['mobile_switch_theme_mobile'];
+
+    $conf['mobile_switch_ismobiletheme'] = TRUE;
+
+    // Use mobile theme on admin pages.
+    if ((stristr($_GET['q'], 'admin')) && $get['admin'] === TRUE) {
+      $conf['admin_theme'] = '0';
+    }
+  }
+
+  if ((bool) $get['browser']['ismobiledevice'] === TRUE) {
+    $conf['mobile_switch_ismobiledevice'] = TRUE;
+  }
+
+  drupal_alter('mobile_switch_boot', $conf, $get);
+}
+
+/**
+ * Implements hook_menu().
+ */
+function mobile_switch_menu() {
+  $items = array();
+
+  $items['admin/config/user-interface/mobile-switch'] = array(
+    'title' => 'Mobile Switch',
+    'page callback' => 'drupal_get_form',
+    'page arguments' =>  array('mobile_switch_settings_form'),
+    'access callback' => 'mobile_switch_administer',
+    'description' => 'Enable or disable automatic theme changing for mobile devices.',
+    'file' => 'includes/mobile_switch.admin.inc',
+  );
+  $items['admin/config/user-interface/mobile-switch/basic-settings'] = array(
+    'title' => 'Basic settings',
+    'description' => 'Adjust the Pirobox lightbox settings.',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => -10
+  );
+
+  $items['admin/config/user-interface/mobile-switch/advanced'] = array(
+    'title' => 'Advanced',
+    'page callback' => 'drupal_get_form',
+    'page arguments' =>  array('mobile_switch_advanced_settings_form'),
+    'access callback' => 'mobile_switch_administer',
+    'file' => 'includes/mobile_switch.admin.inc',
+    'type' => MENU_LOCAL_TASK,
+    'weight' => -8
+  );
+  $items['admin/config/user-interface/mobile-switch/development'] = array(
+    'title' => 'Development',
+    'page callback' => 'drupal_get_form',
+    'page arguments' =>  array('mobile_switch_development_settings_form'),
+    'access callback' => 'mobile_switch_administer',
+    'file' => 'includes/mobile_switch.admin.inc',
+    'type' => MENU_LOCAL_TASK,
+    'weight' => -6
+  );
+
+  return $items;
+}
+
+/**
+ * Access callback.
+ *
+ * @see mobile_switch_menu()
+ * @see mobile_switch_page_alter()
+ */
+function mobile_switch_administer() {
+  global $user;
+
+  if (user_access('administer site configuration', $user) || user_access('administer themes', $user)) {
+    return TRUE;
+  }
+
+  return FALSE;
+}
+
+/**
+ * Implements hook_system_themes_page_alter().
+ *
+ * Alter the displayed theme informations of the used mobile theme.
+ */
+function mobile_switch_system_themes_page_alter(&$theme_groups) {
+  $mobile_theme = variable_get('mobile_switch_mobile_theme', 'none');
+
+  if ($mobile_theme == 'none') {
+    return;
+  }
+
+  foreach ($theme_groups['enabled'] as $key => $theme) {
+    if ($theme->name == $mobile_theme) {
+      $theme_groups['enabled'][$key]->notes[] = t('default mobile theme by !mobile-switch', array('!mobile-switch' => l(t('Mobile Switch'), 'admin/config/user-interface/mobile-switch', array('attributes' => array('title' => t('Administer Mobile Switch'))))));
+      $theme_groups['enabled'][$key]->classes[] = 'theme-default';
+      $theme_groups['enabled'][$key]->classes[] = 'theme-default-mobile';
+      // Remove mobile theme links 'Disable' and 'Set default'.
+      foreach ($theme->operations as $op_key => $op) {
+        if ($op['href'] == 'admin/appearance/disable') {
+          unset($theme_groups['enabled'][$key]->operations[$op_key]);
+        }
+        if ($op['href'] == 'admin/appearance/default') {
+          unset($theme_groups['enabled'][$key]->operations[$op_key]);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Preprocess variables for html.tpl.php.
+ */
+function mobile_switch_preprocess_html(&$variables) {
+  if (variable_get('mobile_switch_mobile_theme', 'none') == 'none') {
+    return;
+  }
+
+  if (stristr($_GET['q'], 'admin')) {
+    drupal_add_css(drupal_get_path('module', 'mobile_switch') . '/css/mobile_switch.system.admin.css');
+  }
+}
+
+/**
+ * Wrapper for browscap_get_browser().
+ *
+ * Extend the browscap device detection with an additional device check.
+ * The returned associative array are extended with the
+ * 'prevent_device' boolean value.
+ *
+ * @param $emulator_check
+ *   Optional boolean value to use mobile browser emulators.
+ *
+ * @see mobile_switch_boot()
+ */
+function mobile_switch_browscap_get_browser($emulator_check = FALSE) {
+  static $browser;
+
+  if (!isset($browser)) {
+    // Fix a peculiarity of Broscap module branch 2+.
+    // Browscap module is not loaded during bootstrap.
+    if (!function_exists('browscap_get_browser')) {
+      drupal_load('module', 'browscap');
+    }
+
+    $browser = browscap_get_browser(NULL, TRUE);
+
+    // Mobile device emulators.
+    if ((bool) $emulator_check === TRUE) {
+      $emulator_strings = variable_get('mobile_switch_emulator_strings', "Fennec\nAndroid\nTablet\nMobi");
+      $emulator_strings = str_replace(array("\r\n", "\n", "\r"), '|', $emulator_strings);
+
+      if (preg_match("/$emulator_strings/i", $browser['useragent'])) {
+        $browser['ismobiledevice'] = TRUE;
+      }
+    }
+
+    // Mobile device prevention.
+    $browser['prevent_device'] = FALSE;
+    $prevent_devices = (bool) variable_get('mobile_switch_prevent_devices', FALSE);
+    $prevent_devices_strings = variable_get('mobile_switch_prevent_devices_strings', '');
+
+    if ($prevent_devices === TRUE && !empty($prevent_devices_strings)) {
+      $prevent_devices_strings = str_replace(array("\r\n", "\n", "\r"), '|', $prevent_devices_strings);
+      $strings_arr = explode("|", $prevent_devices_strings);
+
+      foreach ($strings_arr as $val) {
+        $found = stristr($browser['useragent'], $val);
+        if (!empty($found)) {
+          $browser['prevent_device'] = TRUE;
+        }
+      }
+    }
+
+    // Fix a peculiarity of Broscap module branch 2+.
+    if ($browser['ismobiledevice'] === 'false') {
+      $browser['ismobiledevice'] = FALSE;
+    }
+    if ($browser['ismobiledevice'] === 'true') {
+      $browser['ismobiledevice'] = TRUE;
+    }
+
+  }
+
+  return $browser;
+}
+
+/**
+ * Helper function to determine the active themes.
+ *
+ * @see mobile_switch_settings_form()
+ * @see mobile_switch.admin,inc
+ */
+function mobile_switch_get_themes() {
+  $themes = array();
+
+  foreach (list_themes() as $name => $value) {
+    if ($value->status == 0) continue;
+    $themes[$name] = preg_replace('/_/', ' ', ucfirst($value->name));
+  }
+
+  return $themes;
+}
+
+/**
+ * Helper function to get browscap details.
+ *
+ * @param $browser
+ *  Associative array from browscap.
+ *
+ * @return string
+ *   HTML table contains browscap details.
+ *
+ * @see mobile_switch_page_alter()
+ */
+function _mobile_switch_get_browscap_details($browser) {
+  $rows = array();
+
+  foreach ($browser as $key => $value) {
+    $rows[] = array($key, filter_xss_admin($value));
+  }
+
+  return theme('table', array('header' => array('', ''), 'rows' => $rows, 'attributes' => array('id' => 'browscap-details')));
+}

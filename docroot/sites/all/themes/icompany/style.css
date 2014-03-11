@@ -48,15 +48,15 @@ ul, ol {
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 14px;
 	line-height: 20px;
 }
 h5 {
-	font-size: 17px;
+	font-size: 13px;
 	line-height: 20px;
 }
 h6 {
-	font-size: 15px;
+	font-size: 12px;
 	line-height: 20px;
 }
 
@@ -137,7 +137,7 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6, h7, h8 {
-	line-height: 140%;
+	line-height: 120%;
 }
 
 blockquote {
@@ -946,7 +946,7 @@ span.icon-circle-light-facebook {
 
 @media screen and (min-width: 1023px) {
 	#slider-inner {
-		min-height: 300px;
+		min-height: 250px;
 	}
 }
 
@@ -2407,7 +2407,7 @@ ul.tabs a {
 }
 
 .item-list ul.pager {
-	margin: 20px;
+	/*margin: 20px;*/
 }
 
 /* BOTTOM REGION ------------------ */
@@ -2540,7 +2540,6 @@ ul.secondary-menu {
 
 #footer-note .inner {
 	text-align: right;
-	padding-right: 20px;
 }
 
 .region-footer .block {
@@ -2664,11 +2663,11 @@ html.js fieldset.collapsed{
 }
 
 /* hide read more link */
-@media (max-width: 830px) {
+@media (max-width: 3000px) {
 	.views-field-view-node {
 		display: none;
 	}
-}
+} 
 
 .jcarousel-item {
 	padding: 0;

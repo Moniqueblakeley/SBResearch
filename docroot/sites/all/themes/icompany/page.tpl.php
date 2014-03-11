@@ -192,7 +192,7 @@ $you_here = t("You are here: ");
   
   <?php  if($slider_region){ ?>
 	<div id="main_slider" class="row-fluid <?php print theme_get_setting('slider_type').'-wrap'; ?>">
-			  <div id="youtube">
+	  <div id="youtube">
 
 	    <?php if($youtube) {?>
 
@@ -219,6 +219,7 @@ $you_here = t("You are here: ");
 			
 			<div id="slider-inner-shadow-bottom"></div>
 		</div>
+			</div>
   <div id="youtube">
 
     <div id="youtube" class="span4">
@@ -240,10 +241,10 @@ $you_here = t("You are here: ");
     </div>
 
   </div>
-  <?php } ?>-->
+  <?php } ?> 
   
   
-	<!-- content zone -->
+	<!--content zone-->
 	<div id="zone1" class="row-fluid">
 		
 		<?php if($highlighted || $highlighted_2) { ?>
@@ -358,7 +359,6 @@ $you_here = t("You are here: ");
 		<span class="border"></span>
 		<?php } ?>
 		
-		
 		<!-- bootstrap tabs implementation on this region-->
 		<?php if(region_blocks_exist($tab1,$tab2,$tab3,$tab4,$tab5,$tab6,$tabs_sidebar )) { 
 			  $tabs_exist = region_blocks_exist($tab1,$tab2,$tab3,$tab4,$tab5,$tab6 );	?>
@@ -437,7 +437,7 @@ $you_here = t("You are here: ");
 						 		 
 						 	
 						 	</div><!--tab content -->
-						 </div><!--tabable--> 
+						 </div><!--table--> 
 					 </div><!--tab region inner-->
 				</div>
 				<?php } ?>
@@ -455,6 +455,7 @@ $you_here = t("You are here: ");
 		<?php } ?>
 		
 		
+		<!--TITLE REGION-->
 		<!--TITLE REGION-->
 		<?php if(($title) && !(upperRegionsExist($upper_blocks1, $upper_blocks2, $upper_blocks3, $upper_blocks4))){ ?>
 			<div id="title-region" class="row-fluid">	
@@ -476,7 +477,7 @@ $you_here = t("You are here: ");
 				</div>
 				
 				<div style="clear:both; ">
-				<div class="inner" style="background-color:white">
+				<div class="inner">
 						<?php print render($title_prefix); ?>
 						<h1 class="page-title"><?php print $title ?></h1>  
 						<?php print render($title_suffix); ?>
@@ -573,7 +574,7 @@ $you_here = t("You are here: ");
 			<?php } ?>
 			
 		</div><!--content zone-->
-	</div>
+
 	
 	
 	
@@ -790,7 +791,8 @@ $give_feedback = t('Give us your valuable feedback');
 <?php if($modal_2) print render($modal_2); ?>
 <?php if($modal_3) print render($modal_3); ?>
 
-<div id="toTop" ><img class="visible-desktop" src="<?php print base_path() . path_to_theme() ?>/img/toTop.png" alt="<?php print $toTop ?>" /></div>
+<div id="toTop" ><img class="visible-desktop" src="<?php print base_path() . path_to_theme() ?>/img/toTop.png" alt="<?php print $toTop ?>" />
+</div>
 
 
 <div id="preLoad" style="display:none; visibility:hidden;"> <!-- Preload Images for backgrounds -->
