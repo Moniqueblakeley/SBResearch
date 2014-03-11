@@ -511,19 +511,8 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
  */
 # $conf['allow_authorize_operations'] = FALSE;
 
-$conf['apachesolr_read_only'] = "1";
 
-// Page cache
-$conf['cache'] = FALSE;
-
-// Block cache
-$conf['block_cache'] = FALSE;
-
-// Optimize CSS files
-$conf['preprocess_css'] = FALSE;
-
-// Optimize JavaScript files
-$conf['preprocess_js'] = FALSE;
+$conf['file_public_path'] = 'sites/default/files';
 
 // On Acquia Cloud, this include file configures Drupal to use the correct
 // database in each site environment (Dev, Stage, or Prod). To use this
@@ -533,12 +522,11 @@ if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/sbresearch/sbresearch-settings.inc');
 }
 
-$conf['file_public_path'] = 'sites/default/files';
 
 //require password for dev/staging
 $cli = (php_sapi_name() == 'cli');
 
-if (!$cli && isset($_ENV['AH_NON_PRODUCTION'])) {
+if (!$cli) {
     $username = 'research';
     $password = 'drupal';
 
