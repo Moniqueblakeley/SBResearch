@@ -9,6 +9,7 @@ html, body{
 	font-size:13px
 }
 
+
 h2{
 	padding:8px;
 	color:#000000;
@@ -41,7 +42,17 @@ a{
 	border-left:5px solid #FFD700
 }
 
+.region-adnan-superfish{
+	background-color:#fff;
+}
 
+#main_slider{
+	background-color:#fff;
+}
+
+#zone2{
+	background-color:#fff;
+}
 
 #superfish-2 {
 	margin-top:25px;
@@ -63,6 +74,34 @@ a{
 .active_row{
 	background-color:#FFFFFF !important;
 	color:#008000
+}
+
+.pane-title{
+	margin-top:0px;
+}
+
+.field-collection-view{
+	padding-top:0px;
+}
+
+.field-name-field-policy-category{
+	/*font-size:14pt;
+	font-weight:bold;
+	padding-top:10px;*/
+	margin-bottom:15px;
+	margin-top:0px;
+	padding:8px;
+	color:#000000;
+	-webkit-border-radius:1px;
+	font-size:16px;
+	font-weight:700;
+	text-transform: uppercase;
+	color:#ED143D;
+	border:0px solid #FFD700;
+	border-bottom:1px solid #ED143D;
+	border-top:3px solid #ED143D;
+	background-color:#FFFAFA;
+	text-shadow:text-shadow: 3px 2px 2px rgba(126, 150, 255, 0.83)
 }
 
 #superfish-2:after {
@@ -399,6 +438,9 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li {
 .footer-1-styles a {
 	text-transform:capitalize
 }
+#title-region{
+	background-color:#fff;
+}
 
 #title-region  .inner {
 	margin-top:15px
@@ -535,6 +577,20 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li {
 
 #iview .iviewSlider {
 	background-position: 20px 20px;
+}
+
+caption{
+	padding:8px;
+	color:#000000;
+	-webkit-border-radius:1px;
+	font-size:16px;
+	text-transform: uppercase;
+	color:#ED143D;
+	border:0px solid #FFD700;
+	border-bottom:1px solid #ED143D;
+	border-top:3px solid #ED143D;
+	background-color:#FFFAFA;
+	text-shadow:text-shadow: 3px 2px 2px rgba(126, 150, 255, 0.83)
 }
 
 .caption-contain h2 {
@@ -719,6 +775,7 @@ width:80%
 
 #content-area{
 	padding-top:0px;
+	background-color:#FFFFFF;
 }
 .content.view-videos{
 	display:block;
