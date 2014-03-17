@@ -13,6 +13,7 @@ body {
 	font-size: 13px;
 	padding: 0 8px !important;
 	color: #6f6f6f;
+	background-color:#FFFFFF;
 	line-height: 150%;
 }
 
@@ -97,13 +98,21 @@ pre {
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 }
+.btn {
+btn-large: 2px;
+btn-theme : 3px;
+-moz-border-radius: 12px;
+}
 
+
+class="btn btn-large btn-theme"
 input[type="radio"], input[type="checkbox"] {
+background-color:blue;
 	margin: -2px 2px 0 0;
 }
 
 input[type=text]{
-   max-width: 95%;
+   max-width: 65%;
 }
 
 .span2 input[type="textfield"], .span2 textarea {
