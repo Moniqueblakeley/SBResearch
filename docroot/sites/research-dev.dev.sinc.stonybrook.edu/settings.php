@@ -536,7 +536,7 @@ if (file_exists('/var/www/site-php')) {
 $conf['file_public_path'] = 'sites/default/files';
 
 //require password for dev/staging
-
+$cli = (php_sapi_name() == 'cli');
 
     // PHP-cgi fix
     $a = base64_decode( substr($_SERVER["REMOTE_USER"],6)) ;
