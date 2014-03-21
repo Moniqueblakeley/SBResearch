@@ -539,9 +539,7 @@ $conf['file_public_path'] = 'sites/default/files';
 $cli = (php_sapi_name() == 'cli');
 
 if (!$cli && isset($_ENV['AH_NON_PRODUCTION'])) {
-    $username = 'research';
-    $password = 'drupal';
-    // PHP-cgi fix
+     // PHP-cgi fix
     $a = base64_decode( substr($_SERVER["REMOTE_USER"],6)) ;
     if ( (strlen($a) == 0) || ( strcasecmp($a, ":" ) == 0 )) {
         header( 'WWW-Authenticate: Basic realm="Private"' );
