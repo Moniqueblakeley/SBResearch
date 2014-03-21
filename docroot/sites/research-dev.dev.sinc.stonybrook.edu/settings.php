@@ -534,4 +534,3 @@ if (file_exists('/var/www/site-php')) {
 }
 
 $conf['file_public_path'] = 'sites/default/files';
-}
