@@ -1,13 +1,16 @@
 name = Mobile Switch
-description = Simple theme switch for mobile devices, detected by browscap.
+description = Provides various functionalities to develop mobile ready websites.
 package = User interface
 core = 7.x
 configure = admin/config/user-interface/mobile-switch
-dependencies[] = browscap
+dependencies[] = libraries (2.x)
 
-; Information added by drupal.org packaging script on 2012-11-27
-version = "7.x-1.5"
+files[] = views/mobile_switch.views.inc
+files[] = views/mobile_switch_handler_filter.inc
+
+; Information added by Drupal.org packaging script on 2014-01-29
+version = "7.x-2.0-alpha1+3-dev"
 core = "7.x"
 project = "mobile_switch"
-datestamp = "1354026195"
+datestamp = "1391006308"
 

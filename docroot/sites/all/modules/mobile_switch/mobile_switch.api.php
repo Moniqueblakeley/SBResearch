@@ -15,8 +15,6 @@
  * @ingroup hooks
  */
 function hook_mobile_switch_boot_alter(&$conf, $get) {
-  $conf['theme_cookie'] = FALSE;
-
   // Theme switch from URL.
   // Set users cookie.
   if (isset($_GET['mobile_switch'])) {
@@ -24,5 +22,5 @@ function hook_mobile_switch_boot_alter(&$conf, $get) {
     $get['theme_cookie'] = $_GET['mobile_switch'];
   }
   // Provide cookie value.
-  $conf['theme_cookie'] = $get['theme_cookie'] = _mobile_switch_block_get_cookie();
+  $get['theme_cookie'] = _mobile_switch_block_get_cookie();
 }
