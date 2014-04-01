@@ -305,6 +305,14 @@ font-size:0.8em
 	background-color:#FAFAD2;
 }
 
+a.SbroTopicLink.active{
+	color:#990000;
+}
+
+a.SbroTopicLink{
+	/*color:#5F9EA0;*/
+}
+
 .view-subtopic-menu table tr {
 	background: #d3eefb; /* Old browsers */
 	background: -moz-linear-gradient(left,  #d3eefb 0%, #ffffff 100%); /* FF3.6+ */
@@ -725,21 +733,21 @@ p.subtitle {
 }
 
 #superfish-2 #menu-746-2 a {
-	background-image:url('http://www.youthforia.org.uk/wp-content/uploads/2013/09/Icon-Document.png');
+	/*background-image:url('http://www.youthforia.org.uk/wp-content/uploads/2013/09/Icon-Document.png');*/
 	background-size:20px 20px; 
 	background-repeat:no-repeat; 
 	background-position:30px 20px
 }
 
 #superfish-2 #menu-661-2 a {
-	background-image:url('https://www.milescc.edu/forms/_images/forms-icon.png');
+	/*background-image:url('https://www.milescc.edu/forms/_images/forms-icon.png');*/
 	background-size:20px 20px; 
 	background-repeat:no-repeat; 
 	background-position:30px 20px 
 }
 
 #superfish-2 #menu-1036-2 a {
-	background-image:url('http://icons.iconarchive.com/icons/icojam/blue-bits/256/question-faq-icon.png'); 
+	/*background-image:url('http://icons.iconarchive.com/icons/icojam/blue-bits/256/question-faq-icon.png'); */
 	background-size:20px 20px; 
 	background-repeat:no-repeat; 
 	background-position:30px 20px 
@@ -913,3 +921,46 @@ table.WhomToContact-Department {
     table.WhomToContact-Department tr[person]:not([person=""]):nth-child(odd) {
             background: #FFF;
         }
+		
+		    /*This selector causes every other (even) row that has a person to have a light grey background instead of the default.*/
+    table.WhomToContact-Department tr[person]:not([person=""]):nth-child(even) {
+            background: #F0F0F0;
+        }
+
+
+/*I used 670px because at a screen size lower than that, the phone numbers start to overflow to the next line- Dani*/		
+@media(max-width:670px){
+	table.WhomToContact-Department th.WhomToContact-Department{
+		display:block;
+	}
+	table.WhomToContact-Department th.WhomToContact-Phone{
+		display:block;
+	}
+	
+	th#WhomToContact-Phone, th#WhomToContact-Email{
+		display:none;
+	}
+	
+	table.WhomToContact-Department th.WhomToContact-Email{
+		display:block;
+	}
+}
+
+
+/*------------------------------Responsive Staff Directory-----------------------------*/
+
+
+/*I used min-width:768px to select devices that are ipad tablet size or smaller*/
+@media(max-width:768px){
+	.views-field-field-phone-number{
+		display:none;
+	}
+	
+	.views-field-field-e-mail{
+		display:none;
+	}
+	
+	.views-field-field-position{
+		text-align:right;
+	}
+}
