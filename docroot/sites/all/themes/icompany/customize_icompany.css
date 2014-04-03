@@ -23,7 +23,6 @@ h2{
 	background-color:#FFFAFA;
 	text-shadow:text-shadow: 3px 2px 2px rgba(126, 150, 255, 0.83);
 margin-top:10px
-	text-shadow:text-shadow: 3px 2px 2px rgba(126, 150, 255, 0.83)
 }
 
 a{
@@ -920,15 +919,8 @@ table.WhomToContact-Department {
 			color:white
         }
 		
-	table.WhomToContact-Department  thead th {
-            font-size: 1em;
-			background-color:dimgrey;
-			color:white
-        }
-		
 	
-            font-size: 1.2em;
-        }
+	
     /*This selector hides the rows with no person.*/
     table.WhomToContact-Department tr[person=""] {
             display: none;
