@@ -733,9 +733,27 @@ p.subtitle {
 .region-right-sidebar{
 	background-color:#FAFAD2; 
 	padding:5px 15px; 
-	margin-top:20px
+	margin-top:0px;
+	background-color: #FAFAD2;
+padding: 5px 15px;
+margin-top: 00px;
+background-color: lightslategray;
+border: 1px solid cadetblue;
+margin-right: 10px;
+font-size: 0.9em;
+color: white;
 }
 
+
+.region-right-sidebar a{
+color:white}
+
+.region-right-sidebar h3{
+font-size: 1.2em;
+
+padding:10px;
+background-color:white;
+color:dimgrey}
 #superfish-2 #menu-746-2 a {
 	/*background-image:url('http://www.youthforia.org.uk/wp-content/uploads/2013/09/Icon-Document.png');*/
 	background-size:20px 20px; 
@@ -919,7 +937,9 @@ table.WhomToContact-Department {
 			color:white
         }
 		
-	
+	.WhomToContact-Phone {
+	background-color:dimgrey;
+			color:white}
 	
     /*This selector hides the rows with no person.*/
     table.WhomToContact-Department tr[person=""] {
@@ -1011,5 +1031,7 @@ table.WhomToContact-Department {
 	border-bottom:1px solid #ED143D;
 }
 
-
+.region-right-sidebar {
+background-color:
+}
 
