@@ -5,8 +5,8 @@ html, body{
 	background-image:url('http://www.stonybrook.edu/research/newimages/sbrobg-short.png');
 	background-image:url('/sites/default/files/sbrobg.png'); 
 	background-repeat:repeat-x; 
-	background-color:#990000;
-	font-size:13px
+	background-color:lightgrey;
+	font-size:12px
 }
 
 
@@ -244,8 +244,8 @@ border:1px solid #C0C0C0
 }
 
 .ui-corner-bottom {
-border-bottom-left-radius:30px;
--webkit-border-bottom-left-radius:30px
+border-bottom-left-radius:20px;
+-webkit-border-bottom-left-radius:20px
 }
 
 .ui-state-active a:link {
@@ -732,31 +732,31 @@ p.subtitle {
 	margin:0px;
 	border:none;
 }
-.region-right-sidebar{
+.region-right-sidebar .content{
 	background-color:#FAFAD2; 
-	padding:0px 0px; 
+	padding:20px; 
 	margin-top:0px;
 	background-color: #FAFAD2;
-padding: 0px 0px;
-margin-top: 00px;
-background-color: lightslategray;
+
+background-color: steelblue;
 border: 0px solid cadetblue;
 margin-right: 10px;
 font-size: 0.9em;
 color: white;
 color:white;
-border-radius: 3px
+border-radius: 5px
 }
 
 
-.region-right-sidebar a{
+.region-right-sidebar .content ul li a {
 color:white}
 
 .region-right-sidebar h3{
+color:darkred;
 font-size: 1.2em;
-padding:10px 0px;
+padding:10px 0px 0px 0px;
 background-color:white;
-color:dimgrey}
+}
 
 
 #superfish-2 #menu-746-2 a {
@@ -1033,7 +1033,7 @@ table.WhomToContact-Department {
 	text-transform:uppercase;
 	font-weight:bold;
 	border-top:3px solid #ED143D;
-	border-bottom:1px solid #ED143D;
+	border-bottom:0px solid #ED143D;
 }
 
 .region-right-sidebar {
