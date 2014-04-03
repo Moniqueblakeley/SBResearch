@@ -460,12 +460,12 @@ $you_here = t("You are here: ");
 		<?php if(($title) && !(upperRegionsExist($upper_blocks1, $upper_blocks2, $upper_blocks3, $upper_blocks4))){ ?>
 			<div id="title-region" class="row-fluid">	
 				<div style="clear:both">
-				<div class="span6" style="float:left">
+				<div class="span5" style="float:left">
 					<?php if(!empty($breadcrumb)){  if(theme_get_setting('icompany_breadcrumb') == '1') print '<div class="breadcrumb">' . "<div id='home-icon'> <a href='$base_path'>" . ' <span class="icon-home"></span></a> </div> ' . $breadcrumb . ' &raquo; ' . breadcrumb_title($title) . '</div>'; elseif(!empty($breadcrumb)) print '<div class="breadcrumb">' . $breadcrumb . '</div>';  ?>
 					
 				<?php } ?>	
 				</div>
-				<div class="span4"  style="float:right">
+				<div class="span6"  style="float:right">
 					<!--Search Block -->
 							
 					
