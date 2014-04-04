@@ -1394,8 +1394,8 @@ span.icon-circle-light-facebook {
 
 #zone2 .block {
 	padding: 0 25px 25px 25px;
-	margin-bottom: 25px;
-	border-bottom: 1px solid #e2e2e2;
+	margin-bottom: 0px;
+	border-bottom: 0px solid red;
 }
 
 #content-area {
