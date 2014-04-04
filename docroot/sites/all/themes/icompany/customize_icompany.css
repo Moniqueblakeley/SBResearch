@@ -7,7 +7,11 @@ html, body{
 	background-repeat:repeat-x; 
 	background-color:lightgrey;
 	font-size:12px;
-	line-height:1.5em
+	line-height:1.5em;
+	background: url('http://sagharboronline.com/sagharborexpress/wp-content/uploads/2013/10/IMG_5155.jpg') no-repeat 0px 0px ;
+	background-size:cover;
+	background-attachment: fixed
+	
 }
 
 
@@ -45,7 +49,7 @@ a{
 
 .active_row{
 	background-color:#FAFAD2 !important; /*was set to 'lightgold' but that's not a valid property in chrome. Changed it to "lightgoldenrodyellow"*/
-	border-left:5px solid #FFD700
+	border-left:5px solid crimson
 }
 
 .region-adnan-superfish{
@@ -81,7 +85,7 @@ a{
 	background-color:#FFFFFF !important;
 	color:#008000;
 	padding-left:30px;
-	background: url('http://static.office-power.net/Images/dealers/TOR/ubn_arrow.png') no-repeat 5px 12px;
+	background: url('http://static.office-power.net/Images/dealers/TOR/ubn_arrow.png') no-repeat 5px 11px;
 }
 
 .pane-title{
@@ -290,11 +294,11 @@ margin-bottom:20px
 
 #research-news-teaser .views-field-title {
 	text-transform:initial;
-	font-size:0.9em
+
 }
 
 #research-news-teaser .views-field-created {
-font-size:0.8em
+
 }
 
 #research-recent-funding-opportunities .field-content a{
@@ -304,7 +308,22 @@ font-size:0.8em
 .views-field-field-blurb-description {
 	margin:5px 5px 10px 20px
 } 
-.view-subtopic-titles table{margin-left:-60px}
+.view-subtopic-titles table{margin-left:-30px}
+
+
+.view-subtopic-titles table :before{
+
+	position:absolute;
+	background-image:url('/sites/default/files/ribbonangles-inverted.png'); 
+	top: 1px;
+	right: auto;
+	left: -12px;
+	content: "";
+	width: 16px;
+	height: 12px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: -22px -3px}
 
 
 .view-subtopic-titles table tr { 
@@ -315,6 +334,7 @@ font-size:0.8em
 	border-bottom:1px solid #EEE8AA;
 	border-left: 0px solid #FAFAD2;
 	background-color:#FAFAD2;
+	background-color: #f6e7b1
 
 }
 
@@ -349,7 +369,7 @@ color:#ED143D;
 }
 
 .region-content {
-	padding:0px 30px 40px 30px;
+	padding:0px 0px 0px 0px;
 	margin-top:0px
 }
 .views-field-title-1 {
@@ -357,7 +377,7 @@ color:#ED143D;
 } 
 
 .item-list ul li {
-	margin:10px 0 0.25em -2.2em; 
+	margin:10px 0 0.25em -1.2em; 
 	/*background: #d3eefb;  Old browsers */
 	border:0px
 }
@@ -394,7 +414,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a {
 	font-size:1.1em;
 	text-transform:uppercase;
 	color:#ED143D;
-	height:70px;margin-left:-20px;
+	height:70px;margin-left:0px;
 
 }
 
@@ -406,13 +426,13 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
 	background-image:url('/sites/default/files/ribbonangles-inverted.png'); 
 	top: -12px;
 	right: auto;
-	left: -46px;
+	left: -20px;
 	content: "";
 	width: 16px;
 	height: 12px;
 	background-color: transparent;
 	background-repeat: no-repeat;
-	background-position: -20px -3px
+	background-position: -10px -3px
 }
 
 .quicktabs_main.quicktabs-style-phylactere {
@@ -437,7 +457,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li {
 }
 
 ul.quicktabs-tabs.quicktabs-style-phylactere li .active{
-	color:darkred
+	color:crimson
 }
 
 .quicktabs_main.quicktabs-style-phylactere{
@@ -743,11 +763,7 @@ p.subtitle {
 }
 
 .dateIcon p {
-	padding-top:0px; 
-	padding:10px;
-	background-color:#EEE8AA; 
-	clear:both; 
-	color:#000000
+	
 }	
 
 .left_sidebar_panel{
@@ -765,10 +781,10 @@ p.subtitle {
 	margin-top:0px;
 	background-color: #FAFAD2;
 
-background-color: steelblue;
+background-color: #9AC6D4;
 border: 0px solid cadetblue;
 margin-right: 10px;
-font-size: 0.9em;
+
 color: white;
 color:white;
 border-radius: 5px
@@ -1070,8 +1086,39 @@ table.WhomToContact-Department {
 background-color: transparent;
 }
 
+
+
 .panel-pane{
 padding:5px 15px;
 
 }
 
+#quicktabs-container-for_researchers {
+font-size:0.9em
+}
+
+.content img{
+border:1px solid silver;
+padding:5px;
+box-shadow: 1px 1px 5px #999
+}
+
+.bottomofpage{background-color:dimgrey;
+border-radius: 0px 0px;
+color:white;
+}
+
+.bottomofpage h2{
+ color: powderblue;
+ background-color:dimgrey;
+
+}
+
+
+
+.bottomofpage a {color:white}
+
+table stonybrookevents.td{
+	padding:0px;
+	line-height:110%;
+}
