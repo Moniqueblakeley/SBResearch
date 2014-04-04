@@ -865,8 +865,12 @@ width:80%
 }
 
 #research-news-teaser {
-	margin-right:40px
-}
+	/*margin-right:40px
+	This is adding way too much space to the "News Updates" section on the researchers page and 
+	causing the image to shrink and look smaller than all of the others so I commented it out. 
+	-Dani
+	*/
+	}
 
 #funding-opps-block {
 	margin-right:40px
@@ -1089,8 +1093,9 @@ background-color: transparent;
 
 
 .panel-pane{
-padding:5px 15px;
-
+/*padding:5px 15px;
+ This is making everything shrink and squish so I commented it out. It was adding too much padding in total. -Dani
+*/
 }
 
 #quicktabs-container-for_researchers {
@@ -1118,3 +1123,11 @@ color:white;
 
 .bottomofpage a {color:white}
 
+table stonybrookevents.td{
+	padding:0px;
+	line-height:110%;
+}
+
+#youtube{
+	margin:10px;
+} 

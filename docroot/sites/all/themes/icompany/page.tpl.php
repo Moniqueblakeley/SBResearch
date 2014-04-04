@@ -192,57 +192,32 @@ $you_here = t("You are here: ");
   
   <?php  if($slider_region){ ?>
 	<div id="main_slider" class="row-fluid <?php print theme_get_setting('slider_type').'-wrap'; ?>">
-	  <div id="youtube">
-
-	    <?php if($youtube) {?>
-
-		
 		<div id="slider-inner" class="span8">
-					  
-
-			
 			<div id="slider-inner-shadow"></div>
 			<?php 
 				$slider_type = theme_get_setting('slider_type') ? theme_get_setting('slider_type') : 'nivo';
 				print  icomp_get_slider_html($slider_type) ;
-				
-				
 			?>
 			
 			<?php if(theme_get_setting('slider_type') == 'piecemaker') { ?>							
 				  <center>
 				    <div id="piecemaker">
-				      <p>Flash not supported by browser. <a href="http://get.adobe.com/flashplayer/">Get it </a> </p>
+				      <p>Flash not supported by browser. It's probably about time you fixed that! <a href="http://get.adobe.com/flashplayer/"><strong> Get it here. </strong></a> </p>
 				    </div>
 				  </center>					
 			<?php } ?>
 			
 			<div id="slider-inner-shadow-bottom"></div>
 		</div>
-			</div>
-  <div id="youtube">
-
-    <div id="youtube" class="span4">
-      <?php print render($youtube); ?>
-    </div>
+		
+	<!--Youtube Region-->	
+		<div id="youtube" class="span4">
+			<?php print render($youtube); ?>
+		</div>
 
   </div>
   <?php } ?>	
-  
-  </div> 		
-	<?php  } ?>
-	
-	<!--youtube
-  <?php if($youtube) {?>
-  <div id="youtube">
-
-    <div id="youtube" class="span12">
-      <?php print render($youtube); ?>
-    </div>
-
-  </div>
-  <?php } ?> 
-  
+ 	 
   
 	<!--content zone-->
 	<div id="zone1" class="row-fluid">
@@ -460,12 +435,12 @@ $you_here = t("You are here: ");
 		<?php if(($title) && !(upperRegionsExist($upper_blocks1, $upper_blocks2, $upper_blocks3, $upper_blocks4))){ ?>
 			<div id="title-region" class="row-fluid">	
 				<div style="clear:both">
-				<div class="span5" style="float:left">
+				<div class="span6" style="float:left">
 					<?php if(!empty($breadcrumb)){  if(theme_get_setting('icompany_breadcrumb') == '1') print '<div class="breadcrumb">' . "<div id='home-icon'> <a href='$base_path'>" . ' <span class="icon-home"></span></a> </div> ' . $breadcrumb . ' &raquo; ' . breadcrumb_title($title) . '</div>'; elseif(!empty($breadcrumb)) print '<div class="breadcrumb">' . $breadcrumb . '</div>';  ?>
 					
 				<?php } ?>	
 				</div>
-				<div class="span6"  style="float:right">
+				<div class="span4"  style="float:right">
 					<!--Search Block -->
 							
 					
