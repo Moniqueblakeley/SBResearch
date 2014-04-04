@@ -10,13 +10,8 @@ html, body{
 	line-height:1.5em;
 	background: url('http://sagharboronline.com/sagharborexpress/wp-content/uploads/2013/10/IMG_5155.jpg') no-repeat 0px 0px ;
 	background-size:cover;
-<<<<<<< HEAD
-	background-attachment: fixed;
-=======
 	background-attachment: fixed
-
 	
->>>>>>> 58c41e750b7e92787429b0193d737d2136a71ea7
 }
 
 
@@ -320,15 +315,15 @@ margin-bottom:20px
 
 	position:absolute;
 	background-image:url('/sites/default/files/ribbonangles-inverted.png'); 
-	top: -7px;
+	top: 1px;
 	right: auto;
-	left: -16px;
+	left: -12px;
 	content: "";
 	width: 16px;
 	height: 12px;
 	background-color: transparent;
 	background-repeat: no-repeat;
-	background-position: -20px -3px}
+	background-position: -22px -3px}
 
 
 .view-subtopic-titles table tr { 
@@ -382,7 +377,7 @@ color:#ED143D;
 } 
 
 .item-list ul li {
-	margin:10px 0 0.25em -2.2em; 
+	margin:10px 0 0.25em -1.2em; 
 	/*background: #d3eefb;  Old browsers */
 	border:0px
 }
@@ -419,7 +414,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a {
 	font-size:1.1em;
 	text-transform:uppercase;
 	color:#ED143D;
-	height:70px;margin-left:-20px;
+	height:70px;margin-left:0px;
 
 }
 
@@ -431,13 +426,13 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
 	background-image:url('/sites/default/files/ribbonangles-inverted.png'); 
 	top: -12px;
 	right: auto;
-	left: -46px;
+	left: -20px;
 	content: "";
 	width: 16px;
 	height: 12px;
 	background-color: transparent;
 	background-repeat: no-repeat;
-	background-position: -20px -3px
+	background-position: -10px -3px
 }
 
 .quicktabs_main.quicktabs-style-phylactere {
@@ -1114,8 +1109,8 @@ color:white;
 }
 
 .bottomofpage h2{
- color: black;
- background-color:lightslategrey
+ color: powderblue;
+ background-color:dimgrey;
 
 }
 
