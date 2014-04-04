@@ -5,8 +5,9 @@ html, body{
 	background-image:url('http://www.stonybrook.edu/research/newimages/sbrobg-short.png');
 	background-image:url('/sites/default/files/sbrobg.png'); 
 	background-repeat:repeat-x; 
-	background-color:#990000;
-	font-size:13px
+	background-color:lightgrey;
+	font-size:12px;
+	line-height:1.5em
 }
 
 
@@ -15,14 +16,18 @@ h2{
 	color:#000000;
 	-webkit-border-radius:1px;
 	font-size:16px;
-	text-transform: lowercase;
+	
 	color:#ED143D;
 	border:0px solid #FFD700;
 	border-bottom:0px solid #ED143D;
-	border-top:3px solid #ED143D;
+	border-top:0px solid #ED143D;
 	background-color:#FFFAFA;
 	text-shadow:text-shadow: 3px 2px 2px rgba(126, 150, 255, 0.83);
-margin-top:10px
+	padding:10px 5px;
+margin-top:10px;
+background-color: rgb(0,175,216);
+color:White;
+border-radius: 1px
 }
 
 a{
@@ -74,7 +79,9 @@ a{
 
 .active_row{
 	background-color:#FFFFFF !important;
-	color:#008000
+	color:#008000;
+	padding-left:30px;
+	background: url('http://static.office-power.net/Images/dealers/TOR/ubn_arrow.png') no-repeat 5px 12px;
 }
 
 .pane-title{
@@ -239,13 +246,13 @@ border-top:0px
 }
 
 .ui-accordion .ui-accordion-content {
-background-color:#F5F5F5;
+background-color: ghostwhite;
 border:1px solid #C0C0C0
 }
 
 .ui-corner-bottom {
-border-bottom-left-radius:30px;
--webkit-border-bottom-left-radius:30px
+border-bottom-left-radius:20px;
+-webkit-border-bottom-left-radius:20px
 }
 
 .ui-state-active a:link {
@@ -297,21 +304,27 @@ font-size:0.8em
 .views-field-field-blurb-description {
 	margin:5px 5px 10px 20px
 } 
+.view-subtopic-titles table{margin-left:-60px}
+
 
 .view-subtopic-titles table tr { 
 	background-color:#FAFAD2;
 	 /* Old browsers */
-	font-size:14px;
+	font-size:1.1em;
 	padding: 25px 10px;
 	border-bottom:1px solid #EEE8AA;
-	border-left: 5px solid #FAFAD2;
+	border-left: 0px solid #FAFAD2;
 	background-color:#FAFAD2;
+
 }
 
 
 /*Changes the color of the current active subtopic title link on a topic page*/
 a.SbroTopicLink.active{
 	color:#990000;
+
+
+	
 }
 
 .view-subtopic-menu table tr {
@@ -325,11 +338,14 @@ a.SbroTopicLink.active{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3eefb', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 	border-bottom:#D5EEFB 0px solid;
 	border-left: 5px solid #ED143D;
-	background-color:#FAFAD2
+	background-color:#FAFAD2;
+	
+
 }
 
 .view-subtopic-menu table tr td a{
-color:#ED143D
+color:#ED143D;
+
 }
 
 .region-content {
@@ -358,11 +374,12 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li {
 }
 
 ul.quicktabs-tabs.quicktabs-style-phylactere li.active {
-	border-left:0px solid #990000
+	border-left:5px solid #990000
 }
 
 .quicktabs_main.quicktabs-style-phylactere {
 	border:1px solid #EEE8AA; 
+	border:1px solid goldenrod;
 	padding-left:40px
 }
 
@@ -371,11 +388,14 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a {
 	text-align:left;
 	background-color:#FAFAD2;
 	border:1px solid #EEE8AA;
+	border:1px solid goldenrod;
+	border-left:0px;
 	font-weight:bold;
-	font-size:1.2em;
+	font-size:1.1em;
 	text-transform:uppercase;
 	color:#ED143D;
-	height:70px
+	height:70px;margin-left:-20px;
+
 }
 
 ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
@@ -386,7 +406,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
 	background-image:url('/sites/default/files/ribbonangles-inverted.png'); 
 	top: -12px;
 	right: auto;
-	left: -26px;
+	left: -46px;
 	content: "";
 	width: 16px;
 	height: 12px;
@@ -404,6 +424,8 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
 	font-weight:bold
 }
 
+
+
 .quicktabs_main.quicktabs-style-phylactere table tr td {
 	padding:15px; 
 	width:50%
@@ -412,6 +434,10 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
 ul.quicktabs-tabs.quicktabs-style-phylactere li {
 	-webkit-box-shadow:none;
 	box-shadow:none
+}
+
+ul.quicktabs-tabs.quicktabs-style-phylactere li .active{
+	color:darkred
 }
 
 .quicktabs_main.quicktabs-style-phylactere{
@@ -688,7 +714,8 @@ select {
 
 p.subtitle {
 	color:#DAA520;
-	font-size:0.8em
+	font-size:0.8em;
+	color:slategrey
 }
 
 #fast-facts {
@@ -732,31 +759,31 @@ p.subtitle {
 	margin:0px;
 	border:none;
 }
-.region-right-sidebar{
+.region-right-sidebar .content{
 	background-color:#FAFAD2; 
-	padding:0px 0px; 
+	padding:20px; 
 	margin-top:0px;
 	background-color: #FAFAD2;
-padding: 0px 0px;
-margin-top: 00px;
-background-color: lightslategray;
+
+background-color: steelblue;
 border: 0px solid cadetblue;
 margin-right: 10px;
 font-size: 0.9em;
 color: white;
 color:white;
-border-radius: 3px
+border-radius: 5px
 }
 
 
-.region-right-sidebar a{
+.region-right-sidebar .content ul li a {
 color:white}
 
 .region-right-sidebar h3{
+color:darkred;
 font-size: 1.2em;
-padding:10px 0px;
+padding:10px 0px 0px 0px;
 background-color:white;
-color:dimgrey}
+}
 
 
 #superfish-2 #menu-746-2 a {
@@ -1015,28 +1042,36 @@ table.WhomToContact-Department {
 /*----------------------- Simple Accordion Style Re-styling for mobile------------------------------------------*/
 
 .ui-accordion-header{
-	border:1px solid rgba(179,179,179,1);
+	border:0px solid rgba(179,179,179,1);
 	background: linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
 	background: linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#222222',GradientType=0 );
+	background:none;
+	font-weight:normal
 
 }
 
 
 .ui-accordion .ui-accordion-header a{
-	color:#888;
+	color:#333;
+	font-weight:normal
 	
 }
 
 .ui-accordion .ui-accordion-header.ui-state-active a{
-	color:#ED143D;
+	color:tomato;
 	text-transform:uppercase;
 	font-weight:bold;
-	border-top:3px solid #ED143D;
-	border-bottom:1px solid #ED143D;
+	border-top:3px solid tomato;
+	border-bottom:1px solid tomato;
 }
 
 .region-right-sidebar {
-background-color:
+background-color: transparent;
+}
+
+.panel-pane{
+padding:5px 15px;
+
 }
 
