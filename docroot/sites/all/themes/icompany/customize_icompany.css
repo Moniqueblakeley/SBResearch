@@ -7,7 +7,7 @@ html, body{
 	background-repeat:repeat-x; 
 	background-color:lightgrey;
 	font-size:12px;
-	line-height:1.5em;
+	line-height:1.6em;
 	background: url('http://sb.cc.stonybrook.edu/happenings/wp-content/uploads/Stony-Brook-University.jpg') no-repeat 0px 0px ;
 	background-size:cover;
 	background-attachment: fixed;
@@ -68,12 +68,13 @@ a{
 	margin-top:25px;
 	background-color:#d9ecff;
 	background-color:#F5F5F5;
+	background-color: firebrick;
 	padding:0px;
 	padding: 0px 0px 0px 0px;
 	text-transform: uppercase;
 	font-weight: bolder;
-	padding-left:15px;
-	margin-left:-15px;
+	padding-left:75px;
+	margin-left:-35px;
 	border-bottom:0px solid #87CEEB;
 	-webkit-box-shadow: 0px 26px 110px -53px rgba(97,97,97,1);
 	-moz-box-shadow: 0px 26px 110px -53px rgba(97,97,97,1);
@@ -148,11 +149,13 @@ a{
 }
  
 #superfish-2 li{
-	border-right: 0px solid #B5DFFA
+	border-right: 0px solid #B5DFFA;
+
 }
 
 #superfish-2 li {
-	padding:0px
+	padding:0px;
+	background-color: firebrick;
 }
 
 #superfish-2 li:hover a {
@@ -161,12 +164,16 @@ a{
 
 #superfish-2 li a {
 	background-color:#F5F5F5;
-	padding: 20px 10px 10px 60px; 
-	color:#4169E1
+	background-color: firebrick;
+	padding: 20px 30px 20px 30px; 
+	font-size:100%;
+	color:#4169E1;
+	color: white
+	
 }
 
 #superfish-2 li a:hover{
-	border-right: 0px solid #B5DFFA;
+	
 	background-color:#708090;
 	color:#FFFFFF
 }
@@ -204,7 +211,7 @@ a{
 	-webkit-box-shadow: -5px -1px 184px 42px rgba(0,0,0,0);
 	-moz-box-shadow: -5px -1px 184px 42px rgba(0,0,0,0);
 	box-shadow: -5px -1px 184px 22px rgba(0,0,0,0.65);
-	margin-bottom:100px
+	margin-bottom:300px
 }	
 
 .views-row {
@@ -747,7 +754,7 @@ p.subtitle {
 
 /*.content img {padding:4px ;border:1px solid #EEEEEE;margin:5px}*/
 
-
+.content {padding:0px 20px}
 
 #footer-region img {
 	border:0px
@@ -1108,7 +1115,7 @@ padding:5px;
 box-shadow: 1px 1px 5px #999
 }
 
-.bottomofpage{background-color:dimgrey;
+.bottomofpage{background-color:lightgrey;
 border-radius: 0px 0px;
 color:white;
 }
@@ -1116,10 +1123,13 @@ color:white;
 .bottomofpage h2{
  color: powderblue;
  background-color:dimgrey;
+ text-transform: uppercase;
 
 }
 
+.bottomofpage .panel-pane {padding:30px}
 
+.bottomofpage .ui-accordion  a{color:white;}
 
 .bottomofpage a {color:white}
 
