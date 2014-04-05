@@ -1122,21 +1122,21 @@ box-shadow: 1px 1px 5px #999
 
 .bottomofpage{background-color:lightgrey;
 border-radius: 0px 0px;
-color:white;
+color:black;
 }
 
 .bottomofpage h2{
- color: powderblue;
- background-color:dimgrey;
+ color: gray;
+ background-color:transparent;
  text-transform: uppercase;
 
 }
 
 .bottomofpage .panel-pane {padding:30px}
 
-.bottomofpage .ui-accordion  a{color:white;}
+.bottomofpage .ui-accordion  a{color:black;}
 
-.bottomofpage a {color:white}
+.bottomofpage a {color:black}
 
 table stonybrookevents.td{
 	padding:0px;
