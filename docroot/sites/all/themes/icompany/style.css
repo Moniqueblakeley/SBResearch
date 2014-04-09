@@ -793,8 +793,8 @@ span.icon-circle-light-facebook {
 
 #header {
 	position: relative;
-	width:85%;
-	margin:0px auto;
+	/** width:85%;
+	margin:0px auto; **/
 }
 
 #header_left {
