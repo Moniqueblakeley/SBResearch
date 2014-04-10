@@ -8,7 +8,7 @@ html, body{
 	background-color:lightgrey;
 	font-size:12px;
 	line-height:1.6em;
-	background: url('http://sb.cc.stonybrook.edu/happenings/wp-content/uploads/Stony-Brook-University.jpg') no-repeat 0px 0px ;
+	background: url('http://stonybrook.edu/research/images/turkana.jpg') no-repeat 0px 0px ;
 	background-size:cover;
 	background-attachment: fixed;
 	
@@ -49,7 +49,7 @@ a{
 
 .active_row{
 	background-color:#FAFAD2 !important; /*was set to 'lightgold' but that's not a valid property in chrome. Changed it to "lightgoldenrodyellow"*/
-	border-left:5px solid crimson
+	border-left:0px solid crimson
 }
 
 .region-adnan-superfish{
@@ -219,7 +219,7 @@ a{
 }	
 
 .views-row {
-padding:5px
+padding:0px; margin-left: 0px
 }
 
 table td {
@@ -416,7 +416,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li {
 }
 
 ul.quicktabs-tabs.quicktabs-style-phylactere li.active {
-	border-left:5px solid #990000
+	border-left:0px solid #990000
 }
 
 .quicktabs_main.quicktabs-style-phylactere {
@@ -430,14 +430,17 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a {
 	text-align:left;
 	background-color:#FAFAD2;
 	border:1px solid #EEE8AA;
-	border:1px solid tomato;
+	border:1px solid steelblue;
 	background-color: firebrick;
+	background-color: lightsteelblue;
 	border-left:0px;
 	font-weight:bold;
 	font-size:1.1em;
 	text-transform:uppercase;
 	color:#ED143D;
 	color: white;
+	color: navy;
+	text-shadow: 0px 1px 1px #aaa;
 	height:70px;
 	margin-left:0px;
 
@@ -482,7 +485,8 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li {
 }
 
 ul.quicktabs-tabs.quicktabs-style-phylactere li .active{
-	color:white
+	color: navy;
+
 }
 
 .quicktabs_main.quicktabs-style-phylactere{
@@ -770,7 +774,8 @@ select {
 .subtitle {
 	text-transform: initial;
 	font-weight:normal; 
-	color:wheat
+	color:slategrey;
+text-shadow: none;
 }
 
 .subtitle:hover {
@@ -780,7 +785,7 @@ select {
 p.subtitle {
 	color:#DAA520;
 	font-size:0.8em;
-	color:wheat
+	color:slategrey
 }
 
 #fast-facts {
@@ -818,31 +823,30 @@ p.subtitle {
 	border:none;
 }
 .region-right-sidebar .content{
-	background-color:#FAFAD2; 
-	padding:20px; 
-	margin-top:0px;
-	background-color: #FAFAD2;
-
-background-color: #9AC6D4;
-border: 0px solid cadetblue;
-margin-right: 10px;
-
-color: white;
-color:white;
-border-radius: 5px
+background-color: #fdfdfd; color: slategray; border: 1px solid #eee ; border-top: 0px;
+background: #FdFdFd;
+-o-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+-webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+-moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+padding: 15px;margin-bottom: 20px;
+font-size: 0.9em
 }
 
 
 .region-right-sidebar .content ul li a {
-color:white}
+color:slategrey}
 
 .region-right-sidebar h3{
-color:darkred;
-font-size: 1.2em;
-padding:10px 0px 0px 0px;
-background-color:white;
+color:white;
+font-size: 1em;
+padding:10px;
+background-color:firebrick;
+margin-bottom:0px;
+text-transform: uppercase
 }
 
+#zone2 .titlecontainer .blocktitle{margin:0px;}
 
 #superfish-2 #menu-746-2 a {
 	/*background-image:url('http://www.youthforia.org.uk/wp-content/uploads/2013/09/Icon-Document.png');*/
@@ -1234,8 +1238,8 @@ padding-left: 10px;
 .homepage-row2 a {color: white}
 
 .homepage-search {background-color: lightgoldenrodyellow; border:1px solid palegoldenrod; padding: 10px;text-align: left}
-#footer-bar {background: none;background-color: darkred; color: wheat; font-size: 0.8em}
+#footer-bar {background: none;background-color: #330000; color: wheat; font-size: 0.8em}
 #footer-region img {border: 0px; box-shadow: none;}
-#footer-region {background:none;background-color: firebrick; color: white; font-size: 0.9em; line-height: 1em}
+#footer-region {background:none;background-color: darkred; color: white; font-size: 0.9em; line-height: 1em}
 #footer-region a {color: white}
 .menu {padding: 10px;}
