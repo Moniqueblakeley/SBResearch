@@ -421,7 +421,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li.active {
 
 .quicktabs_main.quicktabs-style-phylactere {
 	border:1px solid #EEE8AA; 
-	border:1px solid tomato;
+	border:1px solid #B9D3EE;
 	padding-left:40px
 }
 
@@ -802,6 +802,7 @@ p.subtitle {
 	border:0px
 }
 
+#footer-region{line-height: 2em}
 /*----------------------Date Icon's------------------------*/
 
 .dateIcon {
@@ -1245,3 +1246,11 @@ padding-left: 10px;
 #footer-region {background:none;background-color: darkred; color: white; font-size: 0.9em; line-height: 1em}
 #footer-region a {color: white}
 .menu {padding: 10px;}
+
+#left-sidebar .menu  {background-color: firebrick; padding-left: 1em; color: white}
+#left-sidebar .menu a {background-color: firebrick; color: white}
+#left-sidebar .menu  .active{
+	background-color:#FFFFFF !important;
+	color:#008000;
+	padding-left:30px;
+	background: url('http://static.office-power.net/Images/dealers/TOR/ubn_arrow.png') no-repeat 2px 10px;}
