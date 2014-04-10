@@ -89,7 +89,7 @@ a{
 	background-color:#FFFFFF !important;
 	color:#008000;
 	padding-left:30px;
-	background: url('http://static.office-power.net/Images/dealers/TOR/ubn_arrow.png') no-repeat 5px 11px;
+	background: url('http://static.office-power.net/Images/dealers/TOR/ubn_arrow.png') no-repeat 2px 17px;
 }
 
 .pane-title{
@@ -319,16 +319,16 @@ margin-bottom:20px
 .views-field-field-blurb-description {
 	margin:5px 5px 10px 20px
 } 
-.view-subtopic-titles table{margin-left:-30px}
+.view-subtopic-titles table{margin-left:-35px}
 
 
 .view-subtopic-titles table :before{
 
 	position:absolute;
 	background-image:url('/sites/default/files/ribbonangles-inverted.png'); 
-	top: 1px;
+	top: -12px;
 	right: auto;
-	left: -12px;
+	left: -36px;
 	content: "";
 	width: 16px;
 	height: 12px;
@@ -340,15 +340,24 @@ margin-bottom:20px
 .view-subtopic-titles table tr { 
 	background-color:#FAFAD2;
 	 /* Old browsers */
-	font-size:1.1em;
+	font-size:1em;
 	padding: 25px 10px;
 	border-bottom:1px solid #EEE8AA;
+	border-bottom:1px solid tomato;
 	border-left: 0px solid #FAFAD2;
 	background-color:#FAFAD2;
-	background-color: #f6e7b1
-
+	background-color: #f6e7b1;
+	background-color: firebrick;
 }
 
+.view-subtopic-titles table td { 
+	
+	padding: 15px 20px;
+	}
+
+.view-subtopic-titles a {color: white; }
+
+.view-subtopic-titles a:hover{color: white; text-decoration: underline; }
 
 /*Changes the color of the current active subtopic title link on a topic page*/
 a.SbroTopicLink.active{
@@ -370,12 +379,14 @@ a.SbroTopicLink.active{
 	border-bottom:#D5EEFB 0px solid;
 	border-left: 5px solid #ED143D;
 	background-color:#FAFAD2;
+
 	
 
 }
 
 .view-subtopic-menu table tr td a{
 color:#ED143D;
+
 
 }
 
@@ -410,7 +421,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li.active {
 
 .quicktabs_main.quicktabs-style-phylactere {
 	border:1px solid #EEE8AA; 
-	border:1px solid goldenrod;
+	border:1px solid tomato;
 	padding-left:40px
 }
 
@@ -419,12 +430,14 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a {
 	text-align:left;
 	background-color:#FAFAD2;
 	border:1px solid #EEE8AA;
-	border:1px solid goldenrod;
+	border:1px solid tomato;
+	background-color: firebrick;
 	border-left:0px;
 	font-weight:bold;
 	font-size:1.1em;
 	text-transform:uppercase;
 	color:#ED143D;
+	color: white;
 	height:70px;
 	margin-left:0px;
 
@@ -453,7 +466,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
 }
 .quicktabs_main.quicktabs-style-phylactere table tr td a{
 	font-size:1.3em;
-	font-weight:bold
+	font-weight:bold;
 }
 
 
@@ -469,7 +482,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li {
 }
 
 ul.quicktabs-tabs.quicktabs-style-phylactere li .active{
-	color:crimson
+	color:white
 }
 
 .quicktabs_main.quicktabs-style-phylactere{
@@ -486,7 +499,8 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li .active{
 	margin-top:5px;
 	font-weight:bold;
 	text-transform: uppercase;
-	font-size:14px
+	font-size:14px;
+	
 }
 
 /*--------------------------------------End Quicktabs----------------------------------*/
@@ -557,7 +571,7 @@ ul.pager li:hover{
 }
 
 #superfish-1 {
-	margin-right:50px; 
+	margin-right:0px; 
 	margin-bottom:0px
 }
 
@@ -662,31 +676,50 @@ caption{
 	border-bottom:1px solid #ED143D;
 	border-top:3px solid #ED143D;
 	background-color:#FFFAFA;
+	background-color: firebrick;
+	color: white; 
 	text-shadow:text-shadow: 3px 2px 2px rgba(126, 150, 255, 0.83)
 }
 
 .caption-contain h2 {
 	background:none; 
-	background-color:transparent
+	background-color:transparent;
+	padding:30px;
+	font-size: 2em;
+	line-height: 1.5em;
+	text-transform: uppercase;
 }
 
+
+.caption-contain p {
+	background:none; 
+	background-color:transparent;
+	display: none;
+}
+
+
+caption a, a:hover {
+	color: white;
+}
 .caption-contain{
-	width:400px !important;
+	width:50% !important;
 	height:230px !important
 }
 
 .iview-caption.caption7{
-	width:400px !important;
+	width:100% !important;
 	height:200px !important
 }
 
 .btn.btn-large.btn-theme{
 	background:transparent;
-	color:#ED143D;
+	color:yellow;
 	border:0px;
 	position:absolute;
 	right:0px;
+	text-transform: uppercase;
 	bottom:40px;
+	font-size: 0.8em
 }
 
 .btn.btn-large.btn-theme:hover{
@@ -737,7 +770,7 @@ select {
 .subtitle {
 	text-transform: initial;
 	font-weight:normal; 
-	color:#DAA520
+	color:wheat
 }
 
 .subtitle:hover {
@@ -747,14 +780,11 @@ select {
 p.subtitle {
 	color:#DAA520;
 	font-size:0.8em;
-	color:slategrey
+	color:wheat
 }
 
 #fast-facts {
-	background-color: #FFFFE0; 
-	padding:10px; 
-	border:1px solid #FFD700;
-	margin-right:10px
+	
 }
 
 /*.content img {padding:4px ;border:1px solid #EEEEEE;margin:5px}*/
@@ -1117,7 +1147,7 @@ font-size:0.9em
 .content img{
 border:1px solid silver;
 padding:5px;
-box-shadow: 1px 1px 5px #999
+box-shadow: 1px 1px 10px #bbb
 }
 
 .bottomofpage{background-color:lightgrey;
@@ -1129,10 +1159,11 @@ color:black;
  color: gray;
  background-color:transparent;
  text-transform: uppercase;
+ text-shadow: -1px -1px 3px rgba (97,97,97,0.8);
 
 }
 
-.bottomofpage .panel-pane {padding:30px}
+.bottomofpage .panel-pane {padding:20px}
 
 .bottomofpage .ui-accordion  a{color:black;}
 
@@ -1146,3 +1177,65 @@ table stonybrookevents.td{
 #youtube{
 	margin:10px;
 } 
+
+.homepage-audience {
+background-color: white;
+color: white;
+font-size: 0.9em;
+border-right: 10px solid white;
+}
+
+.homepage-audience  a {color: white}
+
+.homepage-bottom-row{
+background-color: #E7ECEF;;
+color: white;
+}
+.panels-flexible-column-first img {
+border:0px ;padding: 0px; margin:0px;margin-bottom: 10px;
+
+}
+
+
+.homepage-audience  .panel-pane {padding: 0px; background-color: #fdfdfd; color: slategray; border: 1px solid #eee ;
+background: #FdFdFd;
+-o-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+-webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+-moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;}
+
+.homepage-audience  .panel-pane a{color: slategray}
+.homepage-audience  .panel-pane td {padding:0px}
+.homepage-audience  .panel-pane p, ul {padding:0px 0px}
+
+.homepage-audience  .panel-pane  img {box-shadow: none; padding:0px; margin: 0px
+}
+.searchregion {}
+.panels-flexible-column-first  h2{
+
+}
+.searchregion{
+background-color: white;}
+
+.searchregion .panels-flexible-region-inside{}
+
+
+.homepage-row2{
+background-color: white;
+border-top: 10px solid white; 
+color: white;
+border-right: 10px solid white;
+padding-left: 10px;
+
+
+}
+
+.homepage-row2 a {color: white}
+.homepage-row2 a {color: white}
+
+.homepage-search {background-color: lightgoldenrodyellow; border:1px solid palegoldenrod; padding: 10px;text-align: left}
+#footer-bar {background: none;background-color: darkred; color: wheat; font-size: 0.8em}
+#footer-region img {border: 0px; box-shadow: none;}
+#footer-region {background:none;background-color: firebrick; color: white; font-size: 0.9em; line-height: 1em}
+#footer-region a {color: white}
+.menu {padding: 10px;}

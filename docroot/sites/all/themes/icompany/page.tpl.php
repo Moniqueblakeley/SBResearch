@@ -192,7 +192,7 @@ $you_here = t("You are here: ");
   
   <?php  if($slider_region){ ?>
 	<div id="main_slider" class="row-fluid <?php print theme_get_setting('slider_type').'-wrap'; ?>">
-		<div id="slider-inner" class="span8">
+		<div id="slider-inner" class="span7">
 			<div id="slider-inner-shadow"></div>
 			<?php 
 				$slider_type = theme_get_setting('slider_type') ? theme_get_setting('slider_type') : 'nivo';
@@ -211,7 +211,7 @@ $you_here = t("You are here: ");
 		</div>
 		
 	<!--Youtube Region-->	
-		<div id="youtube" class="span4">
+		<div id="youtube" class="span5">
 			<?php print render($youtube); ?>
 		</div>
 

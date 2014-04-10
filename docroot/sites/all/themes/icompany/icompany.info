@@ -9,11 +9,11 @@ stylesheets[all][] = style.css
 stylesheets[all][] = dateIcon.css
 stylesheets[all][] = token-input.css
 stylesheets[all][] = token-input-facebook.css
-
+stylesheets[all][] = mightyslider.css
 
 ; scripts
 scripts[] = js/scripts.js
-
+scripts[] = js/mightyslider.min.js
 
 ; Important Drupal regions
 regions[help] = Help
