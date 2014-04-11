@@ -191,6 +191,327 @@ $you_here = t("You are here: ");
 	<!--slider-->
   
   <?php  if($slider_region){ ?>
+  
+  	<style>
+		#modern .frame {
+			width: 100%;
+			height: 500px;
+		}
+		#modern .frame ul {
+			list-style: none;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		#modern .frame ul li {
+			float: left;
+			height: 100%;
+		}
+		#modern .frame ul li img {
+			max-width: none;
+		}
+		#modern .frame ul li .mSCover {
+			position: relative;
+		}
+		#modern .frame ul li .mSCover:after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0);
+			
+			-webkit-transition: all 0.3s;
+				-ms-transition: all 0.3s;
+				 -o-transition: all 0.3s;
+					transition: all 0.3s;
+		}
+		#modern .frame ul li:hover .mSCover:after {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+		#modern.mSMedia .frame ul li:hover .mSCover:after {
+			display: none;
+		}
+		#modern .details {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.2);
+			padding: 15px;
+			color: #FFF;
+			
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			
+			-webkit-transition: all 0.3s;
+				-ms-transition: all 0.3s;
+				 -o-transition: all 0.3s;
+					transition: all 0.3s;
+		}
+		#modern.mSMedia .details {
+			display: none;
+		}
+		#modern .frame ul li:hover .details {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+		#modern .details .title {
+			display: block;
+			color: #FFF;
+			font-size: 18px;
+			text-transform: uppercase;
+			text-decoration: none;
+			margin-bottom: 10px;
+			text-shadow: 1px 1px 0 #000;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		#modern .details .description {
+			font-weight: 300;
+			height: 0;
+			overflow: hidden;
+			color: #D5D5D5;
+			
+			-webkit-transition: all 0.3s;
+				-ms-transition: all 0.3s;
+				 -o-transition: all 0.3s;
+					transition: all 0.3s;
+		}
+		#modern .frame ul li:hover .details .description {
+			height: 60px;
+			margin-bottom: 10px;
+		}
+		#modern .details .counts {
+			height: 20px;
+		}
+		#modern .details .counts a {
+			float: left;
+			color: #AAA;
+			font-size: 11px;
+			text-transform: uppercase;
+			margin-right: 15px;
+			
+			-webkit-transition: all 0.3s;
+				-ms-transition: all 0.3s;
+				 -o-transition: all 0.3s;
+					transition: all 0.3s;
+		}
+		#modern .details .counts a:hover {
+			color: #FFF;
+			text-decoration: none;
+		}
+		#modern .details .counts a.more {
+			float: right;
+			opacity: 0;
+			filter: alpha(opacity=0);
+			margin: 0;
+		}
+		#modern .frame ul li:hover .details .counts a.more {
+			opacity: 1;
+			filter: alpha(opacity=100);
+		}
+	</style>
+	<div class="container marketing span12">
+		<div class="page-header">
+			<h1 class="normal">Modern<br><small>(drag, page scroll & hover effect)</small></h1>
+		<div class="featurette">
+		</div>
+			<div class="controls marginbottom">
+				<button class="btn btn-default" id="modern_prev"><i class="icon-chevron-left"></i> Prev Page</button>
+				<span class="divider"></span>
+				<button class="btn btn-default" id="modern_next">Next Page <i class="icon-chevron-right"></i></button>
+			</div>
+		</div>
+    </div>
+    <div class="featurette featurette_full">
+		<div class="mightyslider_carouselModern_skin clearfix" id="modern">
+			<div class="frame" data-mightyslider="width: 1170, height: 370">
+				<ul class="slide_element">
+					<li class="slide" data-mightyslider="cover:'http://mightyslider.com/assets/img/plugin%20pictures/new/151121_tumblr_mb0tlwxyqv1ro1zebo1_500.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/151121_tumblr_mb0tlwxyqv1ro1zebo1_500.jpg' }">
+						<div class="details">
+							<a href="javascript:void(0);" class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</a>
+							<div class="description">Integer viverra felis a nisl volutpat placerat. Donec et lorem mauris. Proin pellentesque urna nulla. Nunc sed turpis semper, fermentum ipsum quis, ornare enim. Proin ut augue enim.</div>
+							<div class="counts">
+								<a href="javascript:void(0);" class="more">Read more</a>
+								<a href="javascript:void(0);">156 Likes</a>
+								<a href="javascript:void(0);">27 Comments</a>
+							</div>
+						</div>
+					</li>
+					<li class="slide" data-mightyslider="cover:'http://mightyslider.com/assets/img/plugin%20pictures/new/154430_tumblr_mbshki8exa1r46py4o1_1280.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/154430_tumblr_mbshki8exa1r46py4o1_1280.jpg' }">
+						<div class="details">
+							<a href="javascript:void(0);" class="title">Integer viverra felis a nisl volutpat placerat</a>
+							<div class="description">Nullam ornare, est vel scelerisque blandit, ligula lectus facilisis lectus, eget lacinia massa ante non magna. Cras sollicitudin diam eu tempor volutpat. Fusce scelerisque metus quam, ut ultrices eros blandit ac.</div>
+							<div class="counts">
+								<a href="javascript:void(0);" class="more">Read more</a>
+								<a href="javascript:void(0);">132 Likes</a>
+								<a href="javascript:void(0);">16 Comments</a>
+							</div>
+						</div>
+					</li>
+					<li class="slide" data-mightyslider="cover:'http://mightyslider.com/assets/img/plugin%20pictures/new/208568_tumblr_me02nuxdyr1rqgv0oo1_500.jpg', video: 'http://vimeo.com/44941805'">
+						<div class="details">
+							<a href="javascript:void(0);" class="title">Donec dignissim est ut ligula pulvinar elementum</a>
+							<div class="description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam volutpat purus vel eleifend venenatis. Nulla bibendum mi sit amet elit convallis imperdiet.</div>
+							<div class="counts">
+								<a href="javascript:void(0);" class="more">Read more</a>
+								<a href="javascript:void(0);">234 Likes</a>
+								<a href="javascript:void(0);">23 Comments</a>
+							</div>
+						</div>
+					</li>
+					<li class="slide" data-mightyslider="cover:'http://mightyslider.com/assets/img/plugin%20pictures/new/michel-hamburg-germany-photography-wookmark-277809.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/michel-hamburg-germany-photography-wookmark-277809.jpg' }">
+						<div class="details">
+							<a href="javascript:void(0);" class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</a>
+							<div class="description">Integer viverra felis a nisl volutpat placerat. Donec et lorem mauris. Proin pellentesque urna nulla. Nunc sed turpis semper, fermentum ipsum quis, ornare enim. Proin ut augue enim.</div>
+							<div class="counts">
+								<a href="javascript:void(0);" class="more">Read more</a>
+								<a href="javascript:void(0);">156 Likes</a>
+								<a href="javascript:void(0);">27 Comments</a>
+							</div>
+						</div>
+					</li>
+					<li class="slide" data-mightyslider="cover:'http://mightyslider.com/assets/img/plugin%20pictures/new/276111_tumblr_mpqoghrt2k1r46py4o1_1280.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/276111_tumblr_mpqoghrt2k1r46py4o1_1280.jpg' }">
+						<div class="details">
+							<a href="javascript:void(0);" class="title">Integer viverra felis a nisl volutpat placerat</a>
+							<div class="description">Nullam ornare, est vel scelerisque blandit, ligula lectus facilisis lectus, eget lacinia massa ante non magna. Cras sollicitudin diam eu tempor volutpat. Fusce scelerisque metus quam, ut ultrices eros blandit ac.</div>
+							<div class="counts">
+								<a href="javascript:void(0);" class="more">Read more</a>
+								<a href="javascript:void(0);">132 Likes</a>
+								<a href="javascript:void(0);">16 Comments</a>
+							</div>
+						</div>
+					</li>
+					<li class="slide" data-mightyslider="cover:'http://mightyslider.com/assets/img/plugin%20pictures/new/267600_8be4e1a2503b369da3e8a70d90cbcfda.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/267600_8be4e1a2503b369da3e8a70d90cbcfda.jpg' }">
+						<div class="details">
+							<a href="javascript:void(0);" class="title">Donec dignissim est ut ligula pulvinar elementum</a>
+							<div class="description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam volutpat purus vel eleifend venenatis. Nulla bibendum mi sit amet elit convallis imperdiet.</div>
+							<div class="counts">
+								<a href="javascript:void(0);" class="more">Read more</a>
+								<a href="javascript:void(0);">234 Likes</a>
+								<a href="javascript:void(0);">23 Comments</a>
+							</div>
+						</div>
+					</li>
+					<li class="slide" data-mightyslider="cover:'http://mightyslider.com/assets/img/plugin%20pictures/new/tumblr_m8nhi25dRR1rxkz3no1_1280.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/tumblr_m8nhi25dRR1rxkz3no1_1280.jpg' }">
+						<div class="details">
+							<a href="javascript:void(0);" class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</a>
+							<div class="description">Integer viverra felis a nisl volutpat placerat. Donec et lorem mauris. Proin pellentesque urna nulla. Nunc sed turpis semper, fermentum ipsum quis, ornare enim. Proin ut augue enim.</div>
+							<div class="counts">
+								<a href="javascript:void(0);" class="more">Read more</a>
+								<a href="javascript:void(0);">156 Likes</a>
+								<a href="javascript:void(0);">27 Comments</a>
+							</div>
+						</div>
+					</li>
+					<li class="slide" data-mightyslider="cover:'http://mightyslider.com/assets/img/plugin%20pictures/new/151116_28780885089926722_f1qwqqsc_c.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/151116_28780885089926722_f1qwqqsc_c.jpg' }">
+						<div class="details">
+							<a href="javascript:void(0);" class="title">Integer viverra felis a nisl volutpat placerat</a>
+							<div class="description">Nullam ornare, est vel scelerisque blandit, ligula lectus facilisis lectus, eget lacinia massa ante non magna. Cras sollicitudin diam eu tempor volutpat. Fusce scelerisque metus quam, ut ultrices eros blandit ac.</div>
+							<div class="counts">
+								<a href="javascript:void(0);" class="more">Read more</a>
+								<a href="javascript:void(0);">132 Likes</a>
+								<a href="javascript:void(0);">16 Comments</a>
+							</div>
+						</div>
+					</li>
+					<li class="slide" data-mightyslider="cover:'http://mightyslider.com/assets/img/plugin%20pictures/new/272261_2d3824e47be54a448642833b1b039399.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/272261_2d3824e47be54a448642833b1b039399.jpg' }">
+						<div class="details">
+							<a href="javascript:void(0);" class="title">Donec dignissim est ut ligula pulvinar elementum</a>
+							<div class="description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam volutpat purus vel eleifend venenatis. Nulla bibendum mi sit amet elit convallis imperdiet.</div>
+							<div class="counts">
+								<a href="javascript:void(0);" class="more">Read more</a>
+								<a href="javascript:void(0);">234 Likes</a>
+								<a href="javascript:void(0);">23 Comments</a>
+							</div>
+						</div>
+					</li>
+					<li class="slide" data-mightyslider="cover:'http://mightyslider.com/assets/img/plugin%20pictures/new/102505_shangai-skyscrapers-above-the-clouds-jin-mao-tower-swfc-blackstation-6.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/102505_shangai-skyscrapers-above-the-clouds-jin-mao-tower-swfc-blackstation-6.jpg' }">
+						<div class="details">
+							<a href="javascript:void(0);" class="title">Donec dignissim est ut ligula pulvinar elementum</a>
+							<div class="description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam volutpat purus vel eleifend venenatis. Nulla bibendum mi sit amet elit convallis imperdiet.</div>
+							<div class="counts">
+								<a href="javascript:void(0);" class="more">Read more</a>
+								<a href="javascript:void(0);">234 Likes</a>
+								<a href="javascript:void(0);">23 Comments</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+    <script>
+
+		jQuery(document).ready(function(){
+			var $win = jQuery(window),
+				isTouch = !!('ontouchstart' in window),
+				clickEvent = isTouch ? 'tap' : 'click';
+
+            // Modern Example
+			(function(){
+				function calculator(width){
+					var percent = '33.33%';
+					if (width <= 768) {
+						percent = '50%';
+					}
+					else {
+						percent = '33.33%';
+					}
+					return percent;
+				};
+
+				var $carousel = jQuery('#modern'),
+				$frame = jQuery('.frame', $carousel);
+				$frame.mightySlider({
+					speed: 500,
+					autoScale: 1,
+					viewport: 'fill',
+
+					// Navigation options
+					navigation: {
+						navigationType: 'basic',
+						activateOn:     clickEvent,
+						slideSize: calculator($win.width())
+					},
+					
+					// Buttons options
+					buttons: {
+						prevPage: jQuery('#modern_prev'),
+						nextPage: jQuery('#modern_next')
+					}
+				});
+
+				var API = $frame.data().mightySlider;
+
+				$win.resize(function(){
+					API.set({
+						navigation: {
+							slideSize: calculator($win.width())
+						}
+					});
+				});
+			})();
+			// End of Modern Example
+
+			jQuery('a[href*=".jpg"]').each(function(){
+				jQuery(this).iLightBox({
+					skin: 'metro-black',
+					fullViewPort: 'fit'
+				});
+			});
+		});
+
+		window.___gcfg = {lang: "en"};
+		(function() {
+			var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+			po.src = "https://apis.google.com/js/plusone.js";
+			var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+		})();
+    </script>
+  
 	<div id="main_slider" class="row-fluid <?php print theme_get_setting('slider_type').'-wrap'; ?>">
 		<div id="slider-inner" class="span7">
 			<div id="slider-inner-shadow"></div>
