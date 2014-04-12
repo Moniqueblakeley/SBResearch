@@ -206,7 +206,7 @@ $you_here = t("You are here: ");
 		}
 		#modern .frame ul li {
 			float: left;
-			height: 90%;
+			height: 95%;
 			margin:5px;
 			border:1px solid #333;
 			background: #333;
