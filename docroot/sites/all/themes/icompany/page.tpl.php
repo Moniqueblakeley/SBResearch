@@ -207,7 +207,7 @@ $you_here = t("You are here: ");
 		#modern .frame ul li {
 			float: left;
 			height: 90%;
-			margin:10px;
+			margin:5px;
 			border:1px solid #333;
 			background: #333;
 			box-shadow: 2px 2px 5px 2px #ccc;
