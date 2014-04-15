@@ -873,7 +873,10 @@ margin-bottom:0px;
 text-transform: uppercase
 }
 
-#zone2 .titlecontainer .blocktitle{margin:0px;}
+/*#zone2 .titlecontainer .blocktitle{margin:0px;}*/
+#zone2 .block .blocktitle{
+	margin:10px;
+}
 
 #superfish-2 #menu-746-2 a {
 	/*background-image:url('http://www.youthforia.org.uk/wp-content/uploads/2013/09/Icon-Document.png');*/
@@ -1229,8 +1232,10 @@ background: -o-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* Op
 background: -ms-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* IE10+ */
 background: linear-gradient(to bottom,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#fdfdfd',GradientType=0 ); /* IE6-9 */
-}
 
+
+
+}
 .panels-flexible-column-first img {
 border:0px ;padding: 0px; margin:0px;margin-bottom: 10px;
 
@@ -1277,7 +1282,7 @@ padding-left: 10px;
 .homepage-search {background-color: lightgoldenrodyellow; border:1px solid palegoldenrod; padding: 10px;text-align: left}
 #footer-bar {background: none;background-color: #900; color: wheat; font-size: 0.8em}
 #footer-region img {border: 0px; box-shadow: none;}
-#footer-region {background:none;background-color: #444; color: white; font-size: 0.9em; line-height: 2em}
+#footer-region {background:none;background-color: #444; color: white; font-size: 0.9em; line-height: 2em; margin-top:25px}
 #footer-region a {color: white}
 .menu {padding: 10px;}
 
@@ -1291,3 +1296,25 @@ padding-left: 10px;
 	
 	
 .panel-flexible  .panel-separator{margin:0px;}
+
+/*------------------------------------Responsive Researchers Page-------------------------------*/
+@media (min-width: 1470px){
+	.view-mobile-researchers-term-{
+		display:none;
+	}
+	#block-block-92{
+		display:none;
+	}
+	#block-views-829d0687dbef600e85a6b1aa5f822d97{
+		display:none;
+	}
+	#block-views-research-news-block-11{
+		display:none;
+	}
+}
+
+@media (max-width: 1470px) {
+		#block-quicktabs-for-researchers{
+		display:none;
+	}
+}
