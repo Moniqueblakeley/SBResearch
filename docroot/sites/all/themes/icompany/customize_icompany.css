@@ -1221,8 +1221,6 @@ border-right: 10px solid white;
 .homepage-bottom-row{
 background-color: #E7ECEF;
 background-color: #e2dfdb;
-color: white;
-
 background: #ededed; /* Old browsers */
 background: -moz-linear-gradient(top,  #ededed 21%, #ededed 21%, #fdfdfd 85%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,#ededed), color-stop(21%,#ededed), color-stop(85%,#fdfdfd)); /* Chrome,Safari4+ */
@@ -1231,10 +1229,8 @@ background: -o-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* Op
 background: -ms-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* IE10+ */
 background: linear-gradient(to bottom,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#fdfdfd',GradientType=0 ); /* IE6-9 */
-
-
-
 }
+
 .panels-flexible-column-first img {
 border:0px ;padding: 0px; margin:0px;margin-bottom: 10px;
 

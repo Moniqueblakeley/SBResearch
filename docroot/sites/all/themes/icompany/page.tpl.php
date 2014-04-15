@@ -87,7 +87,7 @@ function upperRegionsExist($a = NULL, $b = NULL, $c = NULL , $d = NULL){
 $you_here = t("You are here: ");
 
 ?>
-	
+
 <!--<div id="testBed" class="row" style="padding: 100px;"></div> -->
 
 <div class="container-fluid">
@@ -97,13 +97,13 @@ $you_here = t("You are here: ");
 				<!-- Login | Register links -->
 				<div class="span5 loginlinks">
 					<?php if(theme_get_setting('use_login_links') == 1) { ?>
-						<div id="user_links">			
-							<?php if (!($user->uid)) { print user_login_links(); } else { print  icompany_welcome_user(); } ?>	
+						<div id="user_links">
+							<?php if (!($user->uid)) { print user_login_links(); } else { print  icompany_welcome_user(); } ?>
 						</div>
 					<?php } ?>
 				</div>
-				
-				
+
+
 				<!--Social Region -->
 				<?php if($social_region) {?>
 				<div class="social-region <?php if($search_box) print ' span7 '; else print ' span9 '?> hidden-phone">
@@ -112,11 +112,11 @@ $you_here = t("You are here: ");
 					</div>
 				</div>
 				<?php } ?>
-				
-				
-			
-				
-				
+
+
+
+
+
 			</div>
 		</div>
 	</div><!--topBar-->
@@ -124,12 +124,12 @@ $you_here = t("You are here: ");
 
 
 <div class="container-fluid theme-border" >
-	
+
 	<!--Header area -->
 	<header class="row-fluid" id="header">
-		
+
 		<div id="header_left" class="span5 clearfix">
-			<div class="inner">	
+			<div class="inner">
 			<?php if ($logo) { ?><div id="logocontainer"><a href="<?php print $base_path ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" /></a></div><?php } ?>
 				<div id="texttitles">
 					  <?php if ($site_name) { ?><h1 id='site-name'><a href="<?php print $base_path ?>" title="<?php print t('Home') ?>"><?php print $site_name ?></a></h1><?php } ?>
@@ -137,10 +137,10 @@ $you_here = t("You are here: ");
 				</div>
 			</div>
 		</div>
-		
+
 		<div id="wap-menu" class="span7">
 			<div class="pull-right main_menu_container">
-				
+
 				<?php
 		            /*
 		            if ($main_menu) {
@@ -154,44 +154,44 @@ $you_here = t("You are here: ");
 		            <?php
 		            if ($main_menu): print $main_menu; endif;
 					 * */
-		        ?> 
-		        
+		        ?>
+
 		        <?php if($main_menu) print render($main_menu) ?>
-		        
+
 		        <script type="text/javascript">
-					(function ($) {	
-							/* MENU DESCRIPTION MAKER*/								
+					(function ($) {
+							/* MENU DESCRIPTION MAKER*/
 							var wapoWindowWidth = $(window).width();
-							
+
 							// fetch titles and add descriptions
 							$('.content > #nav > li > a').each(function(){
 								var mainMenuTitle = $(this).attr('title');
 								var linkParent = $(this).parent();
-								
+
 								$('<span>', {
 									'class' : 'tip hidden-phone hidden-tablet',
 									'text' : mainMenuTitle,
 								}).appendTo(linkParent);
-							});		
-									
+							});
+
 							/* END MENU DESCRIPTION MAKER*/
 					})(jQuery);
 				</script>
-					
+
 			</div>
 		</div>
-		
+
 		<?php if(!$slider_region && !$title) { ?>
 			<div id="header-inner-shadow"></div>
 		<?php } ?>
-		
+
 	</header><!--Header area -->
-	
-<div class="container-fluid theme-border" id="page-wrapper">	
+
+<div class="container-fluid theme-border" id="page-wrapper">
 	<!--slider-->
-  
+
   <?php  if($slider_region){ ?>
-  
+
   	<style>
 		#modern .frame {
 			width: 100%;
@@ -227,7 +227,7 @@ $you_here = t("You are here: ");
 			top: 0;
 			left: 0;
 			background-color: rgba(0, 0, 0, 0);
-			
+
 			-webkit-transition: all 0.3s;
 				-ms-transition: all 0.3s;
 				 -o-transition: all 0.3s;
@@ -246,11 +246,11 @@ $you_here = t("You are here: ");
 			background-color: rgba(0, 0, 0, 0.2);
 			padding: 15px;
 			color: #FFF;
-			
+
 			-webkit-box-sizing: border-box;
 			   -moz-box-sizing: border-box;
 			        box-sizing: border-box;
-			
+
 			-webkit-transition: all 0.3s;
 				-ms-transition: all 0.3s;
 				 -o-transition: all 0.3s;
@@ -273,14 +273,14 @@ $you_here = t("You are here: ");
 			text-shadow: 1px 1px 0 #000;
 			overflow: hidden;
 			text-overflow: ellipsis;
-			
+
 		}
 		#modern .details .description {
 			font-weight: 300;
 			height: 0;
 			overflow: hidden;
 			color: #D5D5D5;
-			
+
 			-webkit-transition: all 0.3s;
 				-ms-transition: all 0.3s;
 				 -o-transition: all 0.3s;
@@ -300,7 +300,7 @@ $you_here = t("You are here: ");
 			font-size: 11px;
 			text-transform: uppercase;
 			margin-right: 15px;
-			
+
 			-webkit-transition: all 0.3s;
 				-ms-transition: all 0.3s;
 				 -o-transition: all 0.3s;
@@ -321,15 +321,15 @@ $you_here = t("You are here: ");
 			filter: alpha(opacity=100);
 		}
 	</style>
-	
+
     <div class="featurette featurette_full">
 		<div class="mightyslider_windows8_skin clearfix" id="modern">
 			<div class="frame" data-mightyslider="width: 1170, height: 300">
 				<ul class="slide_element">
 					<li class="slide" data-mightyslider="cover:'http://sb.cc.stonybrook.edu/news/_resources/images/IndianapolisPrize_ForPressRelease_320_flat.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/151121_tumblr_mb0tlwxyqv1ro1zebo1_500.jpg' }">
 						<div class="details">
-							<a href="javascript:void(0);" class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</a>
-							<div class="description">Integer viverra felis a nisl volutpat placerat. Donec et lorem mauris. Proin pellentesque urna nulla. Nunc sed turpis semper, fermentum ipsum quis, ornare enim. Proin ut augue enim.</div>
+							<a href="javascript:void(0);" class="title">testtest</a>
+							<div class="description">SBU to Host Earth day tweet-up honoring three indianapolis prize finalists</div>
 							<div class="counts">
 								<a href="javascript:void(0);" class="more">Read more</a>
 								<a href="javascript:void(0);">156 Likes</a>
@@ -361,8 +361,8 @@ $you_here = t("You are here: ");
 					</li>
 					<li class="slide" data-mightyslider="cover:'', video:'http://www.youtube.com/watch?v=8Ik1B38bdOQ', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/michel-hamburg-germany-photography-wookmark-277809.jpg' }">
 						<div class="details">
-							<a href="javascript:void(0);" class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</a>
-							<div class="description">Integer viverra felis a nisl volutpat placerat. Donec et lorem mauris. Proin pellentesque urna nulla. Nunc sed turpis semper, fermentum ipsum quis, ornare enim. Proin ut augue enim.</div>
+							<a href="javascript:void(0);" class="title">How Does Biophysics Payoff for the Public?</a>
+							<div class="description">How Does Biophysics Payoff for the Public?</div>
 							<div class="counts">
 								<a href="javascript:void(0);" class="more">Read more</a>
 								<a href="javascript:void(0);">156 Likes</a>
@@ -370,9 +370,9 @@ $you_here = t("You are here: ");
 							</div>
 						</div>
 					</li>
-					<li class="slide" data-mightyslider="cover:'', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/276111_tumblr_mpqoghrt2k1r46py4o1_1280.jpg' }">
+					<li class="slide" data-mightyslider="cover:'http://sb.cc.stonybrook.edu/news/_resources/images/mentors.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/276111_tumblr_mpqoghrt2k1r46py4o1_1280.jpg' }">
 						<div class="details">
-							<a href="javascript:void(0);" class="title">Integer viverra felis a nisl volutpat placerat</a>
+							<a href="javascript:void(0);" class="title">Stony Brook Protégés Vie for Distinguished Prize</a>
 							<div class="description">Nullam ornare, est vel scelerisque blandit, ligula lectus facilisis lectus, eget lacinia massa ante non magna. Cras sollicitudin diam eu tempor volutpat. Fusce scelerisque metus quam, ut ultrices eros blandit ac.</div>
 							<div class="counts">
 								<a href="javascript:void(0);" class="more">Read more</a>
@@ -381,10 +381,10 @@ $you_here = t("You are here: ");
 							</div>
 						</div>
 					</li>
-					<li class="slide" data-mightyslider="cover:'', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/267600_8be4e1a2503b369da3e8a70d90cbcfda.jpg' }">
+					<li class="slide" data-mightyslider="cover:'http://sb.cc.stonybrook.edu/news/_resources/images/140312_Connell-Paul_041.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/267600_8be4e1a2503b369da3e8a70d90cbcfda.jpg' }">
 						<div class="details">
-							<a href="javascript:void(0);" class="title">Donec dignissim est ut ligula pulvinar elementum</a>
-							<div class="description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam volutpat purus vel eleifend venenatis. Nulla bibendum mi sit amet elit convallis imperdiet.</div>
+							<a href="javascript:void(0);" class="title">Are Toucan Sam and Ronald McDonald Influencing Your Beliefs About Food as an Adult?</a>
+							<div class="description">Are Toucan Sam and Ronald McDonald Influencing Your Beliefs About Food as an Adult? - See more at: http://sb.cc.stonybrook.edu/news/research/03142014BrandsConnell.php#sthash.mCPuP7dF.dpuf</div>
 							<div class="counts">
 								<a href="javascript:void(0);" class="more">Read more</a>
 								<a href="javascript:void(0);">234 Likes</a>
@@ -473,7 +473,7 @@ $you_here = t("You are here: ");
 						activateOn:     clickEvent,
 						slideSize: calculator($win.width())
 					},
-					
+
 					// Buttons options
 					buttons: {
 						prevPage: jQuery('#modern_prev'),
@@ -508,14 +508,14 @@ $you_here = t("You are here: ");
 			var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
 		})();
     </script>
-  
 
-  <?php } ?>	
- 	 
-  
+
+  <?php } ?>
+
+
 	<!--content zone-->
 	<div id="zone1" class="row-fluid">
-		
+
 		<?php if($highlighted || $highlighted_2) { ?>
 		<div class="row-fluid">
 			<?php if($highlighted) {?>
@@ -523,44 +523,44 @@ $you_here = t("You are here: ");
 				<?php print render($highlighted) ?>
 			</div>
 			<?php }?>
-			
+
 			<?php if($highlighted_2) {?>
-			<div id="highlighted_2" class="<?php if(!$highlighted) print 'span12'; else print 'span3'; ?>">		
+			<div id="highlighted_2" class="<?php if(!$highlighted) print 'span12'; else print 'span3'; ?>">
 				<?php print render($highlighted_2) ?>
 			</div>
 			<?php }?>
-			
+
 			<span class="border"></span>
 		</div>
 		<?php } ?>
-		
-		
+
+
 		<?php if(region_blocks_exist($column_block1, $column_block2, $column_block3, $column_block4, $column_block5, $column_block6)) {?>
 		<span class="divider"></span>
 		<div id="column-region" class="row-fluid">
-			
+
 			<?php $column_blocks_span = get_block_span($column_block1, $column_block2, $column_block3, $column_block4, $column_block5, $column_block6); ?>
 			<?php $column_block_count = count_blocks($column_block1, $column_block2, $column_block3, $column_block4, $column_block5, $column_block6) ?>
-			
-			
+
+
 			<?php if($column_block1) {?>
 				<div id="column_block1" class="<?php /* since 12 grids cannot be divided by 5, we use span4 for first block */ if($column_block_count == 5) print ' span4 '; else print $column_blocks_span ?>">
 					<?php print render($column_block1) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($column_block2) {?>
 				<div id="column_block2" class="<?php print $column_blocks_span ?>">
 					<?php print render($column_block2) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($column_block3) {?>
 				<div id="column_block3" class="<?php print $column_blocks_span ?>">
 					<?php print render($column_block3) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($column_block4) {?>
 				<div id="column_block4" class="<?php print $column_blocks_span ?>">
 					<?php print render($column_block4) ?>
@@ -571,7 +571,7 @@ $you_here = t("You are here: ");
 					<?php print render($column_block5) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($column_block6) {?>
 				<div id="column_block6" class="<?php print $column_blocks_span ?>">
 					<?php print render($column_block6) ?>
@@ -580,45 +580,45 @@ $you_here = t("You are here: ");
 		</div>
 		<span class="border-color"></span>
 		<?php } ?>
-		
-		
+
+
 		<?php if(region_blocks_exist($column_block1_second_row , $column_block2_second_row , $column_block3_second_row , $column_block4_second_row,  $column_block5_second_row , $column_block6_second_row )) {?>
 		<span class="divider"></span>
 		<div id="column-region-row2" class="row-fluid">
-			
+
 			<?php $column_blocks_span = get_block_span($column_block1_second_row , $column_block2_second_row , $column_block3_second_row , $column_block4_second_row , $column_block5_second_row , $column_block6_second_row); ?>
 			<?php $column_row2_block_count = count_blocks($column_block1, $column_block2, $column_block3, $column_block4, $column_block5, $column_block6) ?>
-			
+
 			<?php if($column_block1_second_row ) {?>
 				<div id="column_block1-row2" class="<?php /* since 12 grids cannot be divided by 5, we use span4 for first block */ if($column_row2_block_count == 5) print ' span4 '; else print $column_blocks_span ?>">
 					<?php print render($column_block1_second_row ) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($column_block2_second_row ) {?>
 				<div id="column_block2-row2" class="<?php print $column_blocks_span ?>">
 					<?php print render($column_block2_second_row ) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($column_block3_second_row ) {?>
 				<div id="column_block3-row2" class="<?php print $column_blocks_span ?>">
 					<?php print render($column_block3_second_row ) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($column_block4_second_row ) {?>
 				<div id="column_block4-row2" class="<?php print $column_blocks_span ?>">
 					<?php print render($column_block4_second_row ) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($column_block5_second_row ) {?>
 				<div id="column_block5-row2" class="<?php print $column_blocks_span ?>">
 					<?php print render($column_block5_second_row ) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($column_block6_second_row ) {?>
 				<div id="column_block6-row2" class="<?php print $column_blocks_span ?>">
 					<?php print render($column_block6_second_row ) ?>
@@ -627,177 +627,177 @@ $you_here = t("You are here: ");
 		</div>
 		<span class="border"></span>
 		<?php } ?>
-		
+
 		<!-- bootstrap tabs implementation on this region-->
-		<?php if(region_blocks_exist($tab1,$tab2,$tab3,$tab4,$tab5,$tab6,$tabs_sidebar )) { 
+		<?php if(region_blocks_exist($tab1,$tab2,$tab3,$tab4,$tab5,$tab6,$tabs_sidebar )) {
 			  $tabs_exist = region_blocks_exist($tab1,$tab2,$tab3,$tab4,$tab5,$tab6 );	?>
 		<span class="divider"></span>
 			<div id="tabs-region" class="row-fluid">
-				
+
 				<?php if($tabs_exist) {?>
 				<div id="tabs-block" class="<?php if(region_blocks_exist($tabs_sidebar)) print ' span9 '; else print ' span12 ' ?>">
 					 <div class="inner">
 						 <div class="tabbable tabs-left"><!--bootstrap tabs implementation-->
-						 	
-						 	<ul class="nav nav-tabs">	
+
+						 	<ul class="nav nav-tabs">
 						 		 <!--tabs-->
-								 <?php if($tab1) {?>					 	
-								 	<li <?php if($tab1) print 'class="active"' ?> ><a href="#tab1" data-toggle="tab"><?php print theme_get_setting('tabname1'); ?></a></li>					 	
+								 <?php if($tab1) {?>
+								 	<li <?php if($tab1) print 'class="active"' ?> ><a href="#tab1" data-toggle="tab"><?php print theme_get_setting('tabname1'); ?></a></li>
 								 <?php } ?>
-								 
-								 <?php if($tab2) {?>					 	
-								 	<li <?php if(!$tab1) print 'class="active"' ?> ><a href="#tab2" data-toggle="tab"><?php print theme_get_setting('tabname2'); ?></a></li>					 	
+
+								 <?php if($tab2) {?>
+								 	<li <?php if(!$tab1) print 'class="active"' ?> ><a href="#tab2" data-toggle="tab"><?php print theme_get_setting('tabname2'); ?></a></li>
 								 <?php } ?>
-								 
-								 <?php if($tab3) {?>					 	
-								 	<li <?php if(!$tab1 && !$tab2) print 'class="active"' ?> ><a href="#tab3" data-toggle="tab"><?php print theme_get_setting('tabname3'); ?></a></li>					 	
+
+								 <?php if($tab3) {?>
+								 	<li <?php if(!$tab1 && !$tab2) print 'class="active"' ?> ><a href="#tab3" data-toggle="tab"><?php print theme_get_setting('tabname3'); ?></a></li>
 								 <?php } ?>
-								 
-								 <?php if($tab4) {?>					 	
-								 	<li <?php if(!$tab1 && !$tab2 && !$tab3) print 'class="active"' ?>><a href="#tab4" data-toggle="tab"><?php print theme_get_setting('tabname4'); ?></a></li>					 	
+
+								 <?php if($tab4) {?>
+								 	<li <?php if(!$tab1 && !$tab2 && !$tab3) print 'class="active"' ?>><a href="#tab4" data-toggle="tab"><?php print theme_get_setting('tabname4'); ?></a></li>
 								 <?php } ?>
-								 
-								 <?php if($tab5) {?>					 	
-								 	<li <?php if(!$tab1 && !$tab2 && !$tab3 && !$tab4) print 'class="active"' ?>><a href="#tab5" data-toggle="tab"><?php print theme_get_setting('tabname5'); ?></a></li>					 	
+
+								 <?php if($tab5) {?>
+								 	<li <?php if(!$tab1 && !$tab2 && !$tab3 && !$tab4) print 'class="active"' ?>><a href="#tab5" data-toggle="tab"><?php print theme_get_setting('tabname5'); ?></a></li>
 								 <?php } ?>
-								 
-								 <?php if($tab6) {?>					 	
-								 	<li <?php if(!$tab1 && !$tab2 && !$tab3 && !$tab4 && $tab5) print 'class="active"' ?>><a href="#tab6" data-toggle="tab"><?php print theme_get_setting('tabname6'); ?></a></li>					 	
+
+								 <?php if($tab6) {?>
+								 	<li <?php if(!$tab1 && !$tab2 && !$tab3 && !$tab4 && $tab5) print 'class="active"' ?>><a href="#tab6" data-toggle="tab"><?php print theme_get_setting('tabname6'); ?></a></li>
 								 <?php } ?>
 						 	</ul>
-					 		
+
 					 		<!--tabs content -->
 						 	<div class="tab-content">
-						 		  <?php if($tab1) {?>					 	
+						 		  <?php if($tab1) {?>
 								 	<div class="tab-pane <?php if($tab1) print ' active ' ?>" id="tab1">
 								 		<?php print render($tab1 ) ?>
-								 	</div>					 	
+								 	</div>
 								 <?php } ?>
-								 
-								 <?php if($tab2) {?>					 	
+
+								 <?php if($tab2) {?>
 								 	<div class="tab-pane  fade  <?php if(!$tab1) print ' active ' ?>" id="tab2">
 								 		<?php print render($tab2 ) ?>
-								 	</div>				 	
+								 	</div>
 								 <?php } ?>
-								 
-								 <?php if($tab3) {?>					 	
+
+								 <?php if($tab3) {?>
 								 	<div class="tab-pane  fade  <?php if(!$tab1 && !$tab2) print ' active ' ?>" id="tab3">
 								 		<?php print render($tab3 ) ?>
-								 	</div>					 	
+								 	</div>
 								 <?php } ?>
-								 
-								 <?php if($tab4) {?>					 	
+
+								 <?php if($tab4) {?>
 								 	<div class="tab-pane  fade  <?php if(!$tab1 && !$tab2 && !$tab3) print ' active ' ?>" id="tab4">
 								 		<?php print render($tab4) ?>
-								 	</div>					 	
+								 	</div>
 								 <?php } ?>
-								 
-								 <?php if($tab5) {?>					 	
+
+								 <?php if($tab5) {?>
 								 	<div class="tab-pane  fade  <?php if(!$tab1 && !$tab2 && !$tab3 && !$tab4) print ' active ' ?>" id="tab5">
 								 		<?php print render($tab5) ?>
-								 	</div>					 	
+								 	</div>
 								 <?php } ?>
-								 
-								 <?php if($tab6) {?>					 	
+
+								 <?php if($tab6) {?>
 								 	<div class="tab-pane  fade  <?php if(!$tab1 && !$tab2 && !$tab3 && !$tab4 && $tab5) print ' active ' ?>" id="tab6">
 								 		<?php print render($tab6 ) ?>
-								 	</div>					 	
+								 	</div>
 								 <?php } ?>
-						 		 
-						 	
+
+
 						 	</div><!--tab content -->
-						 </div><!--table--> 
+						 </div><!--table-->
 					 </div><!--tab region inner-->
 				</div>
 				<?php } ?>
-				
+
 				<?php if($tabs_sidebar ) {?>
 				<div id="tabs-Sidebar" class="span3 <?php if(!region_blocks_exist($tabs_exist)) print ' offset9 ';  ?>">
 					<?php print render($tabs_sidebar ) ?>
-				
-				</div>				
+
+				</div>
 				<?php } ?>
-			
-			</div>	
+
+			</div>
 		<span class="divider"></span>
 		<span class="border"></span>
 		<?php } ?>
-		
-		
+
+
 		<!--TITLE REGION-->
 		<!--TITLE REGION-->
 		<?php if(($title) && !(upperRegionsExist($upper_blocks1, $upper_blocks2, $upper_blocks3, $upper_blocks4))){ ?>
-			<div id="title-region" class="row-fluid">	
+			<div id="title-region" class="row-fluid">
 				<div style="clear:both">
 				<div class="span6" style="float:left">
 					<?php if(!empty($breadcrumb)){  if(theme_get_setting('icompany_breadcrumb') == '1') print '<div class="breadcrumb">' . "<div id='home-icon'> <a href='$base_path'>" . ' <span class="icon-home"></span></a> </div> ' . $breadcrumb . ' &raquo; ' . breadcrumb_title($title) . '</div>'; elseif(!empty($breadcrumb)) print '<div class="breadcrumb">' . $breadcrumb . '</div>';  ?>
-					
-				<?php } ?>	
+
+				<?php } ?>
 				</div>
 				<div class="span4"  style="float:right">
 					<!--Search Block -->
-							
-					
+
+
 							<?php print render($search_box) ?>
-						
-				
-			
+
+
+
 				</div>
 				</div>
-				
+
 				<div style="clear:both; ">
 				<div class="inner">
 						<?php print render($title_prefix); ?>
-						<h1 class="page-title"><?php print $title ?></h1>  
+						<h1 class="page-title"><?php print $title ?></h1>
 						<?php print render($title_suffix); ?>
 					</div>
-										
+
 				</div>
 				</div>
-			
+
 		<?php } ?>
-		
-		
-		
+
+
+
 		<?php if($adnan_superfish) {?>
 		<div id="adnan_superfish" >
-		
+
 				<div id="adnan_superfish" class="span12">
 					<?php print render($adnan_superfish); ?>
 				</div>
-			
+
 		</div>
 		<?php } ?>
-		
+
 		<div id="zone2" class="row-fluid">
-		
+
 		<?php
 		$left_right_count = count_blocks($left_sidebar, $right_sidebar);
 		switch ($left_right_count) {
 			case '0':
 				$content_span = ' span12 ';
 				break;
-			
+
 			case '1':
 				$content_span = ' span9 ';
 				break;
-				
+
 			case '2';
 				$content_span = ' span6 ';
 			break;
-			
-			default: 
+
+			default:
 				$content_span = ' span12 ';
 				break;
 		}
 		?>
-		
+
 			<?php if($left_sidebar) {?>
 				<div id="left-sidebar" class="span3">
 					<?php print render($left_sidebar); ?>
 				</div>
 			<?php } ?>
-			
+
 			<div id="content-area" class="<?php print $content_span; ?>">
 				<div class="inner <?php if(!$left_sidebar) print ' inner-no-left-sidebar '; if(!$right_sidebar) print ' inner-no-right-sidebar '; if(!$right_sidebar && !$left_sidebar) print ' inner-no-sidebar '; ?>">
 					<?php if($content_top) {?>
@@ -805,74 +805,74 @@ $you_here = t("You are here: ");
 							<?php print render($content_top); ?>
 						</div>
 					<?php } ?>
-					
+
 					<div id="content-region">
 				        <?php if(!empty($tabs)){ ?><div class="tabs"><?php print render($tabs ); ?></div> <?php } ?>
 				        <?php if ($show_messages) { print $messages; } ?>
 				        <?php if($help){ ?><?php print render($help); ?><?php } ?>
 				        <?php if(($title) && (upperRegionsExist($upper_blocks1, $upper_blocks2, $upper_blocks3, $upper_blocks4))){ ?>
-				            <?php if(!empty($breadcrumb)){  if(theme_get_setting('icompany_breadcrumb') == '1') print '<div class="breadcrumb">' . $you_here . $breadcrumb . ' &raquo; ' . breadcrumb_title($title) . '</div>'; elseif(!empty($breadcrumb)) print '<div class="breadcrumb">' . $breadcrumb . '</div>';  ?><?php } ?>     
+				            <?php if(!empty($breadcrumb)){  if(theme_get_setting('icompany_breadcrumb') == '1') print '<div class="breadcrumb">' . $you_here . $breadcrumb . ' &raquo; ' . breadcrumb_title($title) . '</div>'; elseif(!empty($breadcrumb)) print '<div class="breadcrumb">' . $breadcrumb . '</div>';  ?><?php } ?>
 				        	<?php print render($title_prefix); ?>
-								<h1 class="page-title"><?php print $title ?></h1>  
+								<h1 class="page-title"><?php print $title ?></h1>
 							<?php print render($title_suffix); ?>
-				        <?php } ?>	
+				        <?php } ?>
 			              <?php if ($action_links): ?>
 					        <ul class="links">
 					          <?php print render($action_links); ?>
 					        </ul>
-					      <?php endif; ?>		        
-				        <?php  print render($content); ?>	        
-				        <?php if($feed_icons){ ?><?php print $feed_icons; ?><?php } ?>	
-				        
+					      <?php endif; ?>
+				        <?php  print render($content); ?>
+				        <?php if($feed_icons){ ?><?php print $feed_icons; ?><?php } ?>
+
 					</div>
-					
+
 					<?php if($content_bottom) {?>
 						<span class="divider"></span>
 						<div id="content-bottom">
 							<?php print render($content_bottom); ?>
 						</div>
-						
-					<?php } ?>	
-				</div>	
+
+					<?php } ?>
+				</div>
 			</div><!--content area-->
-			
+
 			<?php if($right_sidebar) {?>
 				<div id="right-sidebar" class="span3">
-					<?php print render($right_sidebar); ?>	
+					<?php print render($right_sidebar); ?>
 				</div>
 			<?php } ?>
-			
+
 		</div><!--content zone-->
 
-	
-	
-	
-	
+
+
+
+
 	<?php if(region_blocks_exist($under1, $under2, $under3, $under4, $under5, $under6)) {?>
 		<div id="under-content-region" class="row-fluid">
-			
+
 			<?php $under_blocks_span = get_block_span($under1, $under2, $under3, $under4, $under5, $under6); ?>
 			<?php $under_block_count = count_blocks($under1, $under2, $under3, $under4, $under5, $under6) ?>
-			
-			
+
+
 			<?php if($under1) {?>
 				<div id="under1" class="<?php /* since 12 grids cannot be divided by 5, we use span4 for first block */ if($under_block_count == 5) print ' span4 '; else print $under_blocks_span ?>">
 					<?php print render($under1) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($under2) {?>
 				<div id="under2" class="<?php print $under_blocks_span ?>">
 					<?php print render($under2) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($under3) {?>
 				<div id="under3" class="<?php print $under_blocks_span ?>">
 					<?php print render($under3) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($under4) {?>
 				<div id="under4" class="<?php print $under_blocks_span ?>">
 					<?php print render($under4) ?>
@@ -883,7 +883,7 @@ $you_here = t("You are here: ");
 					<?php print render($under5) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($under6) {?>
 				<div id="under6" class="<?php print $under_blocks_span ?>">
 					<?php print render($under6) ?>
@@ -891,158 +891,158 @@ $you_here = t("You are here: ");
 			<?php } ?>
 		</div>
 		<?php } ?>
-	
-	
-	
-	
-	
+
+
+
+
+
 	<div id="zone3">
 		<!--bottom region -->
-		<?php if( region_blocks_exist($bottom1 , $bottom2 , $bottom3 , $bottom4,  $bottom5 , $bottom6 )) {?>	
+		<?php if( region_blocks_exist($bottom1 , $bottom2 , $bottom3 , $bottom4,  $bottom5 , $bottom6 )) {?>
 		<div id="bottom-region" class="row-fluid">
-			
+
 			<?php $bottom_span = get_block_span($bottom1 , $bottom2 , $bottom3 , $bottom4,  $bottom5 , $bottom6); ?>
 			<?php $bottom_blocks_count = count_blocks($bottom1 , $bottom2 , $bottom3 , $bottom4,  $bottom5 , $bottom6) ?>
-			
+
 			<?php if($bottom1 ) {?>
 				<div id="bottom1" class="<?php /* since 12 grids cannot be divided by 5, we use span4 for first block */ if($bottom_blocks_count == 5) print ' span4 '; else print $bottom_span ?>">
 					<?php print render($bottom1 ) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($bottom2 ) {?>
 				<div id="bottom2" class="<?php print $bottom_span ?>">
 					<?php print render($bottom2 ) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($bottom3 ) {?>
 				<div id="bottom3" class="<?php print $bottom_span ?>">
 					<?php print render($bottom3 ) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($bottom4 ) {?>
 				<div id="bottom4" class="<?php print $bottom_span ?>">
 					<?php print render($bottom4 ) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($bottom5 ) {?>
 				<div id="bottom5" class="<?php print $bottom_span ?>">
 					<?php print render($bottom5 ) ?>
 				</div>
 			<?php } ?>
-			
+
 			<?php if($bottom6 ) {?>
 				<div id="bottom6" class="<?php print $bottom_span ?>">
 					<?php print render($bottom6 ) ?>
 				</div>
 			<?php } ?>
-			
-			
-			
+
+
+
 		</div>
 
 		<?php } ?>
-		
+
 		<!--footer region-->
-		<?php if( region_blocks_exist($footer1 , $footer2 , $footer3 , $footer4,  $footer5 , $footer6 )) {?>	
-		
+		<?php if( region_blocks_exist($footer1 , $footer2 , $footer3 , $footer4,  $footer5 , $footer6 )) {?>
+
 		<div id="footer-region" class="row-fluid">
 			 <div class="footer-inner">
-			<?php 
-			
+			<?php
+
 			$footerLeft = region_blocks_exist($footer1 , $footer2 , $footer3 , $footer4,  $footer5 );
 			$footerRight = region_blocks_exist($footer6);
 			$footerSmalls = region_blocks_exist($footer2 , $footer3 , $footer4 , $footer5);
-			
-			 
-			
+
+
+
 			?>
-			
+
 			<?php if($footerLeft == TRUE) {?>
 			<div id="footer-left" class="<?php if(!$footerRight) print 'span12'; else print 'span9'; ?>">
-				
-				
+
+
 				<?php if($footer1) {?>
 				<div class="row-fluid" id="footer1">
 					<div class="span12">
 						<div class="inner">
-							<?php  print render($footer1) ?>					
+							<?php  print render($footer1) ?>
 						</div>
 					</div>
-					 
+
 				</div>
 				<?php } ?>
-				
+
 				<?php if($footerSmalls == TRUE) {?>
 					<?php $footerSmallsSpan = get_block_span($footer2 , $footer3 , $footer4 , $footer5); ?>
 					<div class="row-fluid" id="footerSmalls">
-						
+
 						<?php if($footer2) {?>
 							<div class="<?php print $footerSmallsSpan ?>">
 								<?php print render($footer2) ?>
 							</div>
 						<?php } ?>
-						
+
 						<?php if($footer3) {?>
 							<div class="<?php print $footerSmallsSpan ?>">
 								<?php print render($footer3) ?>
 							</div>
 						<?php } ?>
-						
+
 						<?php if($footer4) {?>
 							<div class="<?php print $footerSmallsSpan ?>">
 								<?php print render($footer4) ?>
 							</div>
 						<?php } ?>
-						
+
 						<?php if($footer5) {?>
 							<div class="<?php print $footerSmallsSpan ?>">
 								<?php print render($footer5) ?>
 							</div>
 						<?php } ?>
-						
-						
+
+
 					</div>
 				<?php } ?>
-				
-				
+
+
 			</div>
 			<?php } ?>
-			
+
 			<?php if($footer6) {?>
 			<div id="footer-right" class="<?php if(!$footerLeft) print 'span12'; else print 'span3'; ?>">
 				<?php print render($footer6) ?>
 			</div>
 			<?php } ?>
-			
+
 			<span class="divider"> </span>
 			</div>
 		</div>
-		 
+
 		<?php } ?>
-		
-		
+
+
 		<div id="footer-bar" class="row-fluid">
 			<?php if ($secondary_nav):  ?>
 				<div id="secondary_menu" class="span5">
-			      <?php print $secondary_nav; ?> 
+			      <?php print $secondary_nav; ?>
 			    </div>
 			<?php endif; ?>
-			
+
 			<div id="footer-note" class="span12">
 				<div class="inner">
 			      <?php if(theme_get_setting('footer_note')) { print theme_get_setting('footer_note'); }  print render($footer); ?>
 			    </div>
 		    </div>
 		</div><!--footer bar-->
-		
+
 	</div>
-	
-	
-	
+
+
+
 </div><!--container fluid and page wrapper-->
 <span class="divider"></span>
 
