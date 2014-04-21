@@ -1318,3 +1318,10 @@ padding-left: 10px;
 		display:none;
 	}
 }
+
+.redtitle{
+	font-size: 14px;
+	background-color: darkred;
+	padding: 10px 10px;
+	color:white;
+}
