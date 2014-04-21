@@ -328,7 +328,7 @@ $you_here = t("You are here: ");
 				<ul class="slide_element">
 					<li class="slide" data-mightyslider="cover:'http://sb.cc.stonybrook.edu/news/_resources/images/IndianapolisPrize_ForPressRelease_320_flat.jpg', link: { url: 'http://mightyslider.com/assets/img/plugin%20pictures/new/151121_tumblr_mb0tlwxyqv1ro1zebo1_500.jpg' }">
 						<div class="details">
-							<a href="javascript:void(0);" class="title">testtest</a>
+							<a href="javascript:void(0);" class="title">Patricia Wright</a>
 							<div class="description">SBU to Host Earth day tweet-up honoring three indianapolis prize finalists</div>
 							<div class="counts">
 								<a href="javascript:void(0);" class="more">Read more</a>
