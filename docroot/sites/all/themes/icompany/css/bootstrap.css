@@ -298,7 +298,9 @@ a:hover {
   margin-left: 2.127659574468085%;
   *margin-left: 2.074468085106383%;
 }
-.row-fluid [class*="span"]:first-child {
+.row-fluid [class*="span"]
+/* :first-child */
+ {
   margin-left: 0;
 }
 .row-fluid .span12 {
