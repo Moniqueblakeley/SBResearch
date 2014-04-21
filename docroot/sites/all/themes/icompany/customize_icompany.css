@@ -1185,9 +1185,9 @@ font-size:0.9em
 }
 
 .content img{
-border:1px solid silver;
+/* border:1px solid silver;
+box-shadow: 1px 1px 10px #bbb */
 padding:5px;
-box-shadow: 1px 1px 10px #bbb
 }
 
 .bottomofpage{background-color:lightgrey;
