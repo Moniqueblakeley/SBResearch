@@ -426,6 +426,15 @@ $you_here = t("You are here: ");
 
 				</div>
 				</div>
+<?php if($adnan_superfish) {?>
+		<div id="adnan_superfish" >
+
+				<div id="adnan_superfish" class="span12">
+					<?php print render($adnan_superfish); ?>
+				</div>
+
+		</div>
+		<?php } ?>
 
 				<div style="clear:both; ">
 				<div class="inner">
@@ -441,16 +450,7 @@ $you_here = t("You are here: ");
 
 
 
-		<?php if($adnan_superfish) {?>
-		<div id="adnan_superfish" >
-
-				<div id="adnan_superfish" class="span12">
-					<?php print render($adnan_superfish); ?>
-				</div>
-
-		</div>
-		<?php } ?>
-
+		
 		<div id="zone2" class="row-fluid">
 
 		<?php
