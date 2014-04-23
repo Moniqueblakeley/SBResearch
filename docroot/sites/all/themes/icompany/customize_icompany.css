@@ -448,7 +448,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a {
 	color: white;
 	color: navy;
 	
-	height:70px;
+	height:16.6%;
 	margin-left:0px;
 	
 	 
@@ -1304,7 +1304,7 @@ padding-left: 10px;
 .panel-flexible  .panel-separator{margin:0px;}
 
 /*------------------------------------Responsive Researchers Page-------------------------------*/
-@media (min-width: 1470px){
+@media (min-width: 725px){
 	.view-mobile-researchers-term-{
 		display:none;
 	}
@@ -1319,7 +1319,7 @@ padding-left: 10px;
 	}
 }
 
-@media (max-width: 1470px) {
+@media (max-width: 725px) {
 		#block-quicktabs-for-researchers{
 		display:none;
 	}
