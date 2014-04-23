@@ -13,7 +13,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere {
   margin: 0;
   position: relative;
   z-index: 2;
-  width: 40%;
+  width: 30%;
 }
 /*-------------------------------------------------Unactive Tabs------------------------------*/
 ul.quicktabs-tabs.quicktabs-style-phylactere li {
@@ -84,7 +84,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li.active a {
   min-height: 632px;
   position: relative;
   z-index: 1;
-  width: 50%;
+  width: 60%;   /*---------------this is where you change the width for the content box. 650px is a good size------------*/
    border: 1px solid #888888;
   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
