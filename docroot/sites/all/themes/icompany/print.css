@@ -1,1 +1,131 @@
-*,*:after,*:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*,*:after,*:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}img,video{max-width:100%;height:auto}.clearfix:before,.clearfix:after{display:table;content:""}.clearfix:after{clear:both}h2{margin-top:0px}
+﻿#menu {
+	display: none;
+}
+#header, #rail, #banner, #printer, #footer, #relatedlinkscontent, #breadcrumbholder, #breadcrumbtext ul, #relatedlinkscontent li {
+	display: none;
+}
+#breadcrumbholder {
+	display: none;
+}
+
+#search-form-query{
+	display:none;
+}
+#header_body #header_search{
+	display:none
+}
+
+#topheaderbanner {display:none}
+
+#search-form-submit{
+	display:none;
+}
+#left_rail {
+	width: 0px;
+
+	height: 0px;	display: none;
+}
+a {
+	font-weight: bold;
+	color: #003399;
+	text-decoration: underline;
+}
+#body {
+	text-align: center;
+	margin: 0px auto;
+	background-color: #fff;
+}
+.bodytext {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000;
+}
+#container {
+	background-color: #fff;
+	
+	width: 100%;
+}
+#content {
+	background-color: #fff;
+	width: 90%;
+	border-left: 0px solid #768FA5;
+/* The width and color of the rail */	margin-left: 0px; /* Hat tip to Ryan Brill */;
+	
+	text-align: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	font-size:11px;
+}
+#rail {
+	background-color: #768FA5;
+	width: 0px;
+	float: left;
+	text-align: left;
+	padding-bottom: 50px;
+	margin-left: 0px;
+}
+#supercontainer {
+	width: auto;
+	text-align: left;
+	height: auto;
+}
+#container {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+a:link, a:visited {
+	color: #520;
+	background: transparent;
+}
+#content a:link:after, #content a:visited:after {
+	content: " (" attr(href) ") ";
+	font-size: 100%;
+}
+#content a[href^="/"]:after {
+	content: " (http://www.alistapart.com" attr(href) ") ";
+}
+#breadcrumbholder {
+	display: none;
+}
+#content {
+	margin-left: 0px;
+	width: 100%;
+	background-color: white;
+}
+#pagebody{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+
+}
+#pagetitle{
+
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;}
+	
+#pagetitlelong{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;}
+	
+	
+	#page_headline{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;}
+
+.redheader{
+	
+text-transform:uppercase;
+padding:0px 5px;
+color:#900;
+font-weight:bold;
+
+}	
+#redheader{
+text-transform:uppercase;
+padding:0px 5px;
+color:#900;
+font-weight:bold;
+}
+
+#header, #rail, #banner, #printer, #footer, #relatedlinkscontent, #breadcrumbholder, #breadcrumbtext ul, #relatedlinkscontent li {
+	display: none;
+}
