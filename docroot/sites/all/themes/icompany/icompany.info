@@ -10,6 +10,7 @@ stylesheets[all][] = dateIcon.css
 stylesheets[all][] = token-input.css
 stylesheets[all][] = token-input-facebook.css
 stylesheets[all][] = mightyslider.css
+stylesheets[all][] = print.css
 
 ; scripts
 scripts[] = js/scripts.js
