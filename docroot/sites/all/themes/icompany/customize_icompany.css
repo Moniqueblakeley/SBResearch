@@ -26,7 +26,6 @@ h2{
 	color:#000000;
 	-webkit-border-radius:1px;
 	font-size:16px;
-	
 	color:#ED143D;
 	border:0px solid #FFD700;
 	border-bottom:0px solid #ED143D;
@@ -34,15 +33,23 @@ h2{
 	background-color:#FFFAFA;
 	text-shadow:text-shadow: 3px 2px 2px rgba(126, 150, 255, 0.83);
 	padding:10px 5px;
-margin-top:10px;
-background-color: rgb(0,175,216);
-background-color: #444;
-color:White;
-border-radius: 1px
+	margin-top:10px;
+	background-color: rgb(0,175,216);
+	background-color: #444;
+	color:White;
+	border-radius: 1px
 }
 
 a{
 	color:#87CEEB
+}
+
+h2 a{
+	color:lightblue;
+}
+
+h2 a:hover{
+	color:white;
 }
 
 #iview  h2  {
@@ -881,7 +888,7 @@ text-transform: uppercase
 
 /*#zone2 .titlecontainer .blocktitle{margin:0px;}*/
 #zone2 .block .blocktitle{
-	margin:10px;
+	margin:0px;
 }
 
 #superfish-2 #menu-746-2 a {
@@ -1330,3 +1337,12 @@ padding-left: 10px;
 .view-office-org-chart-staff-directory{
 	padding:8px;
 }
+
+.ui-icon-triangle-1-e {
+	background-position: -32px -128px;
+}
+
+.ui-icon-triangle-1-s {
+	background-position: -64px -128px;
+}
+
