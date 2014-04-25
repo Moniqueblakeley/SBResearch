@@ -10,18 +10,16 @@
 }
 
 
-.dateIcon p
+.dateIcon p  
 {
-font-size: 15px; text-align: center; color: steelblue; ;
-	border-left: 5px solid ghostwhite;
+	font-size: 15px; 
+	text-align: center; 
+	color: steelblue;
 	padding:5px 0px;
 	background-color: silver;
-	color: black
-	
-	/* font-family: Helvetica, sans-serif; 
-	font-size: 14px; text-align: center; color: black; 
-	padding: 10px;
-	border-left:0px solid steelblue; */
+	color: black;
+	border-bottom: 1px solid darkgray;
+	border-top:2px solid #326891;
 }
 
 /*.dateIcon p span
@@ -74,17 +72,17 @@ font-size: 15px; text-align: center; color: steelblue; ;
 	/*background-color:khaki;*/
 	clear:both;
 	padding-right:10px;
-	margin:0px 0px 20px 0px
+	margin:0px 0px 20px 0px;
+
 }
 
 
 .trainingDateIcon p
 {
-	
-	font-size: 15px; text-align: center; color: steelblue; ;
-	border-left: 5px solid ghostwhite;
+	font-size: 15px; text-align: center; color: steelblue;
 	padding:5px 0px;
 	background-color: silver;
-	color: black
-	
+	color: black;
+	border-bottom: 1px solid darkgray;
+	border-top:2px solid #326891;
 }
