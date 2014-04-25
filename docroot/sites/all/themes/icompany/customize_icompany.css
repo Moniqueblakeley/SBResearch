@@ -14,7 +14,7 @@ html, body{
 	background-color:lightgrey;
 	font-size:12px;
 	line-height:1.6em;
-	background: url('http://stonybrook.edu/research/images/turkana.jpg') no-repeat 0px 0px ;
+/**	background: url('http://stonybrook.edu/research/images/turkana.jpg') no-repeat 0px 0px ; */
 	background-size:cover;
 	background-attachment: fixed;
 	
@@ -369,7 +369,10 @@ margin-bottom:20px
 	padding: 15px 20px;
 	}
 
-.view-subtopic-titles a {color: white; }
+.view-subtopic-titles a {
+	color: white;
+	display:block;
+}
 
 .view-subtopic-titles a:hover{color: white; text-decoration: underline; }
 
@@ -778,11 +781,15 @@ a {
 }
 
 select {
-	background-color: #F0E68C;
-	color: #000000;
+	background-color: #392150;
+	color: #FFFFFF;
 	font-weight: bold;
-	width: 600px;
-	border-radius:0px;
+	width: 100%;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
 	height:50px;
 	border:1px #A52A2A solid
 }
@@ -1067,7 +1074,6 @@ table.WhomToContact-Department {
 
     /*This selector adds a red border to each department table cell (header or data).*/
     table.WhomToContact-Department td, table.WhomToContact-Department th {
-            border: 0px solid #A52A2A;
             width: 25%;
         }
 
@@ -1079,7 +1085,7 @@ table.WhomToContact-Department {
         }
 		
 	.WhomToContact-Phone {
-	background-color:dimgrey;
+			background-color:dimgrey;
 			color:white}
 	
     /*This selector hides the rows with no person.*/
@@ -1096,24 +1102,40 @@ table.WhomToContact-Department {
     table.WhomToContact-Department tr[person]:not([person=""]):nth-child(even) {
             background: #F0F0F0;
         }
-
-
+	
+		.unbold a{
+			font-weight:bold;
+		}
+		
 /*used 670px because at a screen size lower than that, the phone numbers start to overflow to the next line*/		
 @media(max-width:670px){
 	table.WhomToContact-Department th.WhomToContact-Department{
 		display:block;
 	}
-	table.WhomToContact-Department th.WhomToContact-Phone{
-		display:block;
 	
+	table.WhomToContact-Department td, table.WhomToContact-Department th{
+		display:block;
 	}
 	
-	th#WhomToContact-Phone, th#WhomToContact-Email{
+	table.WhomToContact-Department th.WhomToContact-Phone{
 		display:none;
 	}
-	
 	table.WhomToContact-Department th.WhomToContact-Email{
-		display:block;
+		display:none;
+	}
+	table.WhomToContact-Department td, table.WhomToContact-Department th{
+		width:95%;
+		margin:auto;
+	}
+	
+	.WhomToContact-Title{
+		background-color: lightgray;
+		color:#392150;
+		border-top: 2px solid dimgray; 
+	}
+	
+	.unbold a{
+		font-weight:normal;
 	}
 }
 
@@ -1346,3 +1368,16 @@ padding-left: 10px;
 	background-position: -64px -128px;
 }
 
+#views_slideshow_cycle_teaser_section_clone_of_centers_and_institutes-block_3{
+	margin:auto;
+	width:100%;
+	height:auto;
+}
+
+.content#superfish-1-select{
+	padding:0px;
+}
+
+.staff-directory table thead th{
+	width:20%;
+}
