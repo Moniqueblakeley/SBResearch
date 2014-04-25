@@ -1,7 +1,7 @@
 /*
  * Put all your css customization codes here so that you can easily update version later
  */
- .redtitle{ 
+ .redtitle{
  	font-size: 14px;
  	background-color: darkred;
  	padding: 10px 10px;
@@ -11,10 +11,10 @@ html, body{
 	background-image:url('http://www.stonybrook.edu/research/newimages/sbrobg-short.png');
 	background-image:url('/sites/default/files/sbrobg.png'); 
 	background-repeat:repeat-x; 
-	background-color:lightgray;
+	background-color:lightgrey;
 	font-size:12px;
 	line-height:1.6em;
-	/**background: url('http://stonybrook.edu/research/images/turkana.jpg') no-repeat 0px 0px ;**/
+	background: url('http://stonybrook.edu/research/images/turkana.jpg') no-repeat 0px 0px ;
 	background-size:cover;
 	background-attachment: fixed;
 	
@@ -26,7 +26,7 @@ h2{
 	color:#000000;
 	-webkit-border-radius:1px;
 	font-size:16px;
-	color:##ED143D;
+	color:#ED143D;
 	border:0px solid #FFD700;
 	border-bottom:0px solid #ED143D;
 	border-top:0px solid #ED143D;
