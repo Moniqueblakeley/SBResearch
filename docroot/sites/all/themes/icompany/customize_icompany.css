@@ -781,7 +781,8 @@ a {
 }
 
 select {
-	background-color: #392150;
+	/* background-color: #392150; **/
+	background-color: #d2691e;
 	color: #FFFFFF;
 	font-weight: bold;
 	width: 100%;
