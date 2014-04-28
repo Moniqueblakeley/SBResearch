@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Put all your css customization codes here so that you can easily update version later
  */
  .redtitle{
@@ -513,8 +513,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li .active{
 
 .view-accordion-office-topic-quicktabview h3 {
 	background-image:none;
-	/* background-color:#F5F5F5; */
-		background-color:#000000;
+	background-color:#F5F5F5;
 	border-radius:0px;
 	padding:0px 10px 0px 15px;
 	border-right: 0px #e5e0dc solid;
