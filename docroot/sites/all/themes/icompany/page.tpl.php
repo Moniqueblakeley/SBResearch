@@ -416,7 +416,7 @@ $you_here = t("You are here: ");
 
 				<?php } ?>
 				</div>
-				<div class="span4"  style="float:right">
+				<div class="span4 pagesearch"  style="float:right">
 					<!--Search Block -->
 
 
