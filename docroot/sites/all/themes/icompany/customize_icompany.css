@@ -1602,15 +1602,16 @@ box-shadow: -1px 6px 11px -1px #BEBEBE;
 		}
 		.modern .details .title {
 			display: block;
-			height: 100px;
+			min-height:60px;
 			color: #900;
-			font-size: 14px;
+			font-size: 12px;
 			text-transform: none;
 			text-decoration: none;
 			margin-bottom: 10px;
 			text-shadow: 1px 1px 0 #fff;
 			overflow: hidden;
 			text-overflow: ellipsis;
+			white-space: pre-wrap;
 
 		}
 		.modern .details .description {
