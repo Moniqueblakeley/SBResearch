@@ -1540,6 +1540,7 @@ text-align:left
 		.modern .frame ul li {
 			float: left;
 			height: 95%;
+			min-height:200px;
 			margin:0px 30px 20px 0px;
 			border:1px solid #333;
 			background: #333;
