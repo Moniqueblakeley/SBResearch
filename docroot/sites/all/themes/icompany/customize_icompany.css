@@ -1434,8 +1434,8 @@ margin-top: -8px;
 }
 
 div.views-field.views-field-title.views-accordion-header.ui-accordion-header.ui-helper-reset.ui-state-default.ui-corner-all{
-background-color: lightgoldenrodyellow;
-border:1px solid khaki;
+/**background-color: lightgoldenrodyellow;
+border:1px solid khaki;**/
 margin:15px 0px;
 padding:10px;
 
