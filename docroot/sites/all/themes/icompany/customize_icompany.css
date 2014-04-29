@@ -36,7 +36,7 @@ h2{
 	margin-top:10px;
 	background-color: rgb(0,175,216);
 	background-color: #444;
-	color:White;
+	color:white;
 	border-radius: 1px
 }
 
@@ -369,14 +369,14 @@ margin-bottom:20px
 	}
 
 .view-subtopic-titles a {
-	color: white;
+	color: red;
 	display:block;
 }
 
-.view-subtopic-titles a:hover{color: white; text-decoration: underline; }
+.view-subtopic-titles a:hover{color: red; text-decoration: underline; }
 
 /*Changes the color of the current active subtopic title link on a topic page*/
-a.SbroTopicLink.active{
+a.sbrotopiclink.active{
 	color:#990000;
 
 
@@ -1090,7 +1090,7 @@ table.WhomToContact-Department {
 			color:white}
 	
     /*This selector hides the rows with no person.*/
-    table.WhomToContact-Department tr[person=] {
+    table.WhomToContact-Department tr[person=""] {
             display: none;
         }
     
