@@ -369,11 +369,11 @@ margin-bottom:20px
 	}
 
 .view-subtopic-titles a {
-	color: red;
+	color: white;
 	display:block;
 }
 
-.view-subtopic-titles a:hover{color: red; text-decoration: underline; }
+.view-subtopic-titles a:hover{color: white; text-decoration: underline; }
 
 /*Changes the color of the current active subtopic title link on a topic page*/
 a.sbrotopiclink.active{
@@ -1224,7 +1224,17 @@ table.WhomToContact-Department {
 	font-weight:bold;
 	border:1px solid khaki;
 	background-color: palegoldenrod;
-	
+	background: #d3eefb; /* Old browsers */
+	background: -moz-linear-gradient(left,  #d3eefb 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d3eefb), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #d3eefb 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #d3eefb 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #d3eefb 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to right,  #d3eefb 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3eefb', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	border-bottom:#D5EEFB 0px solid;
+	border-left: 5px solid #ED143D;
+	background-color:#FAFAD2;
 }
 
 
@@ -1243,7 +1253,8 @@ table.WhomToContact-Department {
 
 
 #officetopic .ui-accordion .ui-accordion-header a{
-	color:#333;
+/**	color:#333; **/
+color:#326891;
 	font-weight:bold
 	
 }
@@ -1434,8 +1445,8 @@ margin-top: -8px;
 }
 
 div.views-field.views-field-title.views-accordion-header.ui-accordion-header.ui-helper-reset.ui-state-default.ui-corner-all{
-background-color: lightgoldenrodyellow;
-border:1px solid khaki;
+/**background-color: lightgoldenrodyellow;
+border:1px solid khaki;**/
 margin:15px 0px;
 padding:10px;
 
