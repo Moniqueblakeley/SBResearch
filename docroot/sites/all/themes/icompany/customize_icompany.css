@@ -370,7 +370,7 @@ margin-bottom:20px
 
 .view-subtopic-titles a {
 	color: #black;
-	display:block; 
+/*	display:block; */
 }
 
 .view-subtopic-titles a:hover{color: black; text-decoration: underline; }
