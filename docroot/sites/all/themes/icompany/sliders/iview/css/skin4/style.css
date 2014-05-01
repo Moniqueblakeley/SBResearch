@@ -1,0 +1,159 @@
+.container {
+	display: block;
+	margin: 0px auto;
+}
+
+#iview {
+	display: block;
+	max-width: auto;
+	min-width: 300px;
+	background: #000;
+	
+	background: rgba(0, 0, 0, 0.3);
+	position: relative;
+	margin: 10px 10px;
+	overflow: hidden;
+background: #6d0019; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #6d0019 0%, #8f0222 69%, #a90329 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#6d0019), color-stop(69%,#8f0222), color-stop(100%,#a90329)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg,  #6d0019 0%,#8f0222 69%,#a90329 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg,  #6d0019 0%,#8f0222 69%,#a90329 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg,  #6d0019 0%,#8f0222 69%,#a90329 100%); /* IE10+ */
+background: linear-gradient(45deg,  #6d0019 0%,#8f0222 69%,#a90329 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d0019', endColorstr='#a90329',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background-image:url('/sites/default/files/slideshow-bg.png');
+
+}
+
+#iview .iviewSlider {
+	display: block;
+	width: auto;
+	height: 230px;
+	overflow: hidden;
+padding:0px;
+
+}
+
+
+
+#iview div.iview-directionNav {
+	position: absolute;
+	top: 47%;
+	left: 0px;
+	z-index: 9;
+	width: 100%;
+background: url('../../../../img/slider-caption-bg-dark.png');
+}
+
+#iview div.iview-directionNav a {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	background-image: url(../../img/bg_direction_nav_white.png);
+
+	text-indent: -9999px;
+	-webkit-transition: left 0.3s ease-in-out;
+	-webkit-transition-property: left,right;
+	-moz-transition: left 0.3s ease-in-out;
+	-moz-transition-property: left,right;
+	-o-transition: left 0.3s ease-in-out;
+	-o-transition-property: left,right;
+	-ms-transition: left 0.3s ease-in-out;
+	-ms-transition-property: left,right;
+	transition: left 0.3s ease-in-out;
+	transition-property: left,right;
+}
+
+#iview div.iview-directionNav a.iview-nextNav {
+	right: -27px;
+	background-position: 27px 0px;
+}
+
+#iview div.iview-directionNav a.iview-prevNav {
+	right: -27px;
+	background-position: 0px 0px
+}
+
+#iview.iview-hover div.iview-directionNav a.iview-nextNav {
+	right: 5px;
+}
+
+#iview.iview-hover div.iview-directionNav a.iview-prevNav {
+	right: 30px; 
+}
+
+.iview-caption {
+	background: url('../../../../img/slider-caption-bg-dark.png');
+	color: #fff;
+	padding: 20px 20px 20px 40px;
+	margin:5px;
+	margin-left:300px;
+font-size:10px
+	
+	/*text-shadow: #efefef 1px 1px 0px;*/
+	/*box-shadow: 0px 0px 5px #fff inset; */
+}
+
+@media screen and (max-width: 767px){
+	.iview-caption{
+		padding: 150px 15px 20px 40px;
+		background: none;
+		box-shadow: none;
+		color:white;
+	}	
+	
+		{
+		padding: 1px 10px;
+		background: url('../../../../img/slider-caption-bg-white.png');
+background:none;
+		box-shadow: 0px 0px 5px #efefef inset;
+		font-size: 18px;
+		color:White
+	}
+}
+
+
+
+.iview-caption h2{
+	font-size: 20px;
+	text-shadow: 0 1px 0 rgba(230,230,230, 0.4);
+	padding-bottom: 15px;
+	line-height: 25px
+}
+
+.iview-caption.caption1 {
+	text-shadow: none;
+
+}
+
+.iview-caption.caption2 {
+	background: #FFF;
+	color: #000;
+	text-shadow: none;
+
+}
+
+.iview-caption.caption3 {
+	background: #c4302b;
+	box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;
+	text-shadow: none;
+
+}
+
+#iview-preloader {
+	border: #666 1px solid;
+	width: 100px
+}
+
+#iview-preloader div {
+	background: #666;
+}
+#iview-timer {
+	border-radius: 10px;
+}
+
+#iview-timer div {
+	border-radius: 10px;
+}
