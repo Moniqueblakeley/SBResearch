@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Put all your css customization codes here so that you can easily update version later
  */
  .redtitle{
@@ -24,6 +24,7 @@ html, body{
 h2{
 	padding:2px 10px 15px 10px;
 	color:#000000;
+	-webkit-border-radius:1px;
 	font-size:16px;
 	color:#ED143D;
 	border:0px solid #FFD700;
@@ -35,11 +36,7 @@ h2{
 	margin-top:10px;
 	background-color: rgb(0,175,216);
 	background-color: #444;
-	color:white;
-	-webkit-border-radius:1px;
-	-moz-border-radius:1px;
-	-ms-border-radius:1px;
-	-o-border-radius:1px;
+	color:White;
 	border-radius: 1px
 }
 
@@ -86,18 +83,20 @@ h2 a:hover{
 	background-color:#d9ecff;
 	background-color:#F5F5F5;
 	background-color: firebrick;
+	padding:0px;
+	padding: 0px 0px 0px 0px;
 	text-transform: uppercase;
 	font-weight: bolder;
 	padding-left:75px;
 	margin-left:-35px;
 	border-bottom:0px solid #87CEEB;
+	-webkit-box-shadow: 0px 26px 110px -53px rgba(97,97,97,1);
 	-moz-box-shadow: 0px 26px 110px -53px rgba(97,97,97,1);
 	box-shadow: 0px 26px 110px -53px rgba(97,97,97,1);
 	margin-bottom:30px;
-	-moz-box-shadow: 0px 2px 10px 3px rgba(97,97,97,0.6);
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	box-shadow: 0px 2px 10px 3px rgba(97,97,97,0.6);
+	-moz-box-shadow:0px 2px 10px 3px rgba(97,97,97,0.6);
+	-webkit-box-shadow:0px 2px 10px 3px rgba(97,97,97,0.6);
 }
 
 .active_row{
@@ -238,8 +237,7 @@ padding:0px; margin-left: 0px
 }
 
 table td {
-border-top:0px;
-padding: 3px;
+border-top:0px
 }
 
 #block-system-main > div > div > div.panel-flexible.panels-flexible-1.clearfix > div > div.panels-flexible-1-left > div > div > div > div > div > div > div > div > table > tbody > tr  {
@@ -276,14 +274,14 @@ padding: 3px;
 	background:none
 }
 
-.faq-pages .ui-accordion .ui-accordion-content {
-background-color: oldlace;
-border:1px solid khaki
+.ui-accordion .ui-accordion-content {
+background-color: ghostwhite;
+border:1px solid #C0C0C0
 }
 
 .ui-corner-bottom {
-border-bottom-left-radius:10px;
--webkit-border-bottom-left-radius:10px
+border-bottom-left-radius:20px;
+-webkit-border-bottom-left-radius:20px
 }
 
 .ui-state-active a:link {
@@ -335,13 +333,8 @@ margin-bottom:20px
 .views-field-field-blurb-description {
 	margin:5px 5px 10px 20px
 } 
-.view-subtopic-titles table{
-margin-left:-35px
-}
+.view-subtopic-titles table{margin-left:-35px}
 
-.view-subtopic-titles a{
-	color:white;
-}
 
 .view-subtopic-titles table :before{
 
@@ -377,19 +370,18 @@ margin-left:-35px
 	}
 
 .view-subtopic-titles a {
+	color: white;
 	display:block;
 }
 
- .view-subtopic-titles a:hover{color: white; text-decoration: underline; 
- } 
+.view-subtopic-titles a:hover{color: white; text-decoration: underline; }
 
 /*Changes the color of the current active subtopic title link on a topic page*/
 a.SbroTopicLink.active{
-	color:#990000;	
-}
+	color:#990000;
 
-a.SbroTopicLink{
-	color: #FFFFFF;
+
+	
 }
 
 .view-subtopic-menu table tr {
@@ -543,7 +535,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li .active{
 	background: -o-linear-gradient(left,  #d3eefb 0%,#ffffff 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(left,  #d3eefb 0%,#ffffff 100%); /* IE10+ */
 	background: linear-gradient(to right,  #d3eefb 0%,#ffffff 100%); /* W3C */
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3eefb', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3eefb', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 }
 
 ul.pager li:hover{
@@ -675,7 +667,7 @@ ul.pager li:hover{
 	padding: 5px;
 	margin-bottom: 0px;
 	border-radius: 4px;
-	text-align: left;
+	text-align: right;
 }
 
 #edit-search-block-form--2 {
@@ -779,7 +771,7 @@ a {
 	background: -o-linear-gradient(left, rgba(254,210,129,1) 0%, rgba(255,239,214,1) 100%);
 	background: -ms-linear-gradient(left, rgba(254,210,129,1) 0%, rgba(255,239,214,1) 100%);
 	background: linear-gradient(to right, rgba(254,210,129,1) 0%, rgba(255,239,214,1) 100%);
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fed281', endColorstr='#ffefd6', GradientType=1 ); */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fed281', endColorstr='#ffefd6', GradientType=1 );
 	border:1px solid #FFD700;
 	padding:5px
 }
@@ -792,10 +784,6 @@ select {
 	/* background-color: #392150; **/
 	background-color: #F0E68C;
 	color: #000000;
-	/*
-	background-color: #333;
-	color: #FFFFFF;
-	*/
 	font-weight: bold;
 	width: 100%;
 	-webkit-border-radius:5px;
@@ -804,8 +792,7 @@ select {
 	-o-border-radius:5px;
 	border-radius:5px;
 	height:50px;
-	border:1px #A52A2A solid;
-	
+	border:1px #A52A2A solid
 }
 
 .subtitle {
@@ -868,7 +855,8 @@ background: #FdFdFd;
 -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
 box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
 padding: 15px;margin-bottom: 20px;
-font-size: 0.9em;
+font-size: 0.9em
+;
 background: #fdfdfd; /* Old browsers */
 background: -moz-linear-gradient(-45deg,  #fdfdfd 73%, #ededed 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right bottom, color-stop(73%,#fdfdfd), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
@@ -1092,14 +1080,14 @@ table.WhomToContact-Department {
 
     /*This selector increases the size of the department header.*/
     table.WhomToContact-Department th.WhomToContact-Department {
+            
 			background-color:dimgrey;
 			color:white
         }
 		
 	.WhomToContact-Phone {
 			background-color:dimgrey;
-			color:white
-			}
+			color:white}
 	
     /*This selector hides the rows with no person.*/
     table.WhomToContact-Department tr[person=""] {
@@ -1185,155 +1173,71 @@ table.WhomToContact-Department {
 
 /*----------------------- Simple Accordion Style Re-styling for mobile------------------------------------------*/
 
-
-
-.faq-block .ui-accordion .ui-accordion-header{
+.ui-accordion-header{
 	border:0px solid rgba(179,179,179,1);
-	background: -webkit-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -moz-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -ms-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -o-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
 	background: linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -webkit-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -moz-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -ms-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -o-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
 	background: linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#222222',GradientType=0 );*/
-	background:white;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#222222',GradientType=0 );
+	background:none;
 	font-weight:normal
+
 }
 
-.faq-block .ui-accordion .ui-accordion-header a{
-	color:#333;
-	font-weight:normal;
-}
-
-.faq-pages .ui-accordion .ui-accordion-header{
-	border:0px solid rgba(179,179,179,1);
-	background: -webkit-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -moz-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -ms-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -o-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -webkit-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -moz-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -ms-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -o-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#222222',GradientType=0 );*/
-	background:lightgoldenrodyellow;
-	font-weight:normal;
-}
-
-.faq-pages .ui-accordion .ui-accordion-header a{
-	color:#333;
-	font-weight:normal;
-}
 
 .ui-accordion .ui-accordion-header a{
 	color:#333;
-	font-weight:normal;
+	font-weight:normal
+	
 }
 
 .ui-accordion .ui-accordion-header.ui-state-active a{
 	color:tomato;
+	text-transform:uppercase;
 	font-weight:bold;
-	border:1px solid grey;
-	background: lightgoldenrodyellow;
-}
-
-.faq-pages .ui-accordion-header{
-	border:0px solid rgba(179,179,179,1);
-	background: -webkit-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -moz-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -ms-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -o-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -webkit-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -moz-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -ms-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -o-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#222222',GradientType=0 ); */
-	background:lightgoldenrodyellow;
-	font-weight:normal
-}
-
-.faq-pages .ui-accordion .ui-accordion-header a{
-	color:#333;
-	font-weight:normal
-}
-
-.faq-pages .ui-accordion .ui-accordion-header.ui-state-active a{
-	color:tomato;
-	font-weight:bold;
-	border:1px solid khaki;
-	background-color: palegoldenrod;
-}
-
-#officetopic .ui-accordion-header{
-	border:1px solid #ccc;
-	background: -webkit-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -moz-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -ms-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -o-linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -webkit-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -moz-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -ms-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: -o-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	background: linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#222222',GradientType=0 );*/
-	background:ghostwhite;
-	padding:3px;
-	font-weight:bold;
-	margin:5px 0px;
-}
-
-#officetopic .ui-accordion .ui-accordion-header a{
-	color:#333;
-	font-weight:bold
-}
-
-#officetopic .ui-accordion .ui-accordion-header.ui-state-active a{
-	color:tomato;
-	font-weight:bold;
-	border:0px solid khaki;
-	background-color: palegoldenrod;
+	border-top:3px solid tomato;
+	border-bottom:1px solid tomato;
 }
 
 .region-right-sidebar {
-	background-color: transparent;
+background-color: transparent;
+}
+
+
+
+.panel-pane{
+/*padding:5px 15px;
+ This is making everything shrink and squish so I commented it out. It was adding too much padding in total. -Dani
+*/
 }
 
 #quicktabs-container-for_researchers {
-	font-size:0.9em
+font-size:0.9em
+}
+
+.content img{
+/* border:1px solid silver;
+box-shadow: 1px 1px 10px #bbb 
+padding:5px;*/
 }
 
 .bottomofpage{background-color:lightgrey;
-	border-radius: 0px 0px;
-	color:black;
+border-radius: 0px 0px;
+color:black;
 }
 
 .bottomofpage h2{
-	color: gray;
-	background-color:transparent;
-	text-transform: uppercase;
-	text-shadow: -1px -1px 3px rgba (97,97,97,0.8);
+ color: gray;
+ background-color:transparent;
+ text-transform: uppercase;
+ text-shadow: -1px -1px 3px rgba (97,97,97,0.8);
+
 }
 
-.bottomofpage .panel-pane {
-	padding:20px
-}
+.bottomofpage .panel-pane {padding:20px}
 
-.bottomofpage .ui-accordion  a{
-	color:black;
-}
+.bottomofpage .ui-accordion  a{color:black;}
 
-.bottomofpage a {
-	color:black
-}
+.bottomofpage a {color:black}
 
 table stonybrookevents.td{
 	padding:0px;
@@ -1345,106 +1249,86 @@ table stonybrookevents.td{
 } 
 
 .homepage-audience {
-	background-color: white;
-	color: white;
-	font-size: 0.9em;
-	border-right: 10px solid white;
+background-color: white;
+color: white;
+font-size: 0.9em;
+border-right: 10px solid white;
 }
 
-.homepage-audience  a {
-	color: white
-}
+.homepage-audience  a {color: white}
 
 .homepage-bottom-row{
-	background-color: #E7ECEF;
-	background-color: #e2dfdb;
-	background: #ededed; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ededed 21%, #ededed 21%, #fdfdfd 85%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,#ededed), color-stop(21%,#ededed), color-stop(85%,#fdfdfd)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* W3C */
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#fdfdfd',GradientType=0 ); /* IE6-9 */ 
-}
+background-color: #E7ECEF;
+background-color: #e2dfdb;
+background: #ededed; /* Old browsers */
+background: -moz-linear-gradient(top,  #ededed 21%, #ededed 21%, #fdfdfd 85%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,#ededed), color-stop(21%,#ededed), color-stop(85%,#fdfdfd)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* IE10+ */
+background: linear-gradient(to bottom,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#fdfdfd',GradientType=0 ); /* IE6-9 */
 
+
+
+}
 .panels-flexible-column-first img {
-	border:0px;
-	padding: 0px; 
-	margin:0px;
-	margin-bottom: 10px;
+border:0px ;padding: 0px; margin:0px;margin-bottom: 10px;
+
 }
 
-.homepage-audience  .panel-pane {
-	padding: 0px; 
-	background-color: #fdfdfd; 
-	color: slategray; 
-	border: 1px solid #eee;
-	background: #FdFdFd;
-	-webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
-	-moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
-	-ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
-	-o-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
-	box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
-}
+
+.homepage-audience  .panel-pane {padding: 0px; background-color: #fdfdfd; color: slategray; border: 1px solid #eee ;
+background: #FdFdFd;
+-o-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+-webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+-moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;}
 
 .homepage-audience  .panel-pane a{color: slategray}
-
 .homepage-audience  .panel-pane td {padding:0px}
-
 .homepage-audience  .panel-pane p, ul {padding:0px 0px}
 
-.homepage-audience  .panel-pane  img {
-	box-shadow: none; 
-	padding:0px; 
-	margin: 0px
+.homepage-audience  .panel-pane  img {box-shadow: none; padding:0px; margin: 0px
 }
-
+.searchregion {}
 .panels-flexible-column-first  h2{
 
 }
 .searchregion{
-	background-color: white;
-}
+background-color: white;}
 
 .searchregion .panels-flexible-region-inside{}
 
 .panels-flexible-region-inside{padding:5px;}
-
 .panels-flexible-region-inside{padding:0px;}
-	
 .homepage-row2{
-	background-color: white;
-	border-top: 10px solid white; 
-	color: white;
-	border-right: 10px solid white;
-	padding-left: 10px;
+background-color: white;
+border-top: 10px solid white; 
+color: white;
+border-right: 10px solid white;
+padding-left: 10px;
+
+
 }
 
 .homepage-row2 a {color: white}
+.homepage-row2 a {color: white}
 
 .homepage-search {background-color: lightgoldenrodyellow; border:1px solid palegoldenrod; padding: 10px;text-align: left}
-
 #footer-bar {background: none;background-color: #900; color: wheat; font-size: 0.8em}
-
 #footer-region img {border: 0px; box-shadow: none;}
-
 #footer-region {background:none;background-color: #444; color: white; font-size: 0.9em; line-height: 2em; margin-top:25px}
-
 #footer-region a {color: white}
-
 .menu {padding: 10px;}
 
 #left-sidebar .menu  {background-color: firebrick; padding-left: 1em; color: white}
-
 #left-sidebar .menu a {background-color: firebrick; color: white}
-
 #left-sidebar .menu  .active{
 	background-color:#FFFFFF !important;
 	color:#008000;
 	padding-left:30px;
-	background: url('http://static.office-power.net/Images/dealers/TOR/ubn_arrow.png') no-repeat 2px 10px;
-}
+	background: url('http://static.office-power.net/Images/dealers/TOR/ubn_arrow.png') no-repeat 2px 10px;}
 	
 	
 .panel-flexible  .panel-separator{margin:0px;}
@@ -1477,28 +1361,6 @@ table stonybrookevents.td{
 	padding:8px;
 }
 
-.ui-accordion  .ui-accordion-header .ui-icon{
-	position: absolute;
-	right: 0.5em;
-	left:  inherit;
-	top: 50%;
-	margin-top: -8px;
-}
-
-div.views-field.views-field-title.views-accordion-header.ui-accordion-header.ui-helper-reset.ui-state-default.ui-corner-all{
-	/* background-color: lightgoldenrodyellow;
-	border:1px solid khaki; 
-	margin:15px 0px;*/
-	padding:5px;
-}
-
-.ui-accordion-icons .ui-accordion-header a {
-padding-right: 2.4em;
-padding-left:0em;
-}
-
-
-/* The following two changes make the triangle icons in the accordions into + and - signs*/ 
 .ui-icon-triangle-1-e {
 	background-position: -32px -128px;
 }
@@ -1519,237 +1381,4 @@ padding-left:0em;
 
 .staff-directory table thead th{
 	width:20%;
-}
-
-.view .date-nav-wrapper .date-prev {
-	margin-bottom:0px;
-	background-color: none;
-	background:none;
-}
-.view .date-nav-wrapper .date-next {
-	margin-bottom:0px;
-	background-color: none;
-	background:none;
-}
-
-.view .date-nav-wrapper .date-nav{
-	padding-bottom:0px;
-	margin-bottom:0px
-}
-
-table .mini-day-on {
-	text-decoration: none;
-	background-color: lightsteelblue;
-}
-
-table .mini-day-on a{
-	
-}
-
-.trainingDateIcon p{
-	background-color: lightsteelblue;
-}
-
-h2{
-	font-size:12px;
-}
-
-.calendar-calendar td {
-	text-align: center;
-}
-
-.pager a, .pager span {
-	border: 0px;
-	background-color: transparent;
-}
-
-.view .date-nav-wrapper .date-heading h3 {
-	line-height: 30px;
-	font-size: 1.4em;
-	background: khaki;
-}
-
-.pagesearch{
-	background-color: #ccc;
-	padding:10px;
-	border-bottom-left-radius:30px;
-	-webkit-border-bottom-left-radius:30px;
-	text-align:left
-}
-
-.pagesearch input {
-	margin-bottom:0px; 
-	padding-right:10px;
-	color: steelblue; 
-	font-weight: bold; 
-}
-
-
-/******* Mighty Slider: Modern *********/
-
-.modern .frame {
-			width: 100%;
-			height: 500px;
-			background-color: white;
-		}
-		.modern .frame ul {
-			list-style: none;
-			height: 100%;
-			padding: 0;
-			margin: 0;
-		}
-		.modern .frame ul li {
-			float: left;
-			height: 95%;
-			min-height:200px;
-			margin:0px 30px 20px 0px;
-			border:1px solid #333;
-			background: #333;
-			box-shadow: 2px 2px 5px 2px #ccc;
-			background: none repeat scroll 0 0 #FFFFFF;
-			border: 1px solid #CCCCCC;
-			box-shadow: -1px 6px 11px -1px #BEBEBE;
-		}
-		.modern .frame ul li img {
-			max-width: none;
-			margin-top:0px !important;
-		}
-		.modern .frame ul li .mSCover {
-			position: relative;
-		}
-		.modern .frame ul li .mSCover:after {
-			position: absolute;
-			content: '';
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			background-color: rgba(0, 0, 0, 0);
-			-webkit-transition: all 0.3s;
-				-ms-transition: all 0.3s;
-				 -o-transition: all 0.3s;
-					transition: all 0.3s;
-		}
-		.modern .frame ul li:hover .mSCover:after {
-			background-color: rgba(0, 0, 0, 0.6);
-		}
-		.modern.mSMedia .frame ul li:hover .mSCover:after {
-			display: none;
-		}
-		.modern .details {
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			background-color: rgba(0, 0, 0, 0.2);
-			background-color: white;
-			padding: 15px;
-			color: #900;
-
-			-webkit-box-sizing: border-box;
-			   -moz-box-sizing: border-box;
-			        box-sizing: border-box;
-
-			-webkit-transition: all 0.3s;
-				-ms-transition: all 0.3s;
-				 -o-transition: all 0.3s;
-					transition: all 0.3s;
-		}
-		.modern.mSMedia .details {
-			display: none;
-		}
-		.modern .frame ul li:hover .details {
-			background-color: rgba(0, 0, 0, 0.6);
-			background-color: white;
-		}
-		.modern .details .title {
-			display: block;
-			min-height:60px;
-			color: #900;
-			font-size: 12px;
-			text-transform: none;
-			text-decoration: none;
-			margin-bottom: 10px;
-			text-shadow: 1px 1px 0 #fff;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: pre-wrap;
-		}
-		.modern .details .description {
-			font-weight: 300;
-			height: 0;
-			overflow: hidden;
-			color: #D5D5D5;
-
-			-webkit-transition: all 0.3s;
-				-ms-transition: all 0.3s;
-				 -o-transition: all 0.3s;
-					transition: all 0.3s;
-		}
-		.modern .frame ul li:hover .details .description {
-			height: 60px;
-			margin-bottom: 10px;
-		}
-		.modern .details .counts {
-			display:none;
-			height: 0px;
-		}
-		.modern .details .counts a {
-			float: left;
-			color: #AAA;
-			font-size: 11px;
-			text-transform: uppercase;
-			margin-right: 15px;
-
-			-webkit-transition: all 0.3s;
-				-ms-transition: all 0.3s;
-				 -o-transition: all 0.3s;
-					transition: all 0.3s;
-		}
-		.modern .details .counts a:hover {
-			color: #FFF;
-			text-decoration: none;
-		}
-		.modern .details .counts a.more {
-			float: right;
-			opacity: 0;
-			filter: alpha(opacity=0);
-			margin: 0;
-		}
-		.modern .frame ul li:hover .details .counts a.more {
-			opacity: 1;
-			filter: alpha(opacity=100);
-		}	
-
-		.align-left{
-			text-align:left;
-			position:absolute;
-			left:0;
-		}
-		
-		.align-right{
-			text-align:right;
-			position:absolute;
-			right:0;
-		}
-		
-		.red{
-			color: darkred;
-		}
-		
-		.red a{
-			color:darkred;
-		}
-		
-.pagesearch input[type="text"] {
-	max-width:50%
-}
-
-.pagesearch input img {
-	margin-left:-20px
-}
-
-.controls1{
-	position: absolute;
-	top: 50%;
-	width: 100%;
 }
