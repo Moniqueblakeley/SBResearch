@@ -377,11 +377,11 @@ margin-left:-35px
 	}
 
 .view-subtopic-titles a {
-	color: #navy; 
+	color: navy; 
 	display:block;
 }
 
- .view-subtopic-titles a:hover{color: black; text-decoration: underline; 
+ .view-subtopic-titles a:hover{color: white; text-decoration: underline; 
  } 
 
 /*Changes the color of the current active subtopic title link on a topic page*/
@@ -727,7 +727,7 @@ caption{
 
 
 caption a, a:hover {
-	color: black;
+	color: white;
 }
 .caption-contain{
 	width:50% !important;
@@ -761,8 +761,7 @@ caption a, a:hover {
 }
 
 a {
-	/* color:#5F9EA0 */
-	color:black
+	color:#5F9EA0
 }
 
 .faq-content{padding-left:30px;}
