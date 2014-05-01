@@ -200,7 +200,6 @@
     
 	<!--[if lt IE 10]>
 		<link type="text/css" rel="/sites/all/themes/icompany/ie9-fix.css" />
-		<script type"text/javascript">alert("hello"); </script>
 	<![endif]-->
 	
 </head>
