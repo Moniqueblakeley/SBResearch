@@ -24,7 +24,6 @@ html, body{
 h2{
 	padding:2px 10px 15px 10px;
 	color:#000000;
-	-webkit-border-radius:1px;
 	font-size:16px;
 	color:#ED143D;
 	border:0px solid #FFD700;
@@ -37,6 +36,10 @@ h2{
 	background-color: rgb(0,175,216);
 	background-color: #444;
 	color:white;
+	-webkit-border-radius:1px;
+	-moz-border-radius:1px;
+	-ms-border-radius:1px;
+	-o-border-radius:1px;
 	border-radius: 1px
 }
 
@@ -273,7 +276,7 @@ padding: 3px;
 	background:none
 }
 
-.mainfaq .ui-accordion .ui-accordion-content {
+.faq-pages .ui-accordion .ui-accordion-content {
 background-color: oldlace;
 border:1px solid khaki
 }
@@ -332,8 +335,13 @@ margin-bottom:20px
 .views-field-field-blurb-description {
 	margin:5px 5px 10px 20px
 } 
-.view-subtopic-titles table{margin-left:-35px}
+.view-subtopic-titles table{
+margin-left:-35px
+}
 
+.view-subtopic-titles a{
+	color:white;
+}
 
 .view-subtopic-titles table :before{
 
@@ -364,16 +372,19 @@ margin-bottom:20px
 }
 
 .view-subtopic-titles table td { 
-	color: #black;
+	
 	padding: 15px 20px;
 	}
 
 .view-subtopic-titles a {
 	color: #black;
-/*	display:block; */
+	display:block;
 }
 
-.view-subtopic-titles a:hover{color: black; text-decoration: underline; }
+.view-subtopic-titles a:hover{
+/**color: white; **/
+color: black;
+text-decoration: underline; }
 
 /*Changes the color of the current active subtopic title link on a topic page*/
 a.SbroTopicLink.active{
@@ -408,15 +419,17 @@ color:#ED143D;
 	margin-top:0px
 }
 .views-field-title-1 {
-	font-weight:bold;
-	color:black
+	font-weight:bold
 } 
 
-.item-list ul li {
+
+	.item-list ul li {
 	margin:0em 0em 0em -2.5em; 
 	/*background: #d3eefb;  Old browsers */
 	border:0px
+	color:black;
 }
+
 
 .item-list ul li  .active{
 	margin:10px 0 0.25em -2.4em; 
@@ -1082,14 +1095,14 @@ table.WhomToContact-Department {
 
     /*This selector increases the size of the department header.*/
     table.WhomToContact-Department th.WhomToContact-Department {
-            
 			background-color:dimgrey;
 			color:white
         }
 		
 	.WhomToContact-Phone {
 			background-color:dimgrey;
-			color:white}
+			color:white
+			}
 	
     /*This selector hides the rows with no person.*/
     table.WhomToContact-Department tr[person=""] {
@@ -1175,61 +1188,68 @@ table.WhomToContact-Department {
 
 /*----------------------- Simple Accordion Style Re-styling for mobile------------------------------------------*/
 
-.ui-accordion-header{
+
+
+.faq-block .ui-accordion .ui-accordion-header{
 	border:0px solid rgba(179,179,179,1);
 	background: linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
 	background: linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#222222',GradientType=0 );
 	background:white;
 	font-weight:normal
-
 }
 
+.faq-block .ui-accordion .ui-accordion-header a{
+	color:#333;
+	font-weight:normal;
+}
+
+.faq-pages .ui-accordion .ui-accordion-header{
+	border:0px solid rgba(179,179,179,1);
+	background: linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
+	background: linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#222222',GradientType=0 );
+	background:lightgoldenrodyellow;
+	font-weight:normal;
+}
+
+.faq-pages .ui-accordion .ui-accordion-header a{
+	color:#333;
+	font-weight:normal;
+}
 
 .ui-accordion .ui-accordion-header a{
 	color:#333;
-	font-weight:normal
-	
+	font-weight:normal;
 }
 
 .ui-accordion .ui-accordion-header.ui-state-active a{
 	color:tomato;
-	
 	font-weight:bold;
 	border:1px solid grey;
-	background-color: ghostwhite;
-	
+	background: lightgoldenrodyellow;
 }
 
-
-
-.mainfaq .ui-accordion-header{
+.faq-pages .ui-accordion-header{
 	border:0px solid rgba(179,179,179,1);
 	background: linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
 	background: linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#222222',GradientType=0 );
 	background:lightgoldenrodyellow;
 	font-weight:normal
-
 }
 
-
-.mainfaq .ui-accordion .ui-accordion-header a{
+.faq-pages .ui-accordion .ui-accordion-header a{
 	color:#333;
 	font-weight:normal
-	
 }
 
-.mainfaq .ui-accordion .ui-accordion-header.ui-state-active a{
+.faq-pages .ui-accordion .ui-accordion-header.ui-state-active a{
 	color:tomato;
-	
 	font-weight:bold;
 	border:1px solid khaki;
 	background-color: palegoldenrod;
-	
 }
-
-
 
 #officetopic .ui-accordion-header{
 	border:1px solid #ccc;
@@ -1240,67 +1260,51 @@ table.WhomToContact-Department {
 	padding:3px;
 	font-weight:bold;
 	margin:5px 0px;
-
 }
-
 
 #officetopic .ui-accordion .ui-accordion-header a{
 	color:#333;
 	font-weight:bold
-	
 }
 
 #officetopic .ui-accordion .ui-accordion-header.ui-state-active a{
 	color:tomato;
-	
 	font-weight:bold;
 	border:0px solid khaki;
 	background-color: palegoldenrod;
-	
 }
-
-
 
 .region-right-sidebar {
-background-color: transparent;
-}
-
-
-
-.panel-pane{
-/*padding:5px 15px;
- This is making everything shrink and squish so I commented it out. It was adding too much padding in total. -Dani
-*/
+	background-color: transparent;
 }
 
 #quicktabs-container-for_researchers {
-font-size:0.9em
-}
-
-.content img{
-/* border:1px solid silver;
-box-shadow: 1px 1px 10px #bbb 
-padding:5px;*/
+	font-size:0.9em
 }
 
 .bottomofpage{background-color:lightgrey;
-border-radius: 0px 0px;
-color:black;
+	border-radius: 0px 0px;
+	color:black;
 }
 
 .bottomofpage h2{
- color: gray;
- background-color:transparent;
- text-transform: uppercase;
- text-shadow: -1px -1px 3px rgba (97,97,97,0.8);
-
+	color: gray;
+	background-color:transparent;
+	text-transform: uppercase;
+	text-shadow: -1px -1px 3px rgba (97,97,97,0.8);
 }
 
-.bottomofpage .panel-pane {padding:20px}
+.bottomofpage .panel-pane {
+	padding:20px
+}
 
-.bottomofpage .ui-accordion  a{color:black;}
+.bottomofpage .ui-accordion  a{
+	color:black;
+}
 
-.bottomofpage a {color:black}
+.bottomofpage a {
+	color:black
+}
 
 table stonybrookevents.td{
 	padding:0px;
@@ -1312,86 +1316,106 @@ table stonybrookevents.td{
 } 
 
 .homepage-audience {
-background-color: white;
-color: white;
-font-size: 0.9em;
-border-right: 10px solid white;
+	background-color: white;
+	color: white;
+	font-size: 0.9em;
+	border-right: 10px solid white;
 }
 
-.homepage-audience  a {color: white}
+.homepage-audience  a {
+	color: white
+}
 
 .homepage-bottom-row{
-background-color: #E7ECEF;
-background-color: #e2dfdb;
-background: #ededed; /* Old browsers */
-background: -moz-linear-gradient(top,  #ededed 21%, #ededed 21%, #fdfdfd 85%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,#ededed), color-stop(21%,#ededed), color-stop(85%,#fdfdfd)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* IE10+ */
-background: linear-gradient(to bottom,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#fdfdfd',GradientType=0 ); /* IE6-9 */
-
-
-
+	background-color: #E7ECEF;
+	background-color: #e2dfdb;
+	background: #ededed; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ededed 21%, #ededed 21%, #fdfdfd 85%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,#ededed), color-stop(21%,#ededed), color-stop(85%,#fdfdfd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ededed 21%,#ededed 21%,#fdfdfd 85%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#fdfdfd',GradientType=0 ); /* IE6-9 */
 }
+
 .panels-flexible-column-first img {
-border:0px ;padding: 0px; margin:0px;margin-bottom: 10px;
-
+	border:0px;
+	padding: 0px; 
+	margin:0px;
+	margin-bottom: 10px;
 }
 
-
-.homepage-audience  .panel-pane {padding: 0px; background-color: #fdfdfd; color: slategray; border: 1px solid #eee ;
-background: #FdFdFd;
--o-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
--webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
--moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;}
+.homepage-audience  .panel-pane {
+	padding: 0px; 
+	background-color: #fdfdfd; 
+	color: slategray; 
+	border: 1px solid #eee;
+	background: #FdFdFd;
+	-webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+	-moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+	-ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+	-o-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+	box-shadow: 0 4px 0 rgba(0, 0, 0, 0.02) inset, 0 -4px 0 rgba(0, 0, 0, 0.02) inset;
+}
 
 .homepage-audience  .panel-pane a{color: slategray}
+
 .homepage-audience  .panel-pane td {padding:0px}
+
 .homepage-audience  .panel-pane p, ul {padding:0px 0px}
 
-.homepage-audience  .panel-pane  img {box-shadow: none; padding:0px; margin: 0px
+.homepage-audience  .panel-pane  img {
+	box-shadow: none; 
+	padding:0px; 
+	margin: 0px
 }
-.searchregion {}
+
 .panels-flexible-column-first  h2{
 
 }
 .searchregion{
-background-color: white;}
+	background-color: white;
+}
 
 .searchregion .panels-flexible-region-inside{}
 
 .panels-flexible-region-inside{padding:5px;}
+
 .panels-flexible-region-inside{padding:0px;}
+	
 .homepage-row2{
-background-color: white;
-border-top: 10px solid white; 
-color: white;
-border-right: 10px solid white;
-padding-left: 10px;
-
-
+	background-color: white;
+	border-top: 10px solid white; 
+	color: white;
+	border-right: 10px solid white;
+	padding-left: 10px;
 }
 
 .homepage-row2 a {color: white}
-.homepage-row2 a {color: white}
 
 .homepage-search {background-color: lightgoldenrodyellow; border:1px solid palegoldenrod; padding: 10px;text-align: left}
+
 #footer-bar {background: none;background-color: #900; color: wheat; font-size: 0.8em}
+
 #footer-region img {border: 0px; box-shadow: none;}
+
 #footer-region {background:none;background-color: #444; color: white; font-size: 0.9em; line-height: 2em; margin-top:25px}
+
 #footer-region a {color: white}
+
 .menu {padding: 10px;}
 
 #left-sidebar .menu  {background-color: firebrick; padding-left: 1em; color: white}
+
 #left-sidebar .menu a {background-color: firebrick; color: white}
+
 #left-sidebar .menu  .active{
 	background-color:#FFFFFF !important;
 	color:#008000;
 	padding-left:30px;
-	background: url('http://static.office-power.net/Images/dealers/TOR/ubn_arrow.png') no-repeat 2px 10px;}
+	background: url('http://static.office-power.net/Images/dealers/TOR/ubn_arrow.png') no-repeat 2px 10px;
+}
 	
 	
 .panel-flexible  .panel-separator{margin:0px;}
@@ -1425,24 +1449,27 @@ padding-left: 10px;
 }
 
 .ui-accordion  .ui-accordion-header .ui-icon{
-
-position: absolute;
-right: 0.5em;
-left:  inherit;
-top: 50%;
-margin-top: -8px;
-
-
+	position: absolute;
+	right: 0.5em;
+	left:  inherit;
+	top: 50%;
+	margin-top: -8px;
 }
 
 div.views-field.views-field-title.views-accordion-header.ui-accordion-header.ui-helper-reset.ui-state-default.ui-corner-all{
-/* background-color: lightgoldenrodyellow;
-border:1px solid khaki; 
-*/
-margin:15px 0px;
-padding:10px;
-
+	/* background-color: lightgoldenrodyellow;
+	border:1px solid khaki; 
+	margin:15px 0px;*/
+	padding:5px;
 }
+
+.ui-accordion-icons .ui-accordion-header a {
+padding-right: 2.4em;
+padding-left:0em;
+}
+
+
+/* The following two changes make the triangle icons in the accordions into + and - signs*/ 
 .ui-icon-triangle-1-e {
 	background-position: -32px -128px;
 }
@@ -1466,68 +1493,70 @@ padding:10px;
 }
 
 .view .date-nav-wrapper .date-prev {
-margin-bottom:0px;
-background-color: none;
-background:none;
+	margin-bottom:0px;
+	background-color: none;
+	background:none;
 }
 .view .date-nav-wrapper .date-next {
-margin-bottom:0px;
-background-color: none;
-background:none;
+	margin-bottom:0px;
+	background-color: none;
+	background:none;
 }
 
 .view .date-nav-wrapper .date-nav{
-padding-bottom:0px;
-margin-bottom:0px
+	padding-bottom:0px;
+	margin-bottom:0px
 }
 
 table .mini-day-on {
-text-decoration: none;
-background-color: lightsteelblue;
-
-
+	text-decoration: none;
+	background-color: lightsteelblue;
 }
 
-
 table .mini-day-on a{
-text-decoration: none;
+	
 }
 
 .trainingDateIcon p{
-background-color: lightsteelblue;
+	background-color: lightsteelblue;
 }
 
-h2{font-size:12px;}
+h2{
+	font-size:12px;
+}
 
-.calendar-calendar td {text-align: center;}
+.calendar-calendar td {
+	text-align: center;
+}
 
 .pager a, .pager span {
-border: 0px;
-background-color: transparent;
-
+	border: 0px;
+	background-color: transparent;
 }
 
 .view .date-nav-wrapper .date-heading h3 {
-line-height: 30px;
-font-size: 1.4em;
-background: khaki;
+	line-height: 30px;
+	font-size: 1.4em;
+	background: khaki;
 }
 
 .pagesearch{
-background-color: #ccc;
-padding:10px;
-border-bottom-left-radius:30px;
--webkit-border-bottom-left-radius:30px;
-text-align:left
+	background-color: #ccc;
+	padding:10px;
+	border-bottom-left-radius:30px;
+	-webkit-border-bottom-left-radius:30px;
+	text-align:left
 }
 
-.pagesearch input {margin-bottom:0px; padding-right:10px;color: steelblue; font-weight: bold; }
+.pagesearch input {
+	margin-bottom:0px; 
+	padding-right:10px;
+	color: steelblue; 
+	font-weight: bold; 
+}
 
 
-
-
-
-/******* slider *********/
+/******* Mighty Slider: Modern *********/
 
 .modern .frame {
 			width: 100%;
@@ -1549,8 +1578,8 @@ text-align:left
 			background: #333;
 			box-shadow: 2px 2px 5px 2px #ccc;
 			background: none repeat scroll 0 0 #FFFFFF;
-border: 1px solid #CCCCCC;
-box-shadow: -1px 6px 11px -1px #BEBEBE;
+			border: 1px solid #CCCCCC;
+			box-shadow: -1px 6px 11px -1px #BEBEBE;
 		}
 		.modern .frame ul li img {
 			max-width: none;
@@ -1567,7 +1596,6 @@ box-shadow: -1px 6px 11px -1px #BEBEBE;
 			top: 0;
 			left: 0;
 			background-color: rgba(0, 0, 0, 0);
-
 			-webkit-transition: all 0.3s;
 				-ms-transition: all 0.3s;
 				 -o-transition: all 0.3s;
@@ -1616,8 +1644,6 @@ box-shadow: -1px 6px 11px -1px #BEBEBE;
 			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: pre-wrap;
-			
-
 		}
 		.modern .details .description {
 			font-weight: 300;
@@ -1685,9 +1711,16 @@ box-shadow: -1px 6px 11px -1px #BEBEBE;
 			color:darkred;
 		}
 		
-.pagesearch input[type="text"] {max-width:50%}
-.pagesearch input img {margin-left:-20px}
+.pagesearch input[type="text"] {
+	max-width:50%
+}
+
+.pagesearch input img {
+	margin-left:-20px
+}
+
 .controls1{
-position: absolute;
-top: 50%;
-width: 100%;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
