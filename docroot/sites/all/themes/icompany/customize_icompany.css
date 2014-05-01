@@ -475,9 +475,12 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a {
 
 }
 
+a, a:hover, .color:hover, ul.menu li a:hover, #footer-bar a:hover, #footer-region a, .btn.btn-plain {
+color: black;
+/*
 ul.menu li a:hover {
 color:black
-}
+} */
 
 ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
 	background-color:#F0E68C
