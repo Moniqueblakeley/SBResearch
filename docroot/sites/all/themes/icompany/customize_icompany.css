@@ -475,6 +475,10 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a {
 
 }
 
+ul.menu li a:hover {
+color:black
+}
+
 ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
 	background-color:#F0E68C
 }
