@@ -1,6 +1,6 @@
 	.view-mobile-researchers-term-{
 		display:none;
-	}
+			}
 	#block-block-92{
 		display:none;
 	}
@@ -9,4 +9,7 @@
 	}
 	#block-views-research-news-block-11{
 		display:none;
+	}
+	body{
+	color:magenta;
 	}
