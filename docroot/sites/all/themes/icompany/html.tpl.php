@@ -3,8 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
 
 <head profile="<?php print $grddl_profile; ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	
     <?php print $head ?>   
@@ -18,7 +17,10 @@
     <?php } ?>
     
     <?php  include_once drupal_get_path('theme', 'icompany') . "/includes/css_include.php"; ?>  
-
+ <!--[if lt IE 10]>
+		<link type="text/css" rel="ie9-fix.css" />
+	<![endif]-->
+	
     <!--[if lt IE 7]>
     <![endif]-->
     
@@ -198,9 +200,6 @@
     })(jQuery);
     </script>
     
-	<!--[if lt IE 10]>
-		<link type="text/css" rel="ie9-fix.css" />
-	<![endif]-->
 	
 </head>
 <body class="<?php print $classes; ?> icompany"  <?php print $attributes;?>>
