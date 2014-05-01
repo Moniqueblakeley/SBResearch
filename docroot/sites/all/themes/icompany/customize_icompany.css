@@ -761,7 +761,8 @@ caption a, a:hover {
 }
 
 a {
-	color:#5F9EA0
+	/* color:#5F9EA0 */
+	color:black
 }
 
 .faq-content{padding-left:30px;}
