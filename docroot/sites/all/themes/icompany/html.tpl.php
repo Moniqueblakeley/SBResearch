@@ -199,7 +199,7 @@
     </script>
     
 	<!--[if lt IE 10]>
-		<link type="text/css" rel="/sites/all/themes/icompany/ie9-fix.css" />
+		<link type="text/css" rel="ie9-fix.css" />
 	<![endif]-->
 	
 </head>
