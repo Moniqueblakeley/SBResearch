@@ -39,6 +39,7 @@
 			behavior: url(<?php print base_path() . path_to_theme() ?>/js/PIE.htc);
 		}
 		
+
 		header, nav, section, article, aside, footer {
 		   display:block;
 		}
@@ -53,6 +54,7 @@
 		</style>
 	<![endif]-->
 	
+
 	
 
     <?php print $scripts ?>
@@ -196,6 +198,10 @@
     })(jQuery);
     </script>
     
+	<!--[if lt IE 10]>
+		<link type="text/css" rel="/sites/all/themes/icompany/ie9-fix.css" />
+	<![endif]-->
+	
 </head>
 <body class="<?php print $classes; ?> icompany"  <?php print $attributes;?>>
   <?php print $page_top; ?>
