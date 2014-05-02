@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Put all your css customization codes here so that you can easily update version later
  */
  .redtitle{
@@ -380,7 +380,10 @@ margin-left:-35px
 	display:block;
 }
 
- .view-subtopic-titles a:hover{color: white; text-decoration: underline; 
+ .view-subtopic-titles a:hover
+ {
+ color: white; 
+ /* text-decoration: underline;    */
  } 
 
 /*Changes the color of the current active subtopic title link on a topic page*/
@@ -1584,7 +1587,7 @@ h2{
 	font-weight: bold; 
 }
 
-
+/* 
 /* /******* Mighty Slider: Modern *********/
 
 .modern .frame {
@@ -1738,7 +1741,7 @@ h2{
 		
 		.red a{
 			color:darkred;
-		} */
+		} */ */
 		
 .pagesearch input[type="text"] {
 	max-width:50%
