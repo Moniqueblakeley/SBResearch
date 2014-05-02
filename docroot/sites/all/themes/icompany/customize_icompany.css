@@ -375,12 +375,13 @@ margin-left:-35px
 	
 	padding: 15px 20px;
 	}
-
+/** please do not change these colors because some specific mobile links get affected. they start showing in white and are not visible to the user if color is changed back to white */
 .view-subtopic-titles a {
 	color: red;
 	display:block;
 }
 
+/** please do not change these colors because some specific mobile links get affected. they start showing in white and are not visible to the user if color is changed back to white */
  .view-subtopic-titles a:hover
  {
  color: black; 
@@ -1588,9 +1589,23 @@ h2{
 	font-weight: bold; 
 }
 
-/* 
-/* /******* Mighty Slider: Modern *********/
+	
+.pagesearch input[type="text"] {
+	max-width:50%
+}
 
+.pagesearch input img {
+	margin-left:-20px
+}
+
+.controls1{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+/* /******* Mighty Slider: Modern *********/
+/* 
 .modern .frame {
 			width: 100%;
 			height: 500px;
@@ -1742,18 +1757,4 @@ h2{
 		
 		.red a{
 			color:darkred;
-		} */ */
-		
-.pagesearch input[type="text"] {
-	max-width:50%
-}
-
-.pagesearch input img {
-	margin-left:-20px
-}
-
-.controls1{
-	position: absolute;
-	top: 50%;
-	width: 100%;
-}
+		}  */
