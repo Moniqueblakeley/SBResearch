@@ -18,7 +18,7 @@
 
     <?php  include_once drupal_get_path('theme', 'icompany') . "/includes/css_include.php"; ?>
  <!--[if lt IE 9]>
- <link href="/sites/all/themes/icompany/ie9-fix.css" type="text/css" rel="stylesheet"/>
+ <link href="/sites/all/themes/icompany/ie9-fix.css" type="text/css" rel="stylesheet" />
 					<![endif]-->
 
     <!--[if lt IE 7]>
