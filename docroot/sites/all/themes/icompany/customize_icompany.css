@@ -377,13 +377,14 @@ margin-left:-35px
 	}
 
 .view-subtopic-titles a {
+	color: white;
 	display:block;
 }
 
  .view-subtopic-titles a:hover
  {
- color: white; 
- /* text-decoration: underline;    */
+ color: black; 
+  text-decoration: underline;    
  } 
 
 /*Changes the color of the current active subtopic title link on a topic page*/
