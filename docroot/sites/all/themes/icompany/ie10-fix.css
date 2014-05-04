@@ -12,4 +12,9 @@
 	} 
 	view-nojs-subtopic-titles {
 	display:block_2;
-	}
+		}
+
+		body
+		{
+		color: magenta;
+		}
