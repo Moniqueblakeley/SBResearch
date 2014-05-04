@@ -10,11 +10,28 @@
 	#block-views-research-news-block-11{
 		display:none;
 	} 
-	view-nojs-subtopic-titles {
+	SbroTopicLink {
+	display:none;
+	}
+	
+	.view-subtopic-titles table tr { 
+	background-color:#FAFAD2;
+	 /* Old browsers */
+	font-size:1em;
+	padding: 25px 10px;
+	border-bottom:1px solid #EEE8AA;
+	border-bottom:1px solid tomato;
+	border-left: 25pxpx solid #FAFAD2;
+	background-color:#FAFAD2;
+	background-color: #red;
+	background-color: yell;
+}
+	
+	/* view-nojs-subtopic-titles {
 	display:block_2;
-		}
+		} */
 
 		body
 		{
-		color: magenta;
+		color: magenta
 		}
