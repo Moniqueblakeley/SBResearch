@@ -138,7 +138,7 @@ $you_here = t("You are here: ");
 			</div>
 		</div>
 
-		<div id="wap-menu" class="span7">
+		<div id="wap-menu">
 			<div class="pull-right main_menu_container">
 
 				<?php
