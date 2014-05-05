@@ -21,6 +21,8 @@
 	
  <!--[if lt IE 10]>
  <link href="/sites/all/themes/icompany/ie10-fix.css" type="text/css" rel="stylesheet" />
+ <script type"text/javascript">alert("hello"); </script>
+
 					<![endif]-->
 
     <!--[if lt IE 7]>
