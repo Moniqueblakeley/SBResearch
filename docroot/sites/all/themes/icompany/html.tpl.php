@@ -19,9 +19,10 @@
 
     <?php  include_once drupal_get_path('theme', 'icompany') . "/includes/css_include.php"; ?>
 	
- <!--[if lt IE 10]>
- <link href="/sites/all/themes/icompany/ie10-fix.css" type="text/css" rel="stylesheet" />
-					<![endif]-->
+	<!--[if lt IE 10]>
+		 <link href="/sites/all/themes/icompany/ie10-fix.css" type="text/css" rel="stylesheet" />
+		 <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+	<![endif]-->
 
     <!--[if lt IE 7]>
     <![endif]-->
