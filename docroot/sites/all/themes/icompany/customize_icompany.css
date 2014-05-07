@@ -902,6 +902,11 @@ background: linear-gradient(135deg,  #fdfdfd 73%,#ededed 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#ededed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.width280{
+width:280px;
+padding:20px;
+background-color: grey;
+}
 
 .homepageteasers .title{
 
