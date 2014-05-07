@@ -213,7 +213,7 @@ h2 a:hover{
 }
 
 .footer-inner {
-	padding:10px
+	padding:30px
 }
 
 #footer-note .inner{
@@ -1436,15 +1436,28 @@ table stonybrookevents.td{
 
 .homepage-row2 a {color: white}
 
-.homepage-search {background-color: lightgoldenrodyellow; border:1px solid palegoldenrod; padding: 10px;text-align: left}
+.homepage-search {
+	background-color: lightgoldenrodyellow; 
+	border:1px solid palegoldenrod; 
+	padding: 10px;
+	text-align: left;
+	margin-bottom:25px;
+}
 
 #footer-bar {background: none;background-color: #900; color: wheat; font-size: 0.8em}
 
 #footer-region img {border: 0px; box-shadow: none;}
 
-#footer-region {background:none;background-color: #444; color: white; font-size: 0.9em; line-height: 2em; margin-top:25px}
+#footer-region {
+	background:none;
+	background-color: #444; 
+	font-size: 0.9em; 
+	line-height: 2em; 
+}
 
-#footer-region a {color: white}
+#footer-region a {
+	color:#326891;
+}
 
 .menu {padding: 10px;}
 
