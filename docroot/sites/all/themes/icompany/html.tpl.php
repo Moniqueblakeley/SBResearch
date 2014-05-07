@@ -4,6 +4,9 @@
 
 <head profile="<?php print $grddl_profile; ?>">
    	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<!--[if lt IE 10]>
+		 <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+	<![endif]-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -21,7 +24,6 @@
 	
 	<!--[if lt IE 10]>
 		 <link href="/sites/all/themes/icompany/ie10-fix.css" type="text/css" rel="stylesheet" />
-		 <meta http-equiv="X-UA-Compatible" content="IE=8"/>
 	<![endif]-->
 
     <!--[if lt IE 7]>
