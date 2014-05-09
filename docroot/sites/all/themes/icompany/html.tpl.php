@@ -1,8 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
-
-<head profile="<?php print $grddl_profile; ?>">
+<head profile="<?php print $grddl_profile; ?>"> 
    	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<!--[if lt IE 10]>
 		 <meta http-equiv="X-UA-Compatible" content="IE=8"/>
