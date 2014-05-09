@@ -9,7 +9,17 @@
 	}
 	#block-views-research-news-block-11{
 		display:none;
-	} 
+	}
+	
+	#modern .frame {
+		position: relative;
+		overflow: hidden;
+	}
+	
+	#modern .frame .slide_element {
+		position: absolute;
+		width: 8896px;
+	}
 		
 	
 
