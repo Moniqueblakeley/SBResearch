@@ -295,7 +295,7 @@ border-bottom-left-radius:10px;
 }
 
 .ui-state-active a:link {
-color:#FF6347
+color:#FF6257
 }
 
 .view-FAQs h3 {
@@ -688,7 +688,7 @@ ul.pager li:hover{
 	padding: 5px;
 	margin-bottom: 0px;
 	border-radius: 4px;
-	text-align: left;
+	text-align: center;
 }
 
 #edit-search-block-form--2 {
@@ -1793,3 +1793,31 @@ h2{
 		.red a{
 			color:darkred;
 		}  */
+		
+/* /*******End Mighty Slider: Modern *********/
+
+.slideshow-region{
+	border-bottom: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+	background-position: top;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMV…HwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
+	/*background-color: aliceblue;
+	box-shadow: 0px 5px 5px lightgray, 0px -5px 5px lightgray;*/
+	-webkit-box-shadow: inset 0px 22px 25px -28px rgba(50, 104, 145,1),inset 0px -22px 25px -28px rgba(50, 104, 145,1);
+	-moz-box-shadow: inset 0px 22px 25px -28px rgba(50, 104, 145,1), inset 0px -22px 25px -28px rgba(50, 104, 145,1);
+	box-shadow: inset 0px 22px 25px -28px rgba(50, 104, 145,1), inset 0px -22px 25px -28px rgba(50, 104, 145,1);
+	
+}
+
+.slide{
+	margin-left:5%;
+}
+
+hr{
+	margin:15px 0;
+	margin-top:0px;
+	border-top: 1px solid lightgray;
+	border-bottom: none;
+
+}
