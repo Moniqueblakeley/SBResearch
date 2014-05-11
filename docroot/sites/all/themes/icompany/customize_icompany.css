@@ -908,6 +908,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 background:none;
 border: 0px solid #eee;
 border-bottom: 0px solid #900;
+font-size:0.9em
 }
 
 .width280{
@@ -1834,8 +1835,9 @@ hr{
 
 .audience-row-blocks{
 margin:0px -20px 40px -20px;
-padding: 20px;
-background-color: khaki;
+padding: 50px;
+background-color: whitesmoke;
+border-bottom:5px solid silver;
 
 }
 
