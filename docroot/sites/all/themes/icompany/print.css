@@ -9,7 +9,8 @@
 #footer-bar,
 #title-region .breadcrumb,
 #title-region .pagesearch,
-.loginlinks
+.loginlinks,
+#container-fluid .theme-border
 {
 	display: none;
 }
