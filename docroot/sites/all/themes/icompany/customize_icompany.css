@@ -1837,6 +1837,7 @@ hr{
 margin:0px -20px 40px -20px;
 padding: 50px;
 background-color: whitesmoke;
+background: -webkit-linear-gradient(#ebeff8,#f5f6f8),#f5f6f8;
 border-bottom:5px solid silver;
 
 }
