@@ -9,15 +9,20 @@
 }
 
 html, body{
-	background-image:url('http://www.stonybrook.edu/research/newimages/sbrobg-short.png');
-	background-image:url('/sites/default/files/sbrobg.png'); 
-	background-repeat:repeat-x; 
-	background-color:lightgrey;
+	
+	background-color:#666;
 	font-size:12px;
 	line-height:1.6em;
-	background: url('http://stonybrook.edu/research/images/turkana.jpg') no-repeat 0px 0px ;
-	background-size:cover;
-	background-attachment: fixed;
+	background: rgb(102,102,102); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(102,102,102,1) 22%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(22%,rgba(102,102,102,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(102,102,102,1) 22%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(102,102,102,1) 22%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(102,102,102,1) 22%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(102,102,102,1) 22%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+	
 }
 
 /*---Maximize area used for content on tablets and phones--*/
@@ -900,6 +905,10 @@ background: -o-linear-gradient(-45deg,  #fdfdfd 73%,#ededed 100%); /* Opera 11.1
 background: -ms-linear-gradient(-45deg,  #fdfdfd 73%,#ededed 100%); /* IE10+ */
 background: linear-gradient(135deg,  #fdfdfd 73%,#ededed 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#ededed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background:none;
+border: 0px solid #eee;
+border-bottom: 0px solid #900;
+font-size:0.9em
 }
 
 .width280{
@@ -1797,14 +1806,14 @@ h2{
 /* /*******End Mighty Slider: Modern *********/
 
 .slideshow-region{
-	border-bottom: 1px solid lightgray;
-	border-left: 1px solid lightgray;
-	border-right: 1px solid lightgray;
-	/*background-color: aliceblue;*/
+	border-bottom: 0px solid lightgray;
+	border-left: 0px solid lightgray;
+	border-right: 0px solid lightgray;
+	/*background-color: aliceblue;
 	-webkit-box-shadow: inset 0px 22px 25px -28px rgba(50, 104, 145,1),inset 0px -22px 25px -28px rgba(50, 104, 145,1);
 	-moz-box-shadow: inset 0px 22px 25px -28px rgba(50, 104, 145,1), inset 0px -22px 25px -28px rgba(50, 104, 145,1);
 	box-shadow: inset 0px 22px 25px -28px rgba(50, 104, 145,1), inset 0px -22px 25px -28px rgba(50, 104, 145,1);
-	
+	*/
 }
 
 .slide{
@@ -1823,3 +1832,22 @@ hr{
 	position: relative;
 	overflow: hidden;
 }
+
+.audience-row-blocks{
+margin:0px -20px 40px -20px;
+padding: 50px;
+background-color: whitesmoke;
+background: -webkit-linear-gradient(#ebeff8,#f5f6f8),#f5f6f8;
+border-bottom:5px solid silver;
+
+}
+
+
+.slider-row-adnan{
+margin:-20px -20px 0px -20px;
+padding: 20px;
+background-color: firebrick;
+border-bottom:5px solid darkred;
+
+}
+

@@ -27,6 +27,9 @@ body.toolbar-drawer {
 	padding: 0 !important;
 	width: 90%;
 	margin: auto;
+	max-width:1150px;
+	
+	
 }
 
 form button, form input[type="button"], form input[type="reset"], form input[type="submit"] {
@@ -1393,7 +1396,7 @@ span.icon-circle-light-facebook {
 /* CONTENT ZONE ----------------- */
 
 #zone2{
-	padding-top: 22px;
+	padding-top: 20px;
 }
 
 #zone2 .block {
