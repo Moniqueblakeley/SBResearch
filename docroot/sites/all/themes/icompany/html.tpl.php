@@ -8,7 +8,7 @@
 	
 	<!-- Print CSS -->
 	<style type="text/css" media="screen, print">
-		@import url("http://localhost:8085/sites/all/themes/icompany/print.css?n5gp4y");
+		@import url("sites/all/themes/icompany/print.css?n5gp4y");
 	</style>
 	
     <?php print $head ?>

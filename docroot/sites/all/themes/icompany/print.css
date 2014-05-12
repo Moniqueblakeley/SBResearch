@@ -1,6 +1,16 @@
 @media print {
 
-#superfish-1 {
+#superfish-1, 
+#content-region .tabs, 
+#adnan_superfish .region, 
+#block-system-main .panels-flexible-column-98-3,
+#block-system-main .panels-flexible-column-98-5,
+#footer-region,
+#footer-bar,
+#title-region .breadcrumb,
+#title-region .pagesearch,
+.loginlinks
+{
 	display: none;
 }
 
