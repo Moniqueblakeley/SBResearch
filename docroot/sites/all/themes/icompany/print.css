@@ -9,11 +9,16 @@
 #footer-bar,
 #title-region .breadcrumb,
 #title-region .pagesearch,
-#title-region .theme-border,
-#container-fluid .theme-border
-.loginlinks,
-{
-	display: none;
-}
+#block-feedback-form .feedback-link,
+#block-feedback-form .feedback-processed
+	{
+		display: none;
+	}
+	
+	#page-wrapper .container-fluid .theme-border
+	{
+	border: 0px;
+	margin: 0px;
+	}
 
 }
