@@ -15,7 +15,7 @@ stylesheets[all][] = css/jquery.selectbox.css
 stylesheets[all][] = css/font-awesome.css
 stylesheets[all][] = css/videoGallery_scroll2.css
 stylesheets[screen][] = css/captions.css
-
+stylesheets[screen][] = css/videoGallery_buttons2.css
 ; scripts
 scripts[] = js/scripts.js
 scripts[] = js/mightyslider.min.js
