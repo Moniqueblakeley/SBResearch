@@ -34,6 +34,7 @@ scripts[] = js/captionator.js
 scripts[] = js/jquery.func.js
 scripts[] = js/jquery.vg.func.js
 scripts[] = js/jquery.videoGallery.min.js
+scripts[] = js/jquery.vg.settings_buttons2.js
 
 ; Important Drupal regions
 regions[help] = Help
