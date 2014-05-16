@@ -20,7 +20,11 @@ stylesheets[screen][] = css/videoGallery_buttons2.css
 
 scripts[] = js/swfobject.js 
 scripts[] = js/jquery.mobile-events.min.js
-
+scripts[] = js/captionator.js
+scripts[] = js/jquery.func.js
+scripts[] = js/jquery.vg.func.js
+scripts[] = js/jquery.videoGallery.min.js
+scripts[] = js/jquery.vg.settings_buttons2.js
 
 
 ; Important Drupal regions
