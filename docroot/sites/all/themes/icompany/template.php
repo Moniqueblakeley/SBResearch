@@ -71,27 +71,6 @@ function get_google_css_string(){
 	return $google_css_string;
 }
 
-function icompany(&$vars, $hook)
-{
-         if ($vars['is_front'])
-         {
-         drupal_add_js('theme', 'icompany') . '/js/swfobject.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.mobile-events.min.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.dotdotdot-1.5.1.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.address.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.mousewheel.min.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.jscrollpane.min.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.selectbox-0.2.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.apPlaylistManager.min.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.apYoutubePlayer.min.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/captionator.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.func.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.vg.func.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		 	drupal_add_js('theme', 'icompany') . '/js/jquery.videoGallery.min.js', array('type' => 'file', 'scope' => 'header', 'group' => 'JS_LIBRARY', 'weight' => 25));
-		}
-
-}
-
 function get_googlefont_style_code(){
 
 	?>
