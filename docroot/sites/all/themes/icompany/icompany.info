@@ -39,6 +39,8 @@ scripts[] = js/jquery.videoGallery.min.js
 scripts[] = js/jquery.apPlaylistManager.min.js
 scripts[] = js/jquery.vg.settings_buttons2.js
 scripts[] = js/jquery.easing.1.3.js
+scripts[] = js/jquery.easing.1.3.js
+scripts[] = js/jquery-1.10.2.min.js
 
 ; Important Drupal regions
 regions[help] = Help
