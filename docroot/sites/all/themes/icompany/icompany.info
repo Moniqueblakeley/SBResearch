@@ -27,6 +27,14 @@ scripts[] = js/jquery.videoGallery.min.js
 scripts[] = js/jquery.vg.settings_buttons2.js
 
 
+scripts[] = js/jquery.jscrollpane.min.js
+scripts[] = js/jquery.selectbox-0.2.js
+scripts[] = http://www.youtube.com/player_api 
+scripts[] = js/jquery.apPlaylistManager.min.js
+scripts[] = js/jquery.apYoutubePlayer.min.js
+scripts[] = js/jquery.vg.settings_scroll2.js
+
+
 ; Important Drupal regions
 regions[help] = Help
 regions[content] = content
