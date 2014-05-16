@@ -37,6 +37,7 @@ scripts[] = js/jquery.vg.settings_scroll2.js
 scripts[] = js/jquery.dotdotdot-1.5.1.js
 scripts[] = js/jquery.address.js
 scripts[] = js/jquery.mousewheel.min.js
+scripts[] = js/jquery-1.10.2.min.js
 
 ; Important Drupal regions
 regions[help] = Help
