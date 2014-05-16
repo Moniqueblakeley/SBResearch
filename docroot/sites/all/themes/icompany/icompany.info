@@ -34,6 +34,9 @@ scripts[] = js/jquery.apPlaylistManager.min.js
 scripts[] = js/jquery.apYoutubePlayer.min.js
 scripts[] = js/jquery.vg.settings_scroll2.js
 
+scripts[] = js/jquery.dotdotdot-1.5.1.js
+scripts[] = js/jquery.address.js
+scripts[] = js/jquery.mousewheel.min.js
 
 ; Important Drupal regions
 regions[help] = Help
