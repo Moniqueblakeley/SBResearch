@@ -2582,7 +2582,12 @@ ul.secondary-menu {
 	background: none;
 	padding: 0 0 0 2px;
 	border-bottom: none;
-	line-height: 28px;
+	line-height: 2em;
+}
+
+#block-block-4  .content p {
+	margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 #footer-region ul.menu li a {
