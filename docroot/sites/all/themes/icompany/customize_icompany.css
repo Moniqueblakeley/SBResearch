@@ -1,5 +1,5 @@
 /*
- * Put all your css customization codes here so that you can easily update version later   
+ * Put all your css customization codes here so that you can easily update version later
  */
  .redtitle{
  	font-size: 14px;
@@ -1825,7 +1825,7 @@ hr{
 	border-bottom: none;
 
 }
-	
+	   
 .modern .frame {
 	position: relative;
 	overflow: hidden;
@@ -1849,13 +1849,11 @@ border-bottom:5px solid darkred;
 
 }
 
-.office-bottom-panel{
+.office-page-bottom
+{
 margin: 0px -20px;
-padding:0px;
 background-color: lightgoldenrodyellow;
 padding: 50px 20px;
 border-top: 5px solid khaki;
 border-bottom:0px;
 }
-
-
