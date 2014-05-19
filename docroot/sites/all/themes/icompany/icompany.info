@@ -11,6 +11,15 @@ stylesheets[all][] = token-input.css
 stylesheets[all][] = token-input-facebook.css
 stylesheets[all][] = mightyslider.css
 
+
+stylesheets[all][] = css/jquery.jscrollpane.css
+stylesheets[all][] = css/jquery.selectbox.css
+stylesheets[all][] = css/font-awesome.css
+stylesheets[all][] = css/videoGallery_scroll2.css
+stylesheets[screen][] = css/captions.css
+stylesheets[screen][] = css/videoGallery_buttons2.css
+
+
 ; Important Drupal regions
 regions[help] = Help
 regions[content] = content
