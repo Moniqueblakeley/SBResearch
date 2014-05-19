@@ -13,7 +13,7 @@ stylesheets[all][] = mightyslider.css
 stylesheets[all][] = css/jquery.jscrollpane.css
 stylesheets[all][] = css/jquery.selectbox.css
 stylesheets[all][] = css/font-awesome.css
-stylesheets[all][] = css/videoGallery_scroll2.css
+stylesheets[all][] = css/videoGallery_buttons2.css
 stylesheets[screen][] = css/captions.css
 
 
