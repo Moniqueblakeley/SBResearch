@@ -2867,7 +2867,6 @@
 		}else{
 			if((typeof getFlashMovie(flashPreview) !== "undefined") && (getFlashMovie(flashPreview).pb_dispose))getFlashMovie(flashPreview).pb_dispose();
 			//flashPreviewHolder.css('display','none');
-			//testing git 2
 			flashPreviewHolder.css('left',-10000+'px');//fix for safari problem above (display: none)
 			if(current_wall_yt_blocker) current_wall_yt_blocker.css('left',-10000+'px');
 			if(yt_overlay_blocker)yt_overlay_blocker.css('left',-10000+'px');
