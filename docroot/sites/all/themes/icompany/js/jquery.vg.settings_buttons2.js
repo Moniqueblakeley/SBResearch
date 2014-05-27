@@ -64,7 +64,7 @@ var vplp_settings = {
 	/*defaultVolume: 0-1 */
 	defaultVolume:0.5,
 	/*autoPlay: true/false (defaults to false on mobile)*/
-	autoPlay:true,
+	autoPlay:false,
 	/*randomPlay: true/false */
 	randomPlay:false,
 	/* loopingOn: on playlist end rewind to beginning (last item in playlist) */

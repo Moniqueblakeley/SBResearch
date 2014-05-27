@@ -3644,7 +3644,7 @@
 		videoInited=true;
 		
 		checkInfo();
-		autoPlay=true;
+		autoPlay=false;
 		showControls();
 		
 		if(captionsExist){
