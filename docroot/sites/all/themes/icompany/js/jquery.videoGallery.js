@@ -2865,7 +2865,7 @@
 				wallLayoutInited=false;
 			}
 		}else{
-			if(typeof getFlashMovie(flashPreview) !== "undefined")getFlashMovie(flashPreview).pb_dispose();
+			if(typeof getFlashMovie(flashPreview) !== "undefined")getFlashMovie(flashPreview) = null;//getFlashMovie(flashPreview).pb_dispose();
 			//flashPreviewHolder.css('display','none');
 			flashPreviewHolder.css('left',-10000+'px');//fix for safari problem above (display: none)
 			if(current_wall_yt_blocker) current_wall_yt_blocker.css('left',-10000+'px');
@@ -3286,14 +3286,14 @@
 					if(useCaptions && video)video.removeAttr('id').removeClass('captioned');
 				}
 			}else{
-				if(typeof getFlashMovie(flashMain) !== "undefined")getFlashMovie(flashMain).pb_dispose();
+				if(typeof getFlashMovie(flashMain) !== "undefined")getFlashMovie(flashMain) = null;//getFlashMovie(flashMain).pb_dispose();
 			}
 		}else if(mediaType && mediaType == 'youtube_single' || mediaType && mediaType == 'youtube_playlist'){
 			if(html5Support){
 				if(_youtubePlayer) _youtubePlayer.stop();
 				youtubeIframeMain.css('left', -10000+'px');
 			}else{
-				if(typeof getFlashMovie(flashMain) !== "undefined")getFlashMovie(flashMain).pb_dispose();
+				if(typeof getFlashMovie(flashMain) !== "undefined")getFlashMovie(flashMain) = null;//getFlashMovie(flashMain).pb_dispose();
 			}
 		}	
 		
