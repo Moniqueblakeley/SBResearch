@@ -3948,6 +3948,7 @@
 	
 	function getFlashMovie(name) {
 		if(name.charAt(0)=='#')name = name.substr(1);//remove'#'
+		window.alert(navigator.appName);
 		return (navigator.appName.indexOf("Microsoft") != -1) ? window[name] : document[name];
 	}	
 	
