@@ -5,6 +5,10 @@
 */
 .ui-accordion h3.ui-accordion-header { overflow:hidden; }
 
+.ui-accordion-content {
+	overflow: auto !important;
+}
+
 /*
  * Fix issues with anchor tags for rdf in field items within the headers
  */
