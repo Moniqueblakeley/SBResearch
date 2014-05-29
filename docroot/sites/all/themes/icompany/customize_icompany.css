@@ -1227,6 +1227,7 @@ table.WhomToContact-Department {
 	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#222222',GradientType=0 );*/
 	background:white;
 	font-weight:normal;
+	font-size: 1em;
 	font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
