@@ -297,7 +297,7 @@
 	//buttons
 	var thumbBackward, thumbForward;
 	var _thumbScrollIntervalID;
-	var _thumbsScrollValue=10;	
+	var _thumbsScrollValue=3;	
 	var _thumbForwardSize;
 	var _thumbBackwardSize;
 	var _thumbInnerContainerSize, thumbInnerContainer;
