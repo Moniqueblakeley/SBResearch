@@ -508,6 +508,10 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
 	background-position: -22px -3px
 }
 
+#content-region .quicktabs-tabs li {
+	margin-left: -36px;
+}
+
 .quicktabs_main.quicktabs-style-phylactere {
 	box-shadow:none;
 	-webkit-box-shadow:none
