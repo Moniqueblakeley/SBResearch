@@ -297,7 +297,7 @@
 	//buttons
 	var thumbBackward, thumbForward;
 	var _thumbScrollIntervalID;
-	var _thumbsScrollValue=50;	
+	var _thumbsScrollValue=10;	
 	var _thumbForwardSize;
 	var _thumbBackwardSize;
 	var _thumbInnerContainerSize, thumbInnerContainer;
@@ -1018,7 +1018,7 @@
 			.bind(_downEvent, function(){
 				if(!_componentInited || _playlistTransitionOn) return false;
 				if(_thumbScrollIntervalID) clearInterval(_thumbScrollIntervalID);
-				_thumbScrollIntervalID = setInterval(function() { _scrollThumbsBack(); }, 100);
+				_thumbScrollIntervalID = setInterval(function() { _scrollThumbsBack(); }, 5);
 				return false;
 			}).bind(_upEvent, function(){
 				if(_thumbScrollIntervalID) clearInterval(_thumbScrollIntervalID);
@@ -1029,7 +1029,7 @@
 			.bind(_downEvent, function(){
 				if(!_componentInited || _playlistTransitionOn) return false;
 				if(_thumbScrollIntervalID) clearInterval(_thumbScrollIntervalID);
-				_thumbScrollIntervalID = setInterval(function() { _scrollThumbsForward(); }, 100);
+				_thumbScrollIntervalID = setInterval(function() { _scrollThumbsForward(); }, 5);
 				return false;
 			}).bind(_upEvent, function(){
 				if(_thumbScrollIntervalID) clearInterval(_thumbScrollIntervalID);
@@ -3948,7 +3948,6 @@
 	
 	function getFlashMovie(name) {
 		if(name.charAt(0)=='#')name = name.substr(1);//remove'#'
-		window.alert(navigator.appName);
 		return (navigator.appName.indexOf("Microsoft") != -1) ? window[name] : document[name];
 	}	
 	
