@@ -509,7 +509,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a:hover {
 }
 
 #content-region .quicktabs-tabs li {
-	margin-left: -36px !important;
+	margin-left: -36px;
 }
 
 .quicktabs_main.quicktabs-style-phylactere {
