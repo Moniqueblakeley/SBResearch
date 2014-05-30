@@ -357,6 +357,11 @@ margin-left:-36px
 	color:white;
 }
 
+#quickset-faculty_wall .ui-accordion-content {
+	overflow: auto !important;
+	height: auto !important;
+}
+
 .view-subtopic-titles table :before {
 
 	position:absolute;
