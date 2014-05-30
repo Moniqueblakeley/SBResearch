@@ -348,27 +348,29 @@ margin-bottom:20px
 .views-field-field-blurb-description {
 	margin:5px 5px 10px 20px
 } 
+
 .view-subtopic-titles table{
-margin-left:-35px
+margin-left:-36px
 }
 
 .view-subtopic-titles a{
 	color:white;
 }
 
-.view-subtopic-titles table :before{
+.view-subtopic-titles table :before {
 
 	position:absolute;
 	background-image:url('/sites/default/files/ribbonangles-inverted.png'); 
 	top: -12px;
 	right: auto;
-	left: -36px;
+	left: -16px;
 	content: "";
 	width: 16px;
 	height: 12px;
 	background-color: transparent;
 	background-repeat: no-repeat;
-	background-position: -22px -3px}
+	background-position: -22px -3px
+}
 
 
 .view-subtopic-titles table tr { 

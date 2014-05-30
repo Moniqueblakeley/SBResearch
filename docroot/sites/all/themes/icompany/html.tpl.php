@@ -58,6 +58,10 @@
 		.portfolio-hover{
 			display:none;
 		}
+		
+		.view-subtopic-titles table :before {
+			left: -36px !important;
+		}
 		</style>
 	<![endif]-->
 
