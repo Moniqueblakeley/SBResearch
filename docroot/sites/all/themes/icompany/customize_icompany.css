@@ -318,6 +318,12 @@ color:white}
 	border:0px
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.view-subtopic-titles table :before {
+			left: -36px !important;
+	}
+}
+
 #adnan_superfish {
 	margin-top:0px;
 	width:100%
