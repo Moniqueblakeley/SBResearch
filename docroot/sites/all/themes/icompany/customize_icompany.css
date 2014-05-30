@@ -362,6 +362,15 @@ margin-left:-36px
 	height: auto !important;
 }
 
+#quickset-faculty_wall .content {
+	font-size: 11px;
+	font-family: verdana,arial,helvetica,sans-serif;
+}
+
+#quickset-research_compliance_forms .td {
+	font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .view-subtopic-titles table :before {
 
 	position:absolute;
