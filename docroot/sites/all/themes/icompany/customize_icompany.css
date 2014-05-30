@@ -367,8 +367,10 @@ margin-left:-36px
 	font-family: verdana,arial,helvetica,sans-serif;
 }
 
-#quickset-research_compliance_forms .td {
-	font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+#block-system-main .contextual-links-region td {
+	font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	overflow: auto !important;
+	height: auto !important;
 }
 
 .view-subtopic-titles table :before {
