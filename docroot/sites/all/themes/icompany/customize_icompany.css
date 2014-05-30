@@ -357,6 +357,11 @@ margin-left:-36px
 	color:white;
 }
 
+#block-system-main .ui-accordion-content {
+	overflow: auto !important;
+	height: auto !important;
+}
+
 #quickset-faculty_wall .ui-accordion-content {
 	overflow: auto !important;
 	height: auto !important;
