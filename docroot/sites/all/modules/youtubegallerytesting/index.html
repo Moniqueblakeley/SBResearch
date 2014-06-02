@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>YoutubeVideoGalleryTesting</title>
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="sites/all/modules/youtubegallerytesting/css/captions.css"/><!-- captions -->
+        <link rel="stylesheet" type="text/css" href="sites/all/modules/youtubegallerytesting/css/jquery.jscrollpane.css" media="all" /><!-- scroll -->
+        <link rel="stylesheet" type="text/css" href="sites/all/modules/youtubegallerytesting/css/tooltipster.css" /><!-- tooltip -->
+        <link rel="stylesheet" type="text/css" href="sites/all/modules/youtubegallerytesting/css/jquery.selectbox.css" /><!-- dropdown playlist selector -->
+        <link rel="stylesheet" type="text/css" href="sites/all/modules/youtubegallerytesting/css/font-awesome.css" /><!-- icons -->
+		<link rel="stylesheet" type="text/css" href="sites/all/modules/youtubegallerytesting/css/videoGallery_buttons2.css" />
+        <!--[if lte IE 8 ]><link rel="stylesheet" type="text/css" href="sites/all/modules/youtubegallerytesting/css/ie_below_9.css" /><![endif]-->
+           
+		<script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/swfobject.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.mobile-events.min.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.dotdotdot-1.5.1.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.address.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.jscrollpane.min.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.selectbox-0.2.js"></script>
+        <script type="text/javascript" src="http://www.youtube.com/player_api"></script> 
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.apPlaylistManager.min.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.apYoutubePlayer.min.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.vg.settings_buttons2.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/captionator.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.func.js"></script>
+        <script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.vg.func.js"></script>
+		<script type="text/javascript" src="sites/all/modules/youtubegallerytesting/js/jquery.videoGallery.js"></script>
+	</head>
+	
+	<body>
+		<div id="mainWrapper">
+  
+			<div class="componentWrapper">
+
+				 <!-- player part -->
+				 <div class="playerHolder">
+					 
+					 
+					 <!-- local video holder -->
+					 <div class="mediaHolder"></div>
+					 
+					 <!-- preview image --> 
+					 <div class="mediaPreview"></div>
+					 
+					 <!-- youtube main iframe holder -->
+					 <div class="youtubeIframeMain"></div>
+					 
+					 
+					 <!-- big play button -->
+					 <div class="big_play"><div class="big_play_bg"></div><i class="fa fa-play ap_bplay"></i></div>
+					 
+					 <div class="playerControls">
+					 
+						  <div class="player_toggleControl">
+							 <i class="fa fa-play ap_play"></i>
+						  </div>
+							
+						  <div class="player_mediaTime_current"><p>00:00</p></div>  
+							
+						  <div class="player_seekbar">
+							  <div class="progress_bg">
+								  <div class="load_level"></div>
+								  <div class="progress_level"></div>
+							  </div>
+							  <div class="player_progress_tooltip"><p>0:00 | 0:00</p></div>
+						  </div>
+						  
+						  <div class="player_mediaTime_total"><p>00:00</p></div>
+						 
+						  <div class="player_captions"> 
+							  <div class="caption_holder"></div>
+							  <div class="caption_btn"><i class="fa fa-file-text-o ap_cc"></i></div>
+						  </div> 
+						  
+						  <!--<div class="player_volume_wrapper">
+							  <div class="player_volume"><i class="fa fa-volume-up ap_vol"></i></div>
+							  <div class="volume_seekbar">
+								 <div class="volume_bg"></div>
+								 <div class="volume_level"></div>
+								 <div class="player_volume_tooltip"><p>0</p></div>
+							  </div>
+						  </div>-->
+						  
+						  <div class="player_fullscreen style="width:35px;"><i class="fa fa-expand ap_fs_ent"></i></div>
+						  
+					 </div>
+					 
+					 <!-- media description --> 
+					 <div class="infoHolder"><div class="info_inner"></div></div>
+				 
+					 <!-- description btn --> 
+					 <!--<div class="player_addon">
+						 <div class="info_toggle"><i class="fa fa-info-circle ap_pl_info"></i></div>
+						 <div class="playlist_toggle"><i class="fa fa-bars ap_pl_tog"></i></div>
+						 <div class="ap_share">
+							 <div class="ap_share_btn"><i class="fa fa-share-square ap_pl_share"></i></div>
+							 <div class="ap_share_holder">
+								 <ul>
+									<li><a href="http://www.facebook.com" target="_blank"><img src="data/social/facebook.png" alt=""/></a></li>
+									<li><a href="http://www.flickr.com" target="_blank"><img src="data/social/flickr.png" alt=""/></a></li>
+									<li><a href="http://www.twitter.com" target="_blank"><img src="data/social/twitter.png" alt=""/></a></li>
+									<li><a href="http://www.vimeo.com" target="_blank"><img src="data/social/vimeo.png" alt=""/></a></li>
+									<li><a href="http://www.youtube.com" target="_blank"><img src="data/social/youtube.png" alt=""/></a></li>
+								 </ul>
+							 </div>
+						 </div>
+					 </div>-->
+					 
+					 <!-- playlist part -->
+					  <div class="playlistHolder">
+					
+						 <div class="componentPlaylist">
+						 
+							 <!-- playlist items will be appended here! -->
+							 <div class="playlist_inner"><div class="playlist_content"></div></div>
+							 
+							 <!-- flash mini preview -->
+							 <div id="flashPreviewHolder">
+								 <div id="flashPreview">
+									 <a href="http://www.adobe.com/go/getflashplayer">
+										<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+									</a>
+								</div>
+							</div>
+							
+							<!-- youtube iframe preview holder -->
+							<div class="youtubeIframePreview"></div>
+							 
+						</div>
+						 
+						<div class="thumbBackward"><i class="fa fa-chevron-left ap_pl_back"></i></div>	
+						<div class="thumbForward"><i class="fa fa-chevron-right ap_pl_forw"></i></div>
+						 
+					  </div>
+					 
+				 </div>
+				 
+				<!-- this just holds the data, remains hidden! -->
+				<div class="playlist_list">
+				 
+					<!-- youtube playlist playlist1 -->
+						<div id='playlist1' data-address="playlist1">
+							<div data-address="youtube_playlist" class= "playlistNonSelected" data-type='youtube_playlist' data-mp4Path="PLPj165Xjp59sLmp16CulytWn6D15BQdRR"></div> 
+						</div> 
+					
+						<!-- youtube playlist playlist2 -->
+						<div id='playlist2' data-address="playlist2">
+							<div data-address="youtube_playlist" class= "playlistNonSelected" data-type='youtube_playlist' data-mp4Path="PLPj165Xjp59sLmp16CulytWn6D15BQdRR"></div> 
+						</div>
+						
+						<!-- youtube playlist playlist3 -->
+						<div id='playlist3' data-address="playlist3">
+							<div data-address="youtube_playlist" class= "playlistNonSelected" data-type='youtube_playlist' data-mp4Path="PLPj165Xjp59sLmp16CulytWn6D15BQdRR"></div> 
+						</div>	
+				  
+				 </div>
+			    </div>
+			</div>
+			
+			<!-- public api -->
+			<div id='publicFunctions'>
+				<p>PUBLIC METHODS</p><br/>
+				<ul>
+					<!-- play/stop active media -->
+					<li><a href='#' onClick="api_togglePlayback(); return false;">toggle playback</a></li>
+					
+					<!-- play next media -->
+					<li><a href='#' onClick="api_nextMedia(); return false;">Play next media</a></li>
+					
+					<!-- play previous media -->
+					<li><a href='#' onClick="api_previousMedia(); return false;">Play previous media</a></li>
+					
+					<!-- set volume (0-1) -->
+					<li><a href='#' onClick="api_setVolume(0.5); return false;">Set volume (0.5)</a></li>
+					
+					<!-- toggle playlist  -->
+					<li><a href='#' onClick="api_togglePlaylist(); return false;">toggle playlist</a></li>
+					
+					<!-- toggle description -->
+					<li><a href='#' onClick="api_toggleDescription(); return false;">toggle description</a></li>
+					
+					<!-- destroy media -->
+					<li><a href='#' onClick="api_destroyMedia(); return false;">destroy media</a></li>
+					
+					<!-- load media/playlist:
+					if useDeeplink: 
+						pass deeplink url as string (single or two level).
+						load playlist example (single level): jQuery.videoGallery.loadMedia('playlist0'), 
+						load media example (two level): jQuery.videoGallery.loadMedia('playlist1/youtube_single1').
+					no Deeplink: 
+						for media pass number, counting starts from 0,
+						for playlist pass element 'id' attribute. 
+						load playlist example: jQuery.videoGallery.loadMedia('playlist1'), 
+						load media example: jQuery.videoGallery.loadMedia(3)-->
+					
+					<li><a href='#' onClick="api_loadMedia(1); return false;">load media 1</a></li>
+					<li><a href='#' onClick="api_loadMedia(2); return false;">load media 2</a></li>
+					<li><a href='#' onClick="api_loadMedia(3); return false;">load media 3</a></li>
+					<li><a href='#' onClick="api_loadMedia(4); return false;">load media 4</a></li>
+					<li><a href='#' onClick="api_loadMedia(5); return false;">load media 5</a></li>
+					
+					<li><a href='#' onClick="api_loadMedia('playlist1'); return false;">load playlist 1</a></li>
+					<li><a href='#' onClick="api_loadMedia('playlist2'); return false;">load playlist 2</a></li>
+					<li><a href='#' onClick="api_loadMedia('playlist3'); return false;">load playlist 3</a></li>
+					
+					<!-- if useLivePreview = true, call this to clean active preview item if needed -->
+					<li><a href='#' onClick="api_cleanPreviewVideo(); return false;">clean preview video</a></li>
+					
+				</ul>
+			</div>  
+		</div>
+	</body>
+</html>
