@@ -158,61 +158,14 @@
 							<div data-address="youtube_playlist" class= "playlistNonSelected" data-type='youtube_playlist' data-mp4Path="PLPj165Xjp59sLmp16CulytWn6D15BQdRR"></div> 
 						</div>	 -->
 				  
-				 </div>
-			    </div>
+				</div>
+				 
+        
+        <div class="apiPreloader"></div>
+				</div>
+
 			</div>
 			
-			<!-- public api -->
-			<div id='publicFunctions'>
-				<p>PUBLIC METHODS</p><br/>
-				<ul>
-					<!-- play/stop active media -->
-					<li><a href='#' onClick="api_togglePlayback(); return false;">toggle playback</a></li>
-					
-					<!-- play next media -->
-					<li><a href='#' onClick="api_nextMedia(); return false;">Play next media</a></li>
-					
-					<!-- play previous media -->
-					<li><a href='#' onClick="api_previousMedia(); return false;">Play previous media</a></li>
-					
-					<!-- set volume (0-1) -->
-					<li><a href='#' onClick="api_setVolume(0.5); return false;">Set volume (0.5)</a></li>
-					
-					<!-- toggle playlist  -->
-					<li><a href='#' onClick="api_togglePlaylist(); return false;">toggle playlist</a></li>
-					
-					<!-- toggle description -->
-					<li><a href='#' onClick="api_toggleDescription(); return false;">toggle description</a></li>
-					
-					<!-- destroy media -->
-					<li><a href='#' onClick="api_destroyMedia(); return false;">destroy media</a></li>
-					
-					<!-- load media/playlist:
-					if useDeeplink: 
-						pass deeplink url as string (single or two level).
-						load playlist example (single level): jQuery.videoGallery.loadMedia('playlist0'), 
-						load media example (two level): jQuery.videoGallery.loadMedia('playlist1/youtube_single1').
-					no Deeplink: 
-						for media pass number, counting starts from 0,
-						for playlist pass element 'id' attribute. 
-						load playlist example: jQuery.videoGallery.loadMedia('playlist1'), 
-						load media example: jQuery.videoGallery.loadMedia(3)-->
-					
-					<li><a href='#' onClick="api_loadMedia(1); return false;">load media 1</a></li>
-					<li><a href='#' onClick="api_loadMedia(2); return false;">load media 2</a></li>
-					<li><a href='#' onClick="api_loadMedia(3); return false;">load media 3</a></li>
-					<li><a href='#' onClick="api_loadMedia(4); return false;">load media 4</a></li>
-					<li><a href='#' onClick="api_loadMedia(5); return false;">load media 5</a></li>
-					
-					<li><a href='#' onClick="api_loadMedia('playlist1'); return false;">load playlist 1</a></li>
-					<li><a href='#' onClick="api_loadMedia('playlist2'); return false;">load playlist 2</a></li>
-					<li><a href='#' onClick="api_loadMedia('playlist3'); return false;">load playlist 3</a></li>
-					
-					<!-- if useLivePreview = true, call this to clean active preview item if needed -->
-					<li><a href='#' onClick="api_cleanPreviewVideo(); return false;">clean preview video</a></li>
-					
-				</ul>
-			</div>  
 		</div>
 	</body>
 </html>
