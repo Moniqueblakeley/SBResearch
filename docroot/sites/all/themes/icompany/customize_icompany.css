@@ -825,7 +825,11 @@ a {
 #block-system-main img.adaptive {
 	max-width: 100% !important;
 	width: auto !important;
-	height: auto !important;
+	/* height: auto !important; */
+}
+
+#block-system-main .view-clone-of-centers-and-institutes .view-footer {
+	margin-top: 10px;
 }
 
 .faq-qa-header h3{
