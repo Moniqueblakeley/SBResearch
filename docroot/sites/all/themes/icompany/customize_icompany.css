@@ -820,7 +820,7 @@ a {
 
 .faq-content{padding-left:30px;}
 
-#views_slideshow_cycle_main_clone_of_centers_and_institutes-block_2 img.adaptive {
+#block-system-main div.panels-flexible-region {
 	max-width: 100% !important;
 	width: auto !important;
 	height: auto !important;
