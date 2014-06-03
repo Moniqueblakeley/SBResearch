@@ -820,7 +820,9 @@ a {
 
 .faq-content{padding-left:30px;}
 
-#block-system-main div.panels-flexible-region {
+#block-system-main div.views-slideshow-cycle-main-frame, 
+#block-system-main div.views-slideshow-cycle-main-frame-row,
+#block-system-main img.adaptive {
 	max-width: 100% !important;
 	width: auto !important;
 	height: auto !important;
