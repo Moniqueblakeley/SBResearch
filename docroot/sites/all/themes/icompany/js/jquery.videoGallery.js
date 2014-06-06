@@ -154,7 +154,7 @@
 		yt_autoPlay = false;
 	}
 	var autoAdvanceToNextVideo=settings.autoAdvanceToNextVideo;
-	var autoHideControls=isMobile ? false : true //settings.autoHideControls;
+	var autoHideControls=isMobile ? false : true; //settings.autoHideControls;
 	var captionsBottomPadding = settings.captionsBottomPadding;
 	var autoOpenDescription=settings.autoOpenDescription;
 	var playlistOrientation =settings.playlistOrientation;
