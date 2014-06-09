@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<!-- Print CSS -->
 	<style type="text/css" media="screen, print">
-		@import url("sites/all/themes/icompany/print.css?n5gp4y");
+		@import url("/sites/all/themes/icompany/print.css?n5gp4y");
 	</style>
 
     <?php print $head ?>
@@ -57,10 +57,6 @@
 
 		.portfolio-hover{
 			display:none;
-		}
-		
-		.view-subtopic-titles table :before {
-			left: -36px !important;
 		}
 		</style>
 	<![endif]-->

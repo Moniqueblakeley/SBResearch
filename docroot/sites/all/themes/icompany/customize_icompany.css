@@ -322,12 +322,6 @@ color:white}
     border:0px
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    .view-subtopic-titles table :before {
-        left: -36px !important;
-    }
-}
-
 #adnan_superfish {
     margin-top:0px;
     width:100%
@@ -388,13 +382,11 @@ color:white}
     height: auto !important;
 }
 
-.view-subtopic-titles table :before {
-
+.view-subtopic-titles table:before {
     position:absolute;
     background-image:url('/sites/default/files/ribbonangles-inverted.png'); 
     top: -12px;
     right: auto;
-    left: -16px;
     content: "";
     width: 16px;
     height: 12px;
@@ -402,7 +394,6 @@ color:white}
     background-repeat: no-repeat;
     background-position: -22px -3px
 }
-
 
 .view-subtopic-titles table tr { 
     background-color:#FAFAD2;
@@ -1770,10 +1761,13 @@ transition: all 0.3s;
         .modern.mSMedia .details {
             display: none;
         }
-        .modern .frame ul li:hover .details {
-            background-color: rgba(0, 0, 0, 0.6);
-            background-color: white;
-        }
+        .modern .details .title {
+            display: block;
+            min-height:60px;
+            color: #900;
+            font-size: 12px;
+            text-transform: none;
+            text-decoration: none;
         .modern .details .title {
             display: block;
             min-height:60px;
