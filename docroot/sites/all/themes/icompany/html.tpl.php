@@ -8,8 +8,10 @@
 	<!-- Print CSS -->
 	<style type="text/css" media="screen, print">
 		@import url("/sites/all/themes/icompany/print.css?n5gp4y");
-	</style>
+    </style>
 
+    <!-- Favicon for the site fetched directly from http://www.stonybrook.edu/ -->
+    <link rel="shortcut icon" href="http://www.stonybrook.edu/favicon.ico" type="image/x-icon" />
     <?php print $head ?>
     <title><?php print $head_title ?></title>
 
