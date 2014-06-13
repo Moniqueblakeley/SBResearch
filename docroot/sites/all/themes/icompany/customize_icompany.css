@@ -395,6 +395,11 @@ color:white}
     background-position: -22px -3px
 }
 
+#quicktabs-for_researchers img[src="/sites/default/files/recentnews.png"] {
+    width: 100%;
+    height: 100%;
+}
+
 .view-subtopic-titles table tr { 
     background-color:#FAFAD2;
     /* Old browsers */
@@ -817,29 +822,31 @@ a {
 
 #block-system-main div.views-slideshow-cycle-main-frame, 
 #block-system-main div.views-slideshow-cycle-main-frame-row,
-#block-system-main img.adaptive {
+#block-system-main div.views-slideshow-cycle-main-frame-row img {
     max-width: 100% !important;
     width: 100% !important;
 }
 
-#block-system-main div.views-slideshow-cycle-main-frame {
+#block-system-main .Sidebar .pane-clone-of-centers-and-institutes,
+#block-system-main .Sidebar .pane-front-page-slideshow {
     margin-bottom: 20px;
 }
 
-/* These settings will be adjusted by jQuery/JavaScript later */
-#block-system-main .view-clone-of-centers-and-institutes .view-footer {
-    margin-top: 10px;
-    margin-bottom: 20px;
+#block-system-main div.panels-flexible-region-126-2nd div.pane-clone-of-centers-and-institutes div.view-footer {
+    margin-top: 40px;
 }
 
-#block-system-main .view-clone-of-centers-and-institutes {
-    width: auto;
-    height: auto;
+#block-system-main div.panels-flexible-region-126-2nd {
+    margin-bottom: 50px;
 }
 
-#mainWrapper, .playlistHolder {
+.playerHolder, .playlistHolder {
     box-shadow: 2px 2px 20px #300;
     border: 0px solid #CCC;
+}
+
+#twitter-widget-0 {
+    width: 100% !important;
 }
 
 .faq-qa-header h3{
