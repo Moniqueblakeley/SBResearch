@@ -313,11 +313,11 @@
 	
 	var buttonArr=[
 		player_toggleControl,
+		mainWrapper.find('.player_fullscreen'),
 		mainWrapper.find('.playlist_toggle'),
 		mainWrapper.find('.ap_share_btn'),
 		mainWrapper.find('.info_toggle'),
 		mainWrapper.find('.player_volume'),
-		mainWrapper.find('.player_fullscreen'),
 		mainWrapper.find('.caption_btn'),
 		mainWrapper.find('.player_prev'),
 		mainWrapper.find('.player_next')
@@ -4541,13 +4541,32 @@
 				if(componentSize== "fullscreen" && fullscreenCount>0){
 					//console.log('fullscreenchange');
 					componentSize="normal";
-					resizeComponent();	
+					resizeComponent();
+					toggleNonFullscreenElements(false);
 				}
 				fullscreenCount=1;//firefox fix for escape key
 				
 				if(useCaptions && captionsExist)captionator.setRedraw(false);
 			});
 		}
+	}
+
+	function toggleNonFullscreenElements(isFullscreen) {
+		mainWrapper.parents().andSelf().map(function() {
+			$(this).addClass("fullscreen-visible");
+			$(this).siblings().map(function() {
+				if (isFullscreen) {
+					$(this).addClass("fullscreen-invisible").removeClass("fullscreen-visible");
+					playlistHolder.addClass("fullscreen-invisible").removeClass("fullscreen-visible");
+				}
+
+				else {
+					$(this).addClass("fullscreen-visible").removeClass("fullscreen-invisible");
+					playlistHolder.addClass("fullscreen-visible").removeClass("fullscreen-invisible");
+				}
+			});
+		});
+		
 	}
 	
 	function toggleFullscreen(btnInitiated){
@@ -4571,22 +4590,28 @@
 				//console.log("using W3C Fullscreen API");
 				if (document.fullscreenElement) {
 					document.exitFullscreen();
+					toggleNonFullscreenElements(false);
 				} else {
 					elem.requestFullscreen();
+					toggleNonFullscreenElements(true);
 				}
 			} else if (elem.webkitRequestFullScreen) {
 				//console.log("using WebKit FullScreen  API");
 				if (document.webkitIsFullScreen) {
 					document.webkitCancelFullScreen();
+					toggleNonFullscreenElements(false)
 				} else {
 					elem.webkitRequestFullScreen();
+					toggleNonFullscreenElements(true);
 				}
 			} else if (elem.mozRequestFullScreen) {
 				//console.log("using Mozilla FullScreen  API");
 				if (document.fullscreenElement || document.webkitIsFullScreen || document.mozFullScreenElement) {
 					document.mozCancelFullScreen();
+					toggleNonFullscreenElements(false);
 				} else {
 					elem.mozRequestFullScreen();
+					toggleNonFullscreenElements(true);
 				}
 			}else if(isIOS){
 				//console.log('ios');
@@ -4625,7 +4650,8 @@
 			}
 		}
 		//console.log('support=',support);
-		return support;
+		//return support;
+		return true;
 	}
 	
 	//**************** HELPER FUNCTIONS

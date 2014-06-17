@@ -361,6 +361,14 @@ color:white}
     color:white;
 }
 
+.fullscreen-visible {
+    visibility: visible;
+}
+
+.fullscreen-invisible {
+    visibility: hidden;
+}
+
 #block-system-main .ui-accordion-content {
     overflow: auto !important;
     height: auto !important;
