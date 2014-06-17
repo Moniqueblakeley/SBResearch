@@ -1,24 +1,18 @@
 @media print {
 
-#superfish-1, 
-#content-region .tabs, 
-#adnan_superfish .region, 
-#block-system-main .panels-flexible-column-98-3,
-#block-system-main .panels-flexible-column-98-5,
-#footer-region,
-#footer-bar,
-#title-region .breadcrumb,
-#title-region .pagesearch,
-#block-feedback-form .feedback-link,
-#block-feedback-form .feedback-processed
+	div.region-main-menu, 
+	#topBar,
+	#adnan_superfish,
+	.pagesearch,
+	.breadcrumb
 	{
-		display: none;
+		display: none !important;
 	}
-	
+
 	#page-wrapper .container-fluid .theme-border
 	{
-	border: 0px;
-	margin: 0px;
+		border: 0px;
+		margin: 0px;
 	}
 
 }
