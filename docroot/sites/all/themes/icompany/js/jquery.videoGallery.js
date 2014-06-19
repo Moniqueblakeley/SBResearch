@@ -4613,12 +4613,12 @@
 					elem.mozRequestFullScreen();
 					toggleNonFullscreenElements(true);
 				}
-			}else if(isIOS){
+			} else if(isIOS){
 				//console.log('ios');
 				try{
 					//if(videoUp2Js && videoUp2Js.webkitEnterFullScreen != undefined)videoUp2Js.webkitEnterFullScreen();//we cant have captions in ios fullscreen!
 				}catch(error){}
-			}else {
+			} else {
 				//console.log("no fullscreen API");
 			}
 		}
