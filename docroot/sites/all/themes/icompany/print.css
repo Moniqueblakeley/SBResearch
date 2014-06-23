@@ -1,10 +1,13 @@
 @media print {
 
-	div.region-main-menu, 
+	div.region-main-menu,
 	#topBar,
 	#adnan_superfish,
 	.pagesearch,
-	.breadcrumb
+	.breadcrumb,
+	#footer-region,
+	#toTop,
+	#block-feedback-form
 	{
 		display: none !important;
 	}
@@ -13,6 +16,18 @@
 	{
 		border: 0px;
 		margin: 0px;
+	}
+
+	#page-wrapper
+	{
+		-webkit-box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+
+	#header_left img
+	{
+		content: url(/sites/default/files/stonybrookResearch_logo_0.png);
 	}
 
 }
