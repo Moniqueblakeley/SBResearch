@@ -273,29 +273,27 @@
 <!-- Insert logo when user presses Print -->
 <script type="text/javascript">
 (function($) {
-    $(document).ready(function() {
-	var beforePrint = function() {
-	    $("#logocontainer img").attr("src", "/sites/default/files/sbu-logo-darkred_0.png");
-	};
+    var beforePrint = function() {
+	$("#logocontainer img").attr("src", "/sites/default/files/sbu-logo-darkred_0.png");
+    };
 
-	var afterPrint = function() {
-	    $("#logocontainer img").attr("src", "/sites/default/files/sbu-logo-white_0.png");
-	};
+    var afterPrint = function() {
+	$("#logocontainer img").attr("src", "/sites/default/files/sbu-logo-white_0.png");
+    };
 
-	if (window.matchMedia) {
-	    var mediaQueryList = window.matchMedia('print');
-	    mediaQueryList.addListener(function(mql) {
-		if (mql.matches) {
-		    beforePrint();
-		} else {
-		    afterPrint();
-		}
-	    });
-	}
+    if (window.matchMedia) {
+	var mediaQueryList = window.matchMedia('print');
+	mediaQueryList.addListener(function(mql) {
+	    if (mql.matches) {
+		beforePrint();
+	    } else {
+		afterPrint();
+	    }
+	});
+    }
 
-	window.onbeforeprint = beforePrint;
-	window.onafterprint = afterPrint;
-    });
+    window.onbeforeprint = beforePrint;
+    window.onafterprint = afterPrint;
 
 })(jQuery);
 </script>
