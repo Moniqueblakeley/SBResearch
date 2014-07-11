@@ -10,7 +10,7 @@
 		@import url("/sites/all/themes/icompany/print.css?n5gp4y");
     </style>
 
-    <!-- Favicon for the site fetched directly from http://www.stonybrook.edu/ -->
+    <!-- Favicon for the site fetched directly from Stony Brook Homepage -->
     <link rel="shortcut icon" href="http://www.stonybrook.edu/favicon.ico" type="image/x-icon" />
     <?php print $head ?>
     <title><?php print $head_title ?></title>
