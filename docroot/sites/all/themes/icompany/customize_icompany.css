@@ -348,11 +348,16 @@ table td {
 }
 
 .fullscreen-visible {
-    visibility: visible;
+    visibility: visible !important;
 }
 
 .fullscreen-invisible {
-    visibility: hidden;
+    visibility: hidden !important;
+}
+
+#topBar {
+    line-height: 18px !important;
+    font-size: 11px !important;
 }
 
 #block-system-main .ui-accordion-content {
@@ -805,7 +810,7 @@ a {
     padding-left:30px;
 }
 
-#block-system-main div.views-slideshow-cycle-main-frame, 
+#block-system-main div.views-slideshow-cycle-main-frame,
 #block-system-main div.views-slideshow-cycle-main-frame-row,
 #block-system-main div.views-slideshow-cycle-main-frame-row img {
     max-width: 100% !important;
@@ -1100,7 +1105,7 @@ p.subtitle {
 
 .panels-flexible-region-1-sidebar_left:before {
     position:absolute;
-    background-image:url('/sites/default/files/ribbonangles-inverted.png'); 
+    background-image:url('/sites/default/files/ribbonangles-inverted.png');
     top: -12px;
     right: auto;
     left: -26px;
@@ -1590,7 +1595,7 @@ div.views-field.views-field-title.views-accordion-header.ui-accordion-header.ui-
 }
 
 
-/* The following two changes make the triangle icons in the accordions into + and - signs*/ 
+/* The following two changes make the triangle icons in the accordions into + and - signs*/
 .ui-icon-triangle-1-e {
     background-position: -32px -128px;
 }

@@ -109,12 +109,12 @@ function overriden_icompany_welcome_user(){
 function overriden_user_login_links(){
   global $user;
   $login = drupal_get_path_alias('cas');
-  $register = drupal_get_path_alias('user/register');
+  // $register = drupal_get_path_alias('user/register');
   if(!$user->uid){
-    $login = l(t('Login'), $login, array('attributes' => array('rel' => 'tooltip', 'data-placement' => 'bottom', 'data-original-title' => t('Click here to login'))));
-    $register = l(t('Register'), $register, array('attributes' => array('rel' => 'tooltip', 'data-placement' => 'bottom', 'data-original-title' => t('Click here to create an account') )));
+    $login = l(t('Site Login'), $login, array('attributes' => array('rel' => 'tooltip', 'data-placement' => 'bottom', 'data-original-title' => t('Click here to login'))));
+    // $register = l(t('Register'), $register, array('attributes' => array('rel' => 'tooltip', 'data-placement' => 'bottom', 'data-original-title' => t('Click here to create an account') )));
 
-    $output = $login . ' | ' . $register;
+    $output = $login; // . ' | ' . $register;
 
     return $output;
   }
