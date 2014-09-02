@@ -358,6 +358,13 @@ table td {
 #topBar {
     line-height: 18px !important;
     font-size: 11px !important;
+    width: 90%;
+    /* margin: auto; */
+    /* position: relative; */
+}
+
+#topBar, #top-bar-inner {
+    padding: 0px !important;
 }
 
 #block-system-main .ui-accordion-content {
