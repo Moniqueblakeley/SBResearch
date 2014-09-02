@@ -24,17 +24,36 @@ html, body {
 }
 
 /*---Maximize area used for content on tablets and phones--*/
+#topBar, #top-bar-inner {
+    padding: 0px !important;
+}
+
+#topBar {
+    line-height: 18px !important;
+    font-size: 11px !important;
+    width: 90%;
+    padding-left: 15px !important;
+}
+
+.loginlinks {
+    margin-left: 20px;
+}
+
 @media(max-width:1024px) {
     .container-fluid {
         width:100%;
     }
 
     #header {
-        width:100%;
+        width:100% !important;
     }
 
     .row-fluid {
         width:100%;
+    }
+
+    #topBar {
+        width: 100%;
     }
 }
 
@@ -355,10 +374,6 @@ table td {
     visibility: hidden !important;
 }
 
-#topBar {
-    line-height: 18px !important;
-    font-size: 11px !important;
-}
 
 #block-system-main .ui-accordion-content {
     overflow: auto !important;
