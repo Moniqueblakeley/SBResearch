@@ -1716,7 +1716,7 @@ hr {
 .audience-row-blocks {
     margin:0px -20px 40px -20px;
     padding: 50px 20px;
-    background-color: whitesmoke;
+    background-color: ghostwhite;
     background: -webkit-linear-gradient(#ebeff8,#f5f6f8),#f5f6f8;
     border-bottom:0px solid silver;
 	/* -webkit-box-shadow: 0 4px 4px -2px #000000; */
@@ -1726,7 +1726,12 @@ box-shadow: 0px 20px 40px -20px rgba(0,0,0,0.2);
 
 .feature-row-blocks{background-color: white;
 margin: 30px -20px 10px -20px;
-padding: 20px;}
+padding: 20px;
+
+background-color: white;
+margin: 30px -20px 0px -20px;
+padding: 20px;
+box-shadow: inset 0px -20px 40px -20px rgba(0,0,0,0.2);}
 
 .slider-row-adnan {
     margin:-20px -20px 0px -20px;
