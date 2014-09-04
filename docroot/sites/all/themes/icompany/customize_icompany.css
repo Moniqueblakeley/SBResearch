@@ -10,10 +10,10 @@
 }
 
 html, body {
-    background-color:#ddd;
+    background-color:#dddddd;
     font-size:12px;
     line-height:1.6em;
-    background: rgb(222,222,222); /* Old browsers */
+    background: rgb(224,224,224); /* Old browsers */
    
 }
 
@@ -233,10 +233,7 @@ tr.odd {
 #page-wrapper {
     border-top:0px;
   
-    -webkit-box-shadow: 1px 6px 62px -17px rgba(10,10,10,.3);
-    -moz-box-shadow: 1px 6px 62px -17px rgba(10,10,10,.3);
-    box-shadow: 1px 6px 62px -1px rgba(10,10,10,.3);
-
+    
     background-color:#ffffff;
   
     margin-bottom:300px;
@@ -1737,7 +1734,7 @@ hr {
 .slider-row-adnan {
     margin:-20px -20px 0px -20px;
     padding: 20px;
-    background-color: firebrick;
+    background-color: ghostwhite
     border-bottom:5px solid darkred;
 }
 
