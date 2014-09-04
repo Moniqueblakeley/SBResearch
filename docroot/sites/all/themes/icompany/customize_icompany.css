@@ -1728,8 +1728,14 @@ hr {
     background-color: whitesmoke;
     background: -webkit-linear-gradient(#ebeff8,#f5f6f8),#f5f6f8;
     border-bottom:5px solid silver;
+	/* -webkit-box-shadow: 0 4px 4px -2px #000000; */
+-moz-box-shadow: 0px 20px 40px -20px rgba(0,0,0,0.2)
+box-shadow: 0px 20px 40px -20px rgba(0,0,0,0.2);
 }
 
+.feature-row-blocks{background-color: white;
+margin: 30px -20px 10px -20px;
+padding: 20px;}
 
 .slider-row-adnan {
     margin:-20px -20px 0px -20px;
