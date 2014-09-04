@@ -10,17 +10,11 @@
 }
 
 html, body {
-    background-color:#666;
+    background-color:#ddd;
     font-size:12px;
     line-height:1.6em;
-    background: rgb(102,102,102); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(102,102,102,1) 22%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(22%,rgba(102,102,102,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(102,102,102,1) 22%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(102,102,102,1) 22%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(102,102,102,1) 22%,rgba(255,255,255,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(102,102,102,1) 22%,rgba(255,255,255,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    background: rgb(222,222,222); /* Old browsers */
+   
 }
 
 /*---Maximize area used for content on tablets and phones--*/
@@ -238,14 +232,11 @@ tr.odd {
 
 #page-wrapper {
     border-top:0px;
-    -webkit-border-radius:0px;
+  
     -webkit-box-shadow: 1px 6px 62px -17px rgba(10,10,10,.3);
     -moz-box-shadow: 1px 6px 62px -17px rgba(10,10,10,.3);
     box-shadow: 1px 6px 62px -1px rgba(10,10,10,.3);
-    border-radius:0px;
 
-    background-color:#F6F3E2;
-    background-color:#fffdec;
     background-color:#ffffff;
   
     margin-bottom:300px;
