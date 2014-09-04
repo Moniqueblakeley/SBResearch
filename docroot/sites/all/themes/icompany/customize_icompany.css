@@ -497,10 +497,10 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li a {
     border:1px solid #EEE8AA;
     border:1px solid #B9D3EE;
     background-color: firebrick;
-    background-color: #E0EEEE;
+    background-color: #F5f5f5;
     border-left:0px;
     font-weight:bold;
-    font-size:1.1em;
+    font-size:1.3em;
     text-transform:uppercase;
     color:#ED143D;
     color: white;
@@ -552,7 +552,7 @@ ul.quicktabs-tabs.quicktabs-style-phylactere li {
 }
 
 ul.quicktabs-tabs.quicktabs-style-phylactere li .active {
-    color: navy;
+    color: black;
 }
 
 .quicktabs_main.quicktabs-style-phylactere {
@@ -881,9 +881,8 @@ select {
 }
 
 p.subtitle {
-    color:#DAA520;
-    font-size:0.8em;
-    color:slategrey;
+    font-size:0.7em;
+    color:lightslategrey;
 }
 
 .content {
