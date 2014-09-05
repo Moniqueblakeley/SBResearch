@@ -1742,8 +1742,8 @@ box-shadow: inset 0px -20px 40px -20px rgba(0,0,0,0.2);}
 
 .office-page-bottom {
     margin: 0px -20px;
-    background-color: lightgoldenrodyellow;
+    background-color: #f5f5f5;
     padding: 50px 20px;
-    border-top: 5px solid khaki;
-    border-bottom:0px solid black;
+    box-shadow:  0px -20px 40px -20px rgba(0,0,0,0.7) inset;
+	box-shadow:  0px 20px 40px -20px rgba(0,0,0,0.3) inset;
 }
