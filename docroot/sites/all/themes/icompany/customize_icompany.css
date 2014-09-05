@@ -285,8 +285,8 @@ table td {
 }
 
 .faq-pages .ui-accordion .ui-accordion-content {
-    background-color: oldlace;
-    border:1px solid khaki;
+    background-color: #eeeeee;
+    border:0px solid #f5f5f5;
 }
 
 .ui-corner-bottom {
@@ -1278,7 +1278,7 @@ table.WhomToContact-Department tr[person]:not([person=""]):nth-child(even) {
     background: -ms-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
     background: -o-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
     background: linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
-    background:lightgoldenrodyellow;
+    background:#f5f5f5;
     font-weight:normal;
 }
 
@@ -1296,7 +1296,7 @@ table.WhomToContact-Department tr[person]:not([person=""]):nth-child(even) {
     color:tomato;
     font-weight:bold;
     border:1px solid grey;
-    background: lightgoldenrodyellow;
+    background: #f5f5f5;
 }
 
 .faq-pages .ui-accordion-header {
@@ -1312,6 +1312,7 @@ table.WhomToContact-Department tr[person]:not([person=""]):nth-child(even) {
     background: -o-linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
     background: linear-gradient(to top, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 27%);
     background:lightgoldenrodyellow;
+	background: #f5f5f5;
     font-weight:normal;
 }
 
@@ -1321,10 +1322,10 @@ table.WhomToContact-Department tr[person]:not([person=""]):nth-child(even) {
 }
 
 .faq-pages .ui-accordion .ui-accordion-header.ui-state-active a {
-    color:tomato;
+    color:black;
     font-weight:bold;
-    border:1px solid khaki;
-    background-color: palegoldenrod;
+    border:1px solid #ccc;
+    background-color: #f5f5f5;
 }
 
 #officetopic .ui-accordion-header {
