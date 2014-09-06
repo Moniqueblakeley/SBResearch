@@ -45,11 +45,11 @@
 .sf-menu.sf-style-space-orange a:hover,
 .sf-menu.sf-style-space-orange a:active,
 .sf-menu.sf-style-space-orange.sf-navbar li li {
-  background: #dc5300;
-  color: #ffffff;
+  background: #111;
+  color: #f5f5f5;
 }
 .sf-menu.sf-style-space-orange.sf-navbar li ul {
-  background-color: #dc5300;
+  background-color: #111;
 }
 .sf-menu.sf-style-space-orange.sf-navbar li ul li ul {
   background-color: transparent;
