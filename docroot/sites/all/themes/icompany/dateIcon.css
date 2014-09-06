@@ -12,7 +12,7 @@
 
 .dateIcon p
 {
-	font-size: 14px; 
+	font-size: 12px; 
 	text-align: center; 
 	color: steelblue;
 	padding:5px 5px;
@@ -20,6 +20,10 @@
 	color: black;
 	border-bottom: 1px solid darkgray;
 	border-top:2px solid #326891;
+	background-color: #dddddd;
+	color: black;
+	border-bottom: 0px solid darkgray;
+	border-top:4px solid firebrick;
 }
 
 /*.dateIcon p span
@@ -79,10 +83,10 @@
 
 .trainingDateIcon p
 {
-	font-size: 14px; text-align: center; color: steelblue;
+	font-size: 12px; text-align: center; 
 	padding:5px 5px;
-	background-color: lightsteelblue;
+	background-color: #dddddd;
 	color: black;
-	border-bottom: 1px solid darkgray;
-	border-top:4px solid #326891;
+	border-bottom: 0px solid darkgray;
+	border-top:4px solid firebrick;
 }
