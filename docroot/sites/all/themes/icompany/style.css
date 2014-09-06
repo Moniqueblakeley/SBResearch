@@ -1613,6 +1613,7 @@ ul.menu li.expanded li.first {
 
 ul.menu li.collapsed {
 	background: url(img/collapsed.png) left top no-repeat;
+	background:none;
 }
 
 /* item list */
