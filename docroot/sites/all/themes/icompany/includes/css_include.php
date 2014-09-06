@@ -127,7 +127,7 @@ print 'Darker: ' . $darkerColor . '<br>';
  
     
     #bottom-region a{
-    	color: <?php print $unltraLightColor ?>
+    	color: #cc0000;
     }
  
     .theme-border, .sf-menu li.sfHover ul, #page-wrapper,  th, #forum .table th, .border-color, .banner, #footer-bar 
