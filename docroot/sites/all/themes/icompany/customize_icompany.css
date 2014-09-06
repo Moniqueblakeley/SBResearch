@@ -655,13 +655,13 @@ ul.pager li:hover {
 
 #superfish-3 {
     font-size:10px;
-    color:#FFFFFF;
+    color:#333;
     margin-right:0px;
 }
 
 #superfish-3  li {
     background-color:transparent;
-    padding:0px 5px;
+    padding:0px 15px;
     border:0px;
 }
 
@@ -669,25 +669,32 @@ ul.pager li:hover {
     background-color:transparent;
     padding-right:10px;
     border:0px;
-    color:#FFFFFF;
+    color:#333;
     font-size:11px;
 }
 
 #superfish-3  li a:hover {
-    background-color:#FFFFFF;
-    color:#000000;
+    color:#990000;
 }
 
+
+#superfish-3  li ul li  {
+    background-color:#FFFFFF;
+    padding:5px 0px;
+    border:1px solid #F8F8FF;
+    color:#000000;
+    font-size:11px;
+}
 #superfish-3  li ul li a {
     background-color:#FFFFFF;
-    padding:5px 10px;
+   
     border:1px solid #F8F8FF;
     color:#000000;
     font-size:11px;
 }
 
 #superfish-3 .sf-sub-indicator {
-    background:url('/sites/all/libraries/superfish/images/arrows-ffffff.png') no-repeat -10px -99px;
+    background:url('/sites/all/libraries/superfish/images/arrows-777777.png') no-repeat -10px -99px;
     top:0.1em;
     right:-1em;
 }
@@ -1037,7 +1044,16 @@ p.subtitle {
 }
 
 .view-footer {
-    text-align:right;
+    text-align:left;
+
+}
+
+.view-footer a:hover {
+background-color:#666;
+color: white;
+	padding: 2px;
+
+
 }
 
 .staff-directory .views-field-title {
@@ -1515,6 +1531,10 @@ table stonybrookevents.td {
     color:#326891;
 }
 
+#bottom-region a {
+    color:#326891;
+}
+
 #left-sidebar .menu {
     background-color: ghostwhite;
     padding: 2em;
@@ -1635,7 +1655,7 @@ table .mini-day-on {
 }
 
 h2 {
-    font-size:12px;
+    font-size:14px;
 }
 
 .calendar-calendar td {
