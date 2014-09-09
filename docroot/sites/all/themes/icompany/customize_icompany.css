@@ -1269,7 +1269,7 @@ table.WhomToContact-Department tr[person]:not([person=""]):nth-child(even) {
 }
 
 .faq-block .ui-accordion .ui-accordion-header a {
-    color:#333;
+
     font-weight:normal;
 }
 
@@ -1313,7 +1313,7 @@ table.WhomToContact-Department tr[person]:not([person=""]):nth-child(even) {
 }
 
 .faq-pages .ui-accordion .ui-accordion-header a {
-    color:#333;
+   
     font-weight:normal;
 }
 
