@@ -77,7 +77,10 @@ function jquery_update_library() {
 function jquery_update_library_alter(&$javascript, $module) {
   $path = drupal_get_path('module', 'jquery_update');
   $version = variable_get('jquery_update_jquery_version', '1.10');
-
+  echo $version;
+ if (arg(0) == 'admin') 
+    $version = '1.5';   
+	echo $version;
 
   // Modified System Library.
   if ($module === 'system') {

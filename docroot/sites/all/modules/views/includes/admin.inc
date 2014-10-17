@@ -408,7 +408,7 @@ function views_ui_add_form($form, &$form_state) {
  */
 function views_element_validate_integer($element, &$form_state) {
   $value = $element['#value'];
-  if ($value !== '' && (!is_numeric($value) || intval($value) != $value)) {
+  if ($value !== '' && (!is_numeric($value) || intval($value) != $value || abs($value) != $value)) {
     form_error($element, t('%name must be a positive integer.', array('%name' => $element['#title'])));
   }
 }
@@ -2964,7 +2964,7 @@ function views_ui_ajax_form($js, $key, $view, $display_id = '') {
     else {
       $output = array();
       $output[] = views_ajax_command_dismiss_form();
-      $output[] = views_ajax_command_show_buttons();
+      $output[] = views_ajax_command_show_buttons(!empty($view->changed));
       $output[] = views_ajax_command_trigger_preview();
       if (!empty($form_state['#page_title'])) {
         $output[] = views_ajax_command_replace_title($form_state['#page_title']);
