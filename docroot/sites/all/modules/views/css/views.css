@@ -40,3 +40,14 @@
 .view .progress-disabled {
   float: none;
 }
+
+.views-field-field-blurb-description {
+	font-style:italic; 
+}
+
+.views-row {
+padding: 10px;
+border:0px;
+}
+
+

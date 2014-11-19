@@ -210,7 +210,21 @@
  *   );
  * @endcode
  */
-$databases = array();
+$databases = array (
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'database' => 'sbresearch-dev',
+      'username' => 'drupaluser',
+      'password' => '',
+      'host' => 'localhost',
+      'port' => '5555',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
 
 /**
  * Access control for update.php script.
@@ -242,7 +256,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = '';
+$drupal_hash_salt = 's5i94zfL5YwuL6Dpa5YSfrm1Pe22UlhJEx1UV2iJdmQ';
 
 /**
  * Base URL (optional).
@@ -551,3 +565,53 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
+
+//if we aren't local use memcache server
+if((isset($IsLocal)) && !$IsLocal)
+{
+	$conf['cache_backends'][] = './sites/all/modules/memcache/memcache.inc';
+	$conf['cache_default_class'] = 'MemCacheDrupal';
+	$conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+}
+
+//Non-prod settings
+if(((isset($_ENV['AH_NON_PRODUCTION']) && $_ENV['AH_NON_PRODUCTION'])) || ((isset($IsLocal))) && $IsLocal)
+{
+	$conf['apachesolr_read_only'] = "1";
+
+	// Page cache
+	$conf['cache'] = FALSE;
+	 
+	// Block cache
+	$conf['block_cache'] = FALSE;
+	 
+	// Optimize CSS files
+	$conf['preprocess_css'] = FALSE;
+	 
+	// Optimize JavaScript files
+	$conf['preprocess_js'] = FALSE;
+
+	
+}
+else
+{
+	$conf['apachesolr_read_only'] = "0";
+
+	// Page cache
+	$conf['cache'] = TRUE;
+	 
+	// Block cache
+	$conf['block_cache'] = TRUE;
+	 
+	// Optimize CSS files
+	$conf['preprocess_css'] = TRUE;
+	 
+	// Optimize JavaScript files
+	$conf['preprocess_js'] = TRUE;
+}
+
+
+if (file_exists('/var/www/site-php')) {
+  require('/var/www/site-php/sbresearch/sbresearch-settings.inc');
+}
