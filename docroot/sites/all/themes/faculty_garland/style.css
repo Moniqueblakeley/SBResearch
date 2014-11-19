@@ -8,16 +8,12 @@ body {
   background: #fefefe;
   font: 76%/170% Verdana, sans-serif;
   color: #494949;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 input {
   font: 1em/100% Verdana, sans-serif;
   color: #494949;
 }
-
 
 textarea,
 select {
@@ -44,12 +40,9 @@ h1 {
 h2,
 #center h1 {
   font-size: 160%;
-  line-height: 130%;.
+  line-height: 130%;
+}
 
-}
-#tabs-wrapper h1{
-	  display: none;
-}
 h3 {
   font-size: 140%;
 }
@@ -475,7 +468,7 @@ body.sidebar-second {
 
 /* So we move the #center container over the sidebars to compensate */
 body.sidebar-first #center {
-  /*margin-left: -210px; /* LTR */
+  margin-left: -210px; /* LTR */
 }
 body.sidebar-second #center {
   margin-right: -210px; /* LTR */
@@ -573,7 +566,7 @@ body.two-sidebars #squeeze {
 }
 
 body.sidebar-first .region-footer {
-  margin-left: -265px;
+  margin-left: -210px;
 }
 
 body.sidebar-second .region-footer {
@@ -1282,17 +1275,17 @@ thead tr
 
 #FacultyDirectoryTitle {
     background-color: black;
-color: white !important;
-/* width: 100%; */
-padding-left: 35px;
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 30px;
-height: 75px;
-/* position: relative; */
-z-index: 2;
-margin-top: 50px;
-/* margin-left: -20px; */
+    color: white !important;
+    width: 102%;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    height: 75px;
+    /* position: relative; */
+    z-index: 2;
+	margin-top:50px;
+	margin-left: -20px;
 }
 
 html, .ui-mobile, .ui-mobile body {
@@ -1311,7 +1304,7 @@ img#SbuLogo {
 
 body {
     font-family: sans-serif;
-	/*overflow: hidden; */
+	overflow: hidden;
 }
 
 #SearchBox {
@@ -1401,9 +1394,8 @@ body {
     color: white;
     font-size: 12px;
     width: 104%;
-	
+	position: fixed;
     bottom: 0;
-	width: 1200px;
 }
 
     #footer table {
@@ -2080,175 +2072,4 @@ margin-left: 100px;
     }
 }
 
-.FacultyLeftNavigation
-{
-	margin-left: 20px;
-	width: 200px;
-	margin-top: 40px;
-}
 
-.FacultyLeftNavigation a{
-	border-top: 1px solid #900;
-padding-left: 20px;
-padding-top: 10px;
-display: block;
-}
-
-
-.FacultyLeftNavigation a:last-child{
-	padding-bottom: 10px;
-	border-bottom: 1px solid #900;
-}
-
-#sidebar-first
-{
-	float: left;
-}
-
-.FacultyPageNode
-{
-	float: left;
-	margin-left: 30px;
-}
-.FacultyPageSidebar
-{
-	height: 1120px;
-	background: rgba(128,128,128, 0.28);
-}
-#pictureBlockTitle
-{
-	padding-left: 50px;
-	border: 1px solid black;
-	margin-left: -50px;
-	background: white;
-	height: 24px;
-	font-size: 19px;
-	padding-top: 5px;
-	font-weight: bold;
-}
-#facultyName
-{
-	padding-left: 240px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border: 1px solid black;
-	margin-top: 40px;
-	background: white;
-	width: 75.15%;
-	margin-left: -21px;
-}
-#otherLinks
-{
-	margin-left: 245px;
-	margin-top: 20px;
-	font-weight: bold;
-}
-#otherLinks a
-{
-	border-bottom: 1px solid #900;
-	padding-bottom: 2px;
-}
-#otherLinks div{
-	margin-top: 6px;
-margin-bottom: 6px;
-}
-#facultyName span{
-	margin-left: 0;
-	text-transform: uppercase;
-	font-size: 20px;
-	color: #900;
-}
-
-
-.BackgroundBlock
-{
-	padding: 20px;
-	border: 1px solid lack;
-	border: 1px solid black;
-	background: rgba(128, 128, 128, 0.09);
-	width: 805px;
-	height: 300px;
-}
-.region.region-content{
-	margin-left: 25px;
-}
-.field-name-field-picture img
-{
-	position: absolute;
-	margin-top: -348px;
-	margin-left: 20px;
-	height: 245px;
-	border: 1px solid black;
-	width: 200px;
-}
-#PersonalInfo
-{
-	margin-top: 35px;
-	padding-bottom: 10px;
-	border-bottom: 3px solid #900;
-	font-size: 16px;
-	font-weight: bold;
-	color: #900;
-	margin-bottom: -25px;
-}
-.field
-{
-	margin-bottom: 5px;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	border-bottom: 1px solid grey;
-}
-
-.field-label{
-	float: left;
-	font-weight: bold;
-	color: #900;
-	font-size: 14px;
-	font-style: italic;
-}
-.field-item
-{
-	font-weight: bold;
-	color: black;
-	font-size: 14px;
-}
-.arrow
-{
-	margin-right: 5px;
-}
-#FacultyLeftNavigation2
-{
-	margin-bottom: 20px;
-}
-
-@media (max-width:1203px) {
-	#sidebar-first{
-		display: none;
-	}
-}
-
-@media (max-width:600px) and (min-width:470px) {
-	.BackgroundBlock{
-		width: 396px;
-	}
-	#facultyName
-	{
-		width: 49.5;
-	}
-}
-@media (max-width:469px) and (min-width:300px) {
-	#otherLinks, #pictureBlockTitle{
-		display: none;
-	}
-	
-}
-
-@media (max-width:700px) and (min-width:601px) {
-	.BackgroundBlock{
-		width: 535px;
-	}
-	#facultyName
-	{
-		width: 49.5;
-	}
-}

@@ -58,8 +58,4 @@ $sites = array(
     'faculty.dev.sinc.stonybrook.edu' => 'faculty.stonybrook.edu'
   , 'faculty.stage.sinc.stonybrook.edu' => 'faculty.stonybrook.edu'
   , 'faculty.prod.sinc.stonybrook.edu' => 'faculty.stonybrook.edu'
-  
-  , 'research-d.stonybrook.edu' => 'research.stonybrook.edu'
-  , 'research-s.stonybrook.edu' => 'research.stonybrook.edu'
-  , 'research.stonybrook.edu' => 'research.stonybrook.edu'
 );

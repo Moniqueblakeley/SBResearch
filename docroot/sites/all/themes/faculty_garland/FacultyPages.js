@@ -4,17 +4,6 @@ var myScroll;
 
 function OnReady_Function() {
 
-	if(jQuery(".node-faculty-pages").length != 0)
-	{
-		jQuery("#center").addClass("FacultyPageNode");
-		jQuery("#sidebar-first").addClass("FacultyPageSidebar");
-		jQuery(".field-name-field-picture").css("border-bottom","0");
-		jQuery(".field-label:contains('Picture:')").css("display","none");
-		jQuery(".field-name-field-picture").css("padding-bottom","0");
-		jQuery(".field-name-field-picture").css("padding-top","0");
-		
-	}
-
     var windowWidth = jQuery(window).width();
 	jQuery('head').append('<meta http-equiv="X-UA-Compatible" content="IE=9">');
     var visibleLetters = parseInt(windowWidth / 26);
@@ -106,53 +95,4 @@ jQuery(window).resize(function () {
    (window.innerWidth == screen.width) || (window.innerWidth > 783 && !(window.fullScreen))) {
         jQuery('#A-Z ').animate({ "marginLeft": "0px" }, "fast");
     }
-	
-	if(jQuery(window).width() < 1100 && jQuery("#FacultyLeftNavigation2").length == 0)
-	{
-		alert("Here");
-		var navigationLinks = jQuery(".FacultyLeftNavigation a");
-		var navigationLinkValues = [];
-		var newUl = jQuery("<select id='FacultyLeftNavigation2'></select>");
-		
-		for( i=0; i< navigationLinks.length; i++)
-		{
-			newUl.append("<option value='"+navigationLinks[i]+"'>"+navigationLinks[i].innerText+"</option>");
-		}
-		var otherLinks = jQuery("#otherLinks");
-		var selectOtherLinks = $("<select id="otherLinksSelectBox"></select>");
-		for( i=0; i< otherLinks.length; i++)
-		{
-			selectOtherLinks.append("<option value='"+otherLinks[i]+"'>"+otherLinks[i].innerText+"</option>");
-		}
-		
-		jQuery(".BackgroundBlock").before(newUl);
-		jQuery(newUl).after(selectOtherLinks);
-	}
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
