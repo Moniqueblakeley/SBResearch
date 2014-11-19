@@ -512,7 +512,7 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
 # $conf['allow_authorize_operations'] = FALSE;
 
 
-$conf['file_public_path'] = 'sites/faculty.stonybrook.edu/files';
+$conf['file_public_path'] = 'sites/default/files';
 
 
 // On Acquia Cloud, this include file configures Drupal to use the correct
